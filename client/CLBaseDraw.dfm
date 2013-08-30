@@ -1,0 +1,60 @@
+object fCLBaseDraw: TfCLBaseDraw
+  Left = 354
+  Top = 388
+  Caption = 'fCLBaseDraw'
+  ClientHeight = 373
+  ClientWidth = 630
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Visible = True
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnMouseDown = FormMouseDown
+  OnMouseMove = FormMouseMove
+  OnMouseWheel = FormMouseWheel
+  OnPaint = FormPaint
+  OnResize = FormResize
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object sbHor: TScrollBar
+    Left = 0
+    Top = 357
+    Width = 630
+    Height = 16
+    Align = alBottom
+    LargeChange = 100
+    PageSize = 0
+    SmallChange = 10
+    TabOrder = 0
+    OnScroll = sbVerScroll
+  end
+  object sbVer: TScrollBar
+    Left = 614
+    Top = 0
+    Width = 16
+    Height = 357
+    Align = alRight
+    Enabled = False
+    Kind = sbVertical
+    LargeChange = 100
+    PageSize = 0
+    SmallChange = 10
+    TabOrder = 1
+    Visible = False
+    OnScroll = sbVerScroll
+  end
+  object lvDumb: TListView
+    Left = 10
+    Top = -50
+    Width = 93
+    Height = 27
+    Columns = <>
+    TabOrder = 2
+  end
+end

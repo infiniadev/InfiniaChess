@@ -1,0 +1,296 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{7E64CB83-0C0E-44EF-8D6D-9E6B8F22A121}</ProjectGuid>
+			<MainSource>chclient.dpr</MainSource>
+			<Base>True</Base>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<Platform>Win32</Platform>
+			<AppType>Application</AppType>
+			<FrameworkType>VCL</FrameworkType>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<ProjectVersion>12.3</ProjectVersion>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_UsePackage>VCL50;Chesslink</DCC_UsePackage>
+			<DCC_MapFile>3</DCC_MapFile>
+			<DCC_UNSAFE_CODE>true</DCC_UNSAFE_CODE>
+			<DCC_UNSAFE_TYPE>true</DCC_UNSAFE_TYPE>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_Optimize>false</DCC_Optimize>
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<DCC_UnitSearchPath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10;D:\Work\Chess\comp;C:\Program Files\Indy 9 for Delphi 5\Source;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+			<DCC_ExeOutput>C:\Program Files\InfiniaChess</DCC_ExeOutput>
+			<DCC_UNSAFE_CAST>true</DCC_UNSAFE_CAST>
+			<DCC_N>true</DCC_N>
+			<DCC_K>false</DCC_K>
+			<DCC_DcpOutput>D:\Work\Chess\client\dcu</DCC_DcpOutput>
+			<DCC_S>false</DCC_S>
+			<DCC_F>false</DCC_F>
+			<DCC_SymbolReferenceInfo>1</DCC_SymbolReferenceInfo>
+			<DCC_WriteableConstants>true</DCC_WriteableConstants>
+			<DCC_E>false</DCC_E>
+			<DCC_DcuOutput>D:\Work\Chess\client\dcu</DCC_DcuOutput>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_ExeOutput>C:\Program Files (x86)\InfiniaChess</DCC_ExeOutput>
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+			<DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="chclient.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="CLMain.pas">
+				<Form>fCLMain</Form>
+			</DCCReference>
+			<DCCReference Include="CLGlobal.pas"/>
+			<DCCReference Include="CLOptions.pas">
+				<Form>fCLOptions</Form>
+			</DCCReference>
+			<DCCReference Include="CLCommandEdit.pas">
+				<Form>fCLCommandEdit</Form>
+			</DCCReference>
+			<DCCReference Include="CLTerminal.pas">
+				<Form>fCLTerminal</Form>
+			</DCCReference>
+			<DCCReference Include="CLNavigate.pas">
+				<Form>fCLNavigate</Form>
+			</DCCReference>
+			<DCCReference Include="CLGame.pas"/>
+			<DCCReference Include="CLBoard.pas">
+				<Form>fCLBoard</Form>
+			</DCCReference>
+			<DCCReference Include="CLPromotion.pas">
+				<Form>fCLPromotion</Form>
+			</DCCReference>
+			<DCCReference Include="CLPgn.pas"/>
+			<DCCReference Include="CLAbout.pas">
+				<Form>fCLAbout</Form>
+			</DCCReference>
+			<DCCReference Include="CLSeek.pas">
+				<Form>fCLSeek</Form>
+			</DCCReference>
+			<DCCReference Include="CLAccount.pas">
+				<Form>fCLAccount</Form>
+			</DCCReference>
+			<DCCReference Include="CLPGNLib.pas">
+				<Form>fCLPGNLib</Form>
+			</DCCReference>
+			<DCCReference Include="CLSocket.pas"/>
+			<DCCReference Include="CLCLS.pas"/>
+			<DCCReference Include="CLOffers.pas">
+				<Form>fCLOffers</Form>
+			</DCCReference>
+			<DCCReference Include="CLConst.pas"/>
+			<DCCReference Include="CLNotify.pas">
+				<Form>fCLNotify</Form>
+			</DCCReference>
+			<DCCReference Include="CLMessages.pas">
+				<Form>fCLMessages</Form>
+			</DCCReference>
+			<DCCReference Include="CLMessage.pas">
+				<Form>fCLMessage</Form>
+			</DCCReference>
+			<DCCReference Include="CLRooms.pas">
+				<Form>fCLRooms</Form>
+			</DCCReference>
+			<DCCReference Include="CLGames.pas">
+				<Form>fCLGames</Form>
+			</DCCReference>
+			<DCCReference Include="CLLogin.pas">
+				<Form>fCLLogin</Form>
+			</DCCReference>
+			<DCCReference Include="CLRegister.pas">
+				<Form>fCLRegister</Form>
+			</DCCReference>
+			<DCCReference Include="CLAccounts.pas">
+				<Form>fCLAccounts</Form>
+			</DCCReference>
+			<DCCReference Include="CLFilterManager.pas"/>
+			<DCCReference Include="CLProfile.pas">
+				<Form>fCLProfile</Form>
+			</DCCReference>
+			<DCCReference Include="CLTakeback.pas">
+				<Form>fCLTakeback</Form>
+			</DCCReference>
+			<DCCReference Include="CLMoretime.pas">
+				<Form>fCLMoretime</Form>
+			</DCCReference>
+			<DCCReference Include="CLCrypt.pas"/>
+			<DCCReference Include="CLNet.pas"/>
+			<DCCReference Include="CLLib.pas"/>
+			<DCCReference Include="CLBan.pas"/>
+			<DCCReference Include="CLMessageDlg.pas"/>
+			<DCCReference Include="CLDemoBoard.pas">
+				<Form>fCLDemoBoard</Form>
+			</DCCReference>
+			<DCCReference Include="CLEventControl.pas">
+				<Form>fCLEventControl</Form>
+			</DCCReference>
+			<DCCReference Include="CLEvents.pas">
+				<Form>fCLEvents</Form>
+			</DCCReference>
+			<DCCReference Include="CLEventNew.pas">
+				<Form>fCLEventNew</Form>
+			</DCCReference>
+			<DCCReference Include="CLOdds.pas">
+				<Form>fCLOdds</Form>
+			</DCCReference>
+			<DCCReference Include="CLTournament.pas"/>
+			<DCCReference Include="CLTable.pas">
+				<Form>fCLTable</Form>
+			</DCCReference>
+			<DCCReference Include="CSReglament.pas"/>
+			<DCCReference Include="CLRectMap.pas"/>
+			<DCCReference Include="CLAccept.pas">
+				<Form>fCLAccept</Form>
+			</DCCReference>
+			<DCCReference Include="CLAuthKey.pas">
+				<Form>fCLAuthKey</Form>
+			</DCCReference>
+			<DCCReference Include="CLImageLib.pas"/>
+			<DCCReference Include="CLFileLib.pas"/>
+			<DCCReference Include="CLMediaPlayer.pas"/>
+			<DCCReference Include="CLSocket2.pas"/>
+			<DCCReference Include="CLPassword.pas">
+				<Form>fCLPassword</Form>
+			</DCCReference>
+			<DCCReference Include="CLStat.pas">
+				<Form>fCLStat</Form>
+			</DCCReference>
+			<DCCReference Include="CSClub.pas"/>
+			<DCCReference Include="CLClubList.pas">
+				<Form>fCLClubList</Form>
+			</DCCReference>
+			<DCCReference Include="CLClubMembers.pas">
+				<Form>fCLClubMembers</Form>
+			</DCCReference>
+			<DCCReference Include="CLCLubOptions.pas">
+				<Form>fCLCLubOptions</Form>
+			</DCCReference>
+			<DCCReference Include="CLClubInfo.pas">
+				<Form>fCLClubInfo</Form>
+			</DCCReference>
+			<DCCReference Include="CLEventTickets.pas">
+				<Form>fCLEventTickets</Form>
+			</DCCReference>
+			<DCCReference Include="CLRating.pas"/>
+			<DCCReference Include="CLOfferOdds.pas"/>
+			<DCCReference Include="CLAutoUpdate.pas">
+				<Form>FCLAutoUpdate</Form>
+			</DCCReference>
+			<DCCReference Include="CLLectures.pas">
+				<Form>fCLLectures</Form>
+			</DCCReference>
+			<DCCReference Include="CLLectureNew.pas">
+				<Form>fCLLectureNew</Form>
+			</DCCReference>
+			<DCCReference Include="CLLecture.pas"/>
+			<DCCReference Include="CLClubNew.pas">
+				<Form>fClubNew</Form>
+			</DCCReference>
+			<DCCReference Include="CLAchievementClass.pas"/>
+			<DCCReference Include="CLAchievements.pas">
+				<Form>fCLAchievements</Form>
+			</DCCReference>
+			<DCCReference Include="CLAchGroups.pas"/>
+			<DCCReference Include="CLBaseDraw.pas">
+				<Form>fCLBaseDraw</Form>
+			</DCCReference>
+			<DCCReference Include="CLAchList.pas">
+				<Form>fCLAchList</Form>
+			</DCCReference>
+			<DCCReference Include="CLClubs.pas">
+				<Form>fCLClubs</Form>
+			</DCCReference>
+			<DCCReference Include="CLWarning.pas">
+				<Form>fCLWarning</Form>
+			</DCCReference>
+			<DCCReference Include="CLMembershipType.pas"/>
+			<DCCReference Include="CLPaymentEdit.pas">
+				<Form>fCLPaymentEdit</Form>
+			</DCCReference>
+			<DCCReference Include="CLSeeks.pas">
+				<Form>fCLSeeks</Form>
+			</DCCReference>
+			<DCCReference Include="CLObjectList.pas"/>
+			<DCCReference Include="CLLogins.pas"/>
+			<DCCReference Include="CLAutoUpdateThread.pas"/>
+			<None Include="chclient.todo"/>
+			<None Include="ModelSupport_chclient\default.txaPackage"/>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>VCLApplication</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">chclient.dpr</Source>
+					</Source>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">2</VersionInfo>
+						<VersionInfo Name="MinorVer">2</VersionInfo>
+						<VersionInfo Name="Release">7</VersionInfo>
+						<VersionInfo Name="Build">4</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1033</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">2.2.7.4</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">2.0.1.15</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+				</Delphi.Personality>
+				<Platforms>
+					<Platform value="Win32">True</Platform>
+				</Platforms>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>
