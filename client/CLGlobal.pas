@@ -463,7 +463,7 @@ begin
       SetLength(FServer, L);
       Read(FServer[1], L);
       if FServer = 'server1.infiniachess.com' then
-        FServer:='67.192.255.154';
+        FServer:=CHESSLINK_SERVER;
       Read(FPort, SizeOf(FPort));
       if FPort = 1024 then
         FPort:=CHESSLINK_PORT;
