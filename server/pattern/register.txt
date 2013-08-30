@@ -1,0 +1,9 @@
+InfiniaChess registration
+You registered new login on www.infiniachess.com.
+Login: %login%
+Password: %password%
+
+First time when you will connect, you will be asked for confirmation key. 
+You key is: %key%
+
+Thank you. 

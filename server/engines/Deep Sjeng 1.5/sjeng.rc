@@ -1,0 +1,51 @@
+# Sample rcfile for Deep Sjeng 
+#
+# Size of hash table (transposition table) 
+# in megabytes.
+#
+32
+#
+# EGTB Buffer size
+#
+# This is the amount of memory that will be used for
+# endgame tablebase caching in megabytes.
+#
+1
+#
+# EGTB directory
+#
+# Point this to the directory where your Nalimov endgame
+# tablebases are located.
+#
+c:\archivos de programa\chessbase\tb
+#
+#
+# Logging (1=enabled/0=disabled)
+# 
+# Writes all commands sent and received to the file
+# specified below.
+#
+0
+#
+# Name of the logfile
+#
+sjeng.log
+#
+#
+# Book learning (1=enabled/0=disabled)
+# Sjeng will adjust the openings it plays
+# depending on the outcome of the game.
+#
+1
+#
+# CPU's (default=1)
+# Set to number of available cpus in machine.
+#
+1
+#
+#
+# Personality (default=none)
+# Loads a personality from a file.
+#
+none
+#

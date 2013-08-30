@@ -1,0 +1,158 @@
+[2009-08-16 01:53:05:609]: *****************************************
+[2009-08-16 01:53:05:625]: dbo.proc_UpdateLoginSettings
+[2009-08-16 01:53:05:625]: 30 params
+[2009-08-16 01:53:05:625]: (#1) => 15920
+[2009-08-16 01:53:05:625]: (#2) => False
+[2009-08-16 01:53:05:625]: (#3) => 0
+[2009-08-16 01:53:05:625]: (#4) => 3
+[2009-08-16 01:53:05:625]: (#5) => 0
+[2009-08-16 01:53:05:625]: (#6) => 3000
+[2009-08-16 01:53:05:625]: (#7) => 1
+[2009-08-16 01:53:05:625]: (#8) => True
+[2009-08-16 01:53:05:625]: (#9) => True
+[2009-08-16 01:53:05:625]: (#10) => 0
+[2009-08-16 01:53:05:625]: (#11) => True
+[2009-08-16 01:53:05:625]: (#12) => M
+[2009-08-16 01:53:05:625]: (#13) => 0
+[2009-08-16 01:53:05:625]: (#14) => 0
+[2009-08-16 01:53:05:625]: (#15) => urise@mail.ru
+[2009-08-16 01:53:05:625]: (#16) => 0
+[2009-08-16 01:53:05:625]: (#17) => 0
+[2009-08-16 01:53:05:625]: (#18) => 
+[2009-08-16 01:53:05:625]: (#19) => 1
+[2009-08-16 01:53:05:625]: (#20) => 0
+[2009-08-16 01:53:05:625]: (#21) => 0
+[2009-08-16 01:53:05:625]: (#22) => 1
+[2009-08-16 01:53:05:625]: (#23) => 1
+[2009-08-16 01:53:05:625]: (#24) => Greek
+[2009-08-16 01:53:05:625]: (#25) => 0
+[2009-08-16 01:53:05:625]: (#26) => 13.02.1975
+[2009-08-16 01:53:05:625]: (#27) => 0
+[2009-08-16 01:53:05:625]: (#28) => 1
+[2009-08-16 01:53:05:625]: (#29) => 0
+[2009-08-16 01:53:05:625]: === ERROR ===
+[2009-08-16 01:53:05:625]: Не удается найти объект в семействе, соответствующий требуемому имени или порядковому номеру
+[2009-09-02 14:45:30:125]: *****************************************
+[2009-09-02 14:45:30:156]: dbo.proc_ClientError
+[2009-09-02 14:45:30:156]: 7 params
+[2009-09-02 14:45:30:156]: (#1) => urise
+[2009-09-02 14:45:30:156]: (#2) => 8.1ai
+[2009-09-02 14:45:30:156]: (#3) => 1
+[2009-09-02 14:45:30:156]: (#4) => (000FF5C0){chclient.exe}[005005C0]CLObjectList.TTypedObjectList.AddObjectToSortedList(Line55,"CLObjectList.pas"+4)+$88<-(000FF435){chclient.exe}[00500435]CLObjectList.TTypedObjectList.AddObject(Line42,"CLObjectList.pas"+5)+$F<-(000FFFC2){chclient.exe}[00500FC2]CLLogins.TLoginFilterList.AddLoginFilter(Line140,"CLLogins.pas"+4)+$6<-(0015C1E3){chclient.exe}[0055D1E3]CLTerminal.TfCLTerminal.AddLoginFilter(Line728,"CLTerminal.pas"+3)+$12<-(0015D3A8){chclient.exe}[0055E3A8]CLTerminal.TfCLTerminal.RoomEnter(Line1075,"CLTerminal.pas"+4)+$C<-(00136BB5){chclient.exe}[00537BB5]CLCLS.TCLCLS.ProcessDatapack(Line1021,"CLCLS.pas"+40)+$D<-(00137A09){chclient.exe}[00538A09]CLCLS.TCLCLS.Receive(Line1219,"CLCLS.pas"+18)+$12<-(001590F4){chclient.exe}[0055A0F4]CLSocket.TCLSocket.FSocketRead(Line437,"CLSocket.pas"+19)+$D<-(000FE41F){chclient.exe}[004FF41F]ScktComp.TCustomSocket.Event(Line1869,"ScktComp.pas"+20)+$16<-(000FE02B){chclient.exe}[004FF02B]ScktComp.TAbstractSocket.DoEvent(Line1764,"ScktComp.pas"+1)+$B<-(000FD7AA){chclient.exe}[004FE7AA]ScktComp.TCustomWinSocket.Event(Line981,"ScktComp.pas"+1)+$1A<-(000FDB79){chclient.exe}[004FEB79]ScktComp.TCustomWinSocket.Read(Line1116,"ScktComp.pas"+2)+$C<-(000FD184){chclient.exe}[004FE184]ScktComp.TCustomWinSocket.CMSocketMessage(Line679,"ScktComp.pas"+6)+$B<-(000FDD49){chclient.exe}[004FED49]ScktComp.TCustomWinSocket.WndProc(Line1169,"ScktComp.pas"+2)+$8<-(0002CC74){chclient.exe}[0042DC74]Classes.StdWndProc(Line11572,"classes.pas"+8)+$0<-(0008B2F6){chclient.exe}[0048C2F6]Forms.TApplication.ProcessMessage(Line7651,"Forms.pas"+23)+$4<-(0008B33B){chclient.exe}[0048C33B]Forms.TApplication.HandleMessage(Line7670,"Forms.pas"+1)+$6<-(00086A62){chclient.exe}[00487A62]Forms.TCustomForm.ShowModal(Line5400,"Forms.pas"+29)+$5<-(001987A6){chclient.exe}[005997A6]CLMain.TfCLMain.miLoginClick(Line1651,"C
+[2009-09-02 14:45:30:156]: (#5) => 000000
+[2009-09-02 14:45:30:156]: (#6) => TLoginFilterList.AddObjectToSortedList: adding existing object TLoginFilter with key = 15920;1 
+[2009-09-02 14:45:30:156]: (#7) => 500
+[2009-09-02 14:45:30:156]: === ERROR ===
+[2009-09-02 14:45:30:156]: CurThreadID = 4960
+[2009-09-02 14:45:30:156]: Приложение использует для текущей операции значение неверного типа
+[2009-09-02 14:45:36:390]: *****************************************
+[2009-09-02 14:45:36:390]: dbo.proc_SaveLagStat
+[2009-09-02 14:45:36:390]: 4 params
+[2009-09-02 14:45:36:390]: (#1) => urise
+[2009-09-02 14:45:36:390]: (#2) => clienterror
+[2009-09-02 14:45:36:390]: (#3) => /clienterror 1 (000FF5C0){chclient.exe}[005005C0]CLObjectList.TTypedObjectList.AddObjectToSortedList(Line55,"CLObjectList.pas"+4)+$88<-(000FF435){chclient.exe}[00500435]CLObjectList.TTypedObjectList.AddObject(Line42,"CLObjectList.pas"+5)+$F<-(000FFFC2){chclient.exe}[00500FC2]CLLogins.TLoginFilterList.AddLoginFilter(Line140,"CLLogins.pas"+4)+$6<-(0015C1E3){chclient.exe}[0055D1E3]CLTerminal.TfCLTerminal.AddLoginFilter(Line728,"CLTerminal.pas"+3)+$12<-(0015D3A8){chclient.exe}[0055E3A8]CLTerminal.TfCLTerminal.RoomEnter(Line1075,"CLTerminal.pas"+4)+$C<-(00136BB5){chclient.exe}[00537BB5]CLCLS.TCLCLS.ProcessDatapack(Line1021,"CLCLS.pas"+40)+$D<-(00137A09){chclient.exe}[00538A09]CLCLS.TCLCLS.Receive(Line1219,"CLCLS.pas"+18)+$12<-(001590F4){chclient.exe}[0055A0F4]CLSocket.TCLSocket.FSocketRead(Line437,"CLSocket.pas"+19)+$D<-(000FE41F){chclient.exe}[004FF41F]ScktComp.TCustomSocket.Event(Line1869,"ScktComp.pas"+20)+$16<-(000FE02B){chclient.exe}[004FF02B]ScktComp.TAbstractSocket.DoEvent(Line1764,"ScktComp.pas"+1)+$B<-(000FD7AA){chclient.exe}[004FE7AA]ScktComp.TCustomWinSocket.Event(Line981,"ScktComp.pas"+1)+$1A<-(000FDB79){chclient.exe}[004FEB79]ScktComp.TCustomWinSocket.Read(Line1116,"ScktComp.pas"+2)+$C<-(000FD184){chclient.exe}[004FE184]ScktComp.TCustomWinSocket.CMSocketMessage(Line679,"ScktComp.pas"+6)+$B<-(000FDD49){chclient.exe}[004FED49]ScktComp.TCustomWinSocket.WndProc(Line1169,"ScktComp.pas"+2)+$8<-(0002CC74){chclient.exe}[0042DC74]Classes.StdWndProc(Line11572,"classes.pas"+8)+$0<-(0008B2F6){chclient.exe}[0048C2F6]Forms.TApplication.ProcessMessage(Line7651,"Forms.pas"+23)+$4<-(0008B33B){chclient.exe}[0048C33B]Forms.TApplication.HandleMessage(Line7670,"Forms.pas"+1)+$6<-(00086A62){chclient.exe}[00487A62]Forms.TCustomForm.ShowModal(Line5400,"Forms.pas"+29)+$5<-(001987A6){chclient.exe}[005997A6]CLMain.TfCLMain.miLoginClick(Line1651,"C 000000 500 TLoginFilterList.AddObjectToSortedList: adding existing object TLoginFilter with key = 15920;1
+
+[2009-09-02 14:45:36:390]: (#4) => 107109
+[2009-09-02 14:45:36:390]: === ERROR ===
+[2009-09-02 14:45:36:390]: CurThreadID = 4960
+[2009-09-02 14:45:36:390]: Приложение использует для текущей операции значение неверного типа
+[2009-09-02 14:45:45:109]: *****************************************
+[2009-09-02 14:45:45:125]: dbo.proc_ClientError
+[2009-09-02 14:45:45:125]: 7 params
+[2009-09-02 14:45:45:125]: (#1) => urise
+[2009-09-02 14:45:45:125]: (#2) => 8.1ai
+[2009-09-02 14:45:45:125]: (#3) => 1
+[2009-09-02 14:45:45:125]: (#4) => (000FF5C0){chclient.exe}[005005C0]CLObjectList.TTypedObjectList.AddObjectToSortedList(Line55,"CLObjectList.pas"+4)+$88<-(000FF435){chclient.exe}[00500435]CLObjectList.TTypedObjectList.AddObject(Line42,"CLObjectList.pas"+5)+$F<-(000FFFC2){chclient.exe}[00500FC2]CLLogins.TLoginFilterList.AddLoginFilter(Line140,"CLLogins.pas"+4)+$6<-(0015C1E3){chclient.exe}[0055D1E3]CLTerminal.TfCLTerminal.AddLoginFilter(Line728,"CLTerminal.pas"+3)+$12<-(0015D3A8){chclient.exe}[0055E3A8]CLTerminal.TfCLTerminal.RoomEnter(Line1075,"CLTerminal.pas"+4)+$C<-(00136BB5){chclient.exe}[00537BB5]CLCLS.TCLCLS.ProcessDatapack(Line1021,"CLCLS.pas"+40)+$D<-(00137A09){chclient.exe}[00538A09]CLCLS.TCLCLS.Receive(Line1219,"CLCLS.pas"+18)+$12<-(001590F4){chclient.exe}[0055A0F4]CLSocket.TCLSocket.FSocketRead(Line437,"CLSocket.pas"+19)+$D<-(000FE41F){chclient.exe}[004FF41F]ScktComp.TCustomSocket.Event(Line1869,"ScktComp.pas"+20)+$16<-(000FE02B){chclient.exe}[004FF02B]ScktComp.TAbstractSocket.DoEvent(Line1764,"ScktComp.pas"+1)+$B<-(000FD7AA){chclient.exe}[004FE7AA]ScktComp.TCustomWinSocket.Event(Line981,"ScktComp.pas"+1)+$1A<-(000FDB79){chclient.exe}[004FEB79]ScktComp.TCustomWinSocket.Read(Line1116,"ScktComp.pas"+2)+$C<-(000FD184){chclient.exe}[004FE184]ScktComp.TCustomWinSocket.CMSocketMessage(Line679,"ScktComp.pas"+6)+$B<-(000FDD49){chclient.exe}[004FED49]ScktComp.TCustomWinSocket.WndProc(Line1169,"ScktComp.pas"+2)+$8<-(0002CC74){chclient.exe}[0042DC74]Classes.StdWndProc(Line11572,"classes.pas"+8)+$0<-(0008B2F6){chclient.exe}[0048C2F6]Forms.TApplication.ProcessMessage(Line7651,"Forms.pas"+23)+$4<-(0008B33B){chclient.exe}[0048C33B]Forms.TApplication.HandleMessage(Line7670,"Forms.pas"+1)+$6<-(00086A62){chclient.exe}[00487A62]Forms.TCustomForm.ShowModal(Line5400,"Forms.pas"+29)+$5<-(001987A6){chclient.exe}[005997A6]CLMain.TfCLMain.miLoginClick(Line1651,"C
+[2009-09-02 14:45:45:125]: (#5) => 000000
+[2009-09-02 14:45:45:125]: (#6) => TLoginFilterList.AddObjectToSortedList: adding existing object TLoginFilter with key = 15920;2 
+[2009-09-02 14:45:45:125]: (#7) => 1044
+[2009-09-02 14:45:45:125]: === ERROR ===
+[2009-09-02 14:45:45:125]: CurThreadID = 4960
+[2009-09-02 14:45:45:125]: Приложение использует для текущей операции значение неверного типа
+[2009-09-02 14:45:47:562]: *****************************************
+[2009-09-02 14:45:47:562]: dbo.proc_SaveLagStat
+[2009-09-02 14:45:47:562]: 4 params
+[2009-09-02 14:45:47:562]: (#1) => urise
+[2009-09-02 14:45:47:562]: (#2) => clienterror
+[2009-09-02 14:45:47:562]: (#3) => /clienterror 1 (000FF5C0){chclient.exe}[005005C0]CLObjectList.TTypedObjectList.AddObjectToSortedList(Line55,"CLObjectList.pas"+4)+$88<-(000FF435){chclient.exe}[00500435]CLObjectList.TTypedObjectList.AddObject(Line42,"CLObjectList.pas"+5)+$F<-(000FFFC2){chclient.exe}[00500FC2]CLLogins.TLoginFilterList.AddLoginFilter(Line140,"CLLogins.pas"+4)+$6<-(0015C1E3){chclient.exe}[0055D1E3]CLTerminal.TfCLTerminal.AddLoginFilter(Line728,"CLTerminal.pas"+3)+$12<-(0015D3A8){chclient.exe}[0055E3A8]CLTerminal.TfCLTerminal.RoomEnter(Line1075,"CLTerminal.pas"+4)+$C<-(00136BB5){chclient.exe}[00537BB5]CLCLS.TCLCLS.ProcessDatapack(Line1021,"CLCLS.pas"+40)+$D<-(00137A09){chclient.exe}[00538A09]CLCLS.TCLCLS.Receive(Line1219,"CLCLS.pas"+18)+$12<-(001590F4){chclient.exe}[0055A0F4]CLSocket.TCLSocket.FSocketRead(Line437,"CLSocket.pas"+19)+$D<-(000FE41F){chclient.exe}[004FF41F]ScktComp.TCustomSocket.Event(Line1869,"ScktComp.pas"+20)+$16<-(000FE02B){chclient.exe}[004FF02B]ScktComp.TAbstractSocket.DoEvent(Line1764,"ScktComp.pas"+1)+$B<-(000FD7AA){chclient.exe}[004FE7AA]ScktComp.TCustomWinSocket.Event(Line981,"ScktComp.pas"+1)+$1A<-(000FDB79){chclient.exe}[004FEB79]ScktComp.TCustomWinSocket.Read(Line1116,"ScktComp.pas"+2)+$C<-(000FD184){chclient.exe}[004FE184]ScktComp.TCustomWinSocket.CMSocketMessage(Line679,"ScktComp.pas"+6)+$B<-(000FDD49){chclient.exe}[004FED49]ScktComp.TCustomWinSocket.WndProc(Line1169,"ScktComp.pas"+2)+$8<-(0002CC74){chclient.exe}[0042DC74]Classes.StdWndProc(Line11572,"classes.pas"+8)+$0<-(0008B2F6){chclient.exe}[0048C2F6]Forms.TApplication.ProcessMessage(Line7651,"Forms.pas"+23)+$4<-(0008B33B){chclient.exe}[0048C33B]Forms.TApplication.HandleMessage(Line7670,"Forms.pas"+1)+$6<-(00086A62){chclient.exe}[00487A62]Forms.TCustomForm.ShowModal(Line5400,"Forms.pas"+29)+$5<-(001987A6){chclient.exe}[005997A6]CLMain.TfCLMain.miLoginClick(Line1651,"C 000000 1044 TLoginFilterList.AddObjectToSortedList: adding existing object TLoginFilter with key = 15920;2
+
+[2009-09-02 14:45:47:562]: (#4) => 3234
+[2009-09-02 14:45:47:562]: === ERROR ===
+[2009-09-02 14:45:47:562]: CurThreadID = 4960
+[2009-09-02 14:45:47:562]: Приложение использует для текущей операции значение неверного типа
+[2009-09-02 14:47:02:218]: *****************************************
+[2009-09-02 14:47:02:984]: dbo.proc_ClientError
+[2009-09-02 14:47:04:187]: 7 params
+[2009-09-02 14:47:04:187]: (#1) => urise
+[2009-09-02 14:47:04:187]: (#2) => 8.1ai
+[2009-09-02 14:47:04:187]: (#3) => 1
+[2009-09-02 14:47:04:187]: (#4) => (000FF5C0){chclient.exe}[005005C0]CLObjectList.TTypedObjectList.AddObjectToSortedList(Line55,"CLObjectList.pas"+4)+$88<-(000FF435){chclient.exe}[00500435]CLObjectList.TTypedObjectList.AddObject(Line42,"CLObjectList.pas"+5)+$F<-(000FFFC2){chclient.exe}[00500FC2]CLLogins.TLoginFilterList.AddLoginFilter(Line140,"CLLogins.pas"+4)+$6<-(0015C1E3){chclient.exe}[0055D1E3]CLTerminal.TfCLTerminal.AddLoginFilter(Line728,"CLTerminal.pas"+3)+$12<-(0015D3A8){chclient.exe}[0055E3A8]CLTerminal.TfCLTerminal.RoomEnter(Line1075,"CLTerminal.pas"+4)+$C<-(00136BB5){chclient.exe}[00537BB5]CLCLS.TCLCLS.ProcessDatapack(Line1021,"CLCLS.pas"+40)+$D<-(00137A09){chclient.exe}[00538A09]CLCLS.TCLCLS.Receive(Line1219,"CLCLS.pas"+18)+$12<-(001590F4){chclient.exe}[0055A0F4]CLSocket.TCLSocket.FSocketRead(Line437,"CLSocket.pas"+19)+$D<-(000FE41F){chclient.exe}[004FF41F]ScktComp.TCustomSocket.Event(Line1869,"ScktComp.pas"+20)+$16<-(000FE02B){chclient.exe}[004FF02B]ScktComp.TAbstractSocket.DoEvent(Line1764,"ScktComp.pas"+1)+$B<-(000FD7AA){chclient.exe}[004FE7AA]ScktComp.TCustomWinSocket.Event(Line981,"ScktComp.pas"+1)+$1A<-(000FDB79){chclient.exe}[004FEB79]ScktComp.TCustomWinSocket.Read(Line1116,"ScktComp.pas"+2)+$C<-(000FD184){chclient.exe}[004FE184]ScktComp.TCustomWinSocket.CMSocketMessage(Line679,"ScktComp.pas"+6)+$B<-(000FDD49){chclient.exe}[004FED49]ScktComp.TCustomWinSocket.WndProc(Line1169,"ScktComp.pas"+2)+$8<-(0002CC74){chclient.exe}[0042DC74]Classes.StdWndProc(Line11572,"classes.pas"+8)+$0<-(0008B2F6){chclient.exe}[0048C2F6]Forms.TApplication.ProcessMessage(Line7651,"Forms.pas"+23)+$4<-(0008B33B){chclient.exe}[0048C33B]Forms.TApplication.HandleMessage(Line7670,"Forms.pas"+1)+$6<-(00086A62){chclient.exe}[00487A62]Forms.TCustomForm.ShowModal(Line5400,"Forms.pas"+29)+$5<-(001987A6){chclient.exe}[005997A6]CLMain.TfCLMain.miLoginClick(Line1651,"C
+[2009-09-02 14:47:04:187]: (#5) => 000000
+[2009-09-02 14:47:04:187]: (#6) => TLoginFilterList.AddObjectToSortedList: adding existing object TLoginFilter with key = 15920;3 
+[2009-09-02 14:47:04:187]: (#7) => 1057
+[2009-09-02 14:47:04:187]: === ERROR ===
+[2009-09-02 14:47:04:187]: CurThreadID = 4960
+[2009-09-02 14:47:04:187]: Приложение использует для текущей операции значение неверного типа
+[2009-09-02 14:56:59:359]: *****************************************
+[2009-09-02 14:56:59:359]: dbo.proc_SaveLagStat
+[2009-09-02 14:56:59:359]: 4 params
+[2009-09-02 14:56:59:359]: (#1) => urise
+[2009-09-02 14:56:59:359]: (#2) => clienterror
+[2009-09-02 14:56:59:359]: (#3) => /clienterror 1 (000FF5C0){chclient.exe}[005005C0]CLObjectList.TTypedObjectList.AddObjectToSortedList(Line55,"CLObjectList.pas"+4)+$88<-(000FF435){chclient.exe}[00500435]CLObjectList.TTypedObjectList.AddObject(Line42,"CLObjectList.pas"+5)+$F<-(000FFFC2){chclient.exe}[00500FC2]CLLogins.TLoginFilterList.AddLoginFilter(Line140,"CLLogins.pas"+4)+$6<-(0015C1E3){chclient.exe}[0055D1E3]CLTerminal.TfCLTerminal.AddLoginFilter(Line728,"CLTerminal.pas"+3)+$12<-(0015D3A8){chclient.exe}[0055E3A8]CLTerminal.TfCLTerminal.RoomEnter(Line1075,"CLTerminal.pas"+4)+$C<-(00136BB5){chclient.exe}[00537BB5]CLCLS.TCLCLS.ProcessDatapack(Line1021,"CLCLS.pas"+40)+$D<-(00137A09){chclient.exe}[00538A09]CLCLS.TCLCLS.Receive(Line1219,"CLCLS.pas"+18)+$12<-(001590F4){chclient.exe}[0055A0F4]CLSocket.TCLSocket.FSocketRead(Line437,"CLSocket.pas"+19)+$D<-(000FE41F){chclient.exe}[004FF41F]ScktComp.TCustomSocket.Event(Line1869,"ScktComp.pas"+20)+$16<-(000FE02B){chclient.exe}[004FF02B]ScktComp.TAbstractSocket.DoEvent(Line1764,"ScktComp.pas"+1)+$B<-(000FD7AA){chclient.exe}[004FE7AA]ScktComp.TCustomWinSocket.Event(Line981,"ScktComp.pas"+1)+$1A<-(000FDB79){chclient.exe}[004FEB79]ScktComp.TCustomWinSocket.Read(Line1116,"ScktComp.pas"+2)+$C<-(000FD184){chclient.exe}[004FE184]ScktComp.TCustomWinSocket.CMSocketMessage(Line679,"ScktComp.pas"+6)+$B<-(000FDD49){chclient.exe}[004FED49]ScktComp.TCustomWinSocket.WndProc(Line1169,"ScktComp.pas"+2)+$8<-(0002CC74){chclient.exe}[0042DC74]Classes.StdWndProc(Line11572,"classes.pas"+8)+$0<-(0008B2F6){chclient.exe}[0048C2F6]Forms.TApplication.ProcessMessage(Line7651,"Forms.pas"+23)+$4<-(0008B33B){chclient.exe}[0048C33B]Forms.TApplication.HandleMessage(Line7670,"Forms.pas"+1)+$6<-(00086A62){chclient.exe}[00487A62]Forms.TCustomForm.ShowModal(Line5400,"Forms.pas"+29)+$5<-(001987A6){chclient.exe}[005997A6]CLMain.TfCLMain.miLoginClick(Line1651,"C 000000 500 TLoginFilterList.AddObjectToSortedList: adding existing object TLoginFilter with key = 15920;1
+
+[2009-09-02 14:56:59:359]: (#4) => 82249
+[2009-09-02 14:56:59:359]: === ERROR ===
+[2009-09-02 14:56:59:359]: CurThreadID = 5444
+[2009-09-02 14:56:59:359]: Приложение использует для текущей операции значение неверного типа
+[2009-09-02 14:58:01:625]: *****************************************
+[2009-09-02 14:58:01:625]: dbo.proc_SaveLagStat
+[2009-09-02 14:58:01:625]: 4 params
+[2009-09-02 14:58:01:625]: (#1) => urise
+[2009-09-02 14:58:01:625]: (#2) => clienterror
+[2009-09-02 14:58:01:625]: (#3) => /clienterror 1 (000FF5C0){chclient.exe}[005005C0]CLObjectList.TTypedObjectList.AddObjectToSortedList(Line55,"CLObjectList.pas"+4)+$88<-(000FF435){chclient.exe}[00500435]CLObjectList.TTypedObjectList.AddObject(Line42,"CLObjectList.pas"+5)+$F<-(000FFFC2){chclient.exe}[00500FC2]CLLogins.TLoginFilterList.AddLoginFilter(Line140,"CLLogins.pas"+4)+$6<-(0015C1E3){chclient.exe}[0055D1E3]CLTerminal.TfCLTerminal.AddLoginFilter(Line728,"CLTerminal.pas"+3)+$12<-(0015D3A8){chclient.exe}[0055E3A8]CLTerminal.TfCLTerminal.RoomEnter(Line1075,"CLTerminal.pas"+4)+$C<-(00136BB5){chclient.exe}[00537BB5]CLCLS.TCLCLS.ProcessDatapack(Line1021,"CLCLS.pas"+40)+$D<-(00137A09){chclient.exe}[00538A09]CLCLS.TCLCLS.Receive(Line1219,"CLCLS.pas"+18)+$12<-(001590F4){chclient.exe}[0055A0F4]CLSocket.TCLSocket.FSocketRead(Line437,"CLSocket.pas"+19)+$D<-(000FE41F){chclient.exe}[004FF41F]ScktComp.TCustomSocket.Event(Line1869,"ScktComp.pas"+20)+$16<-(000FE02B){chclient.exe}[004FF02B]ScktComp.TAbstractSocket.DoEvent(Line1764,"ScktComp.pas"+1)+$B<-(000FD7AA){chclient.exe}[004FE7AA]ScktComp.TCustomWinSocket.Event(Line981,"ScktComp.pas"+1)+$1A<-(000FDB79){chclient.exe}[004FEB79]ScktComp.TCustomWinSocket.Read(Line1116,"ScktComp.pas"+2)+$C<-(000FD184){chclient.exe}[004FE184]ScktComp.TCustomWinSocket.CMSocketMessage(Line679,"ScktComp.pas"+6)+$B<-(000FDD49){chclient.exe}[004FED49]ScktComp.TCustomWinSocket.WndProc(Line1169,"ScktComp.pas"+2)+$8<-(0002CC74){chclient.exe}[0042DC74]Classes.StdWndProc(Line11572,"classes.pas"+8)+$0<-(0008B2F6){chclient.exe}[0048C2F6]Forms.TApplication.ProcessMessage(Line7651,"Forms.pas"+23)+$4<-(0008B33B){chclient.exe}[0048C33B]Forms.TApplication.HandleMessage(Line7670,"Forms.pas"+1)+$6<-(00086A62){chclient.exe}[00487A62]Forms.TCustomForm.ShowModal(Line5400,"Forms.pas"+29)+$5<-(001987A6){chclient.exe}[005997A6]CLMain.TfCLMain.miLoginClick(Line1651,"C 000000 508 TLoginFilterList.AddObjectToSortedList: adding existing object TLoginFilter with key = 15920;2
+
+[2009-09-02 14:58:01:625]: (#4) => 54875
+[2009-09-02 14:58:01:625]: === ERROR ===
+[2009-09-02 14:58:01:625]: CurThreadID = 5444
+[2009-09-02 14:58:01:625]: Приложение использует для текущей операции значение неверного типа
+[2009-09-02 14:58:06:343]: *****************************************
+[2009-09-02 14:58:06:343]: dbo.proc_SaveLagStat
+[2009-09-02 14:58:06:343]: 4 params
+[2009-09-02 14:58:06:343]: (#1) => urise
+[2009-09-02 14:58:06:343]: (#2) => clienterror
+[2009-09-02 14:58:06:343]: (#3) => /clienterror 1 (000FF5C0){chclient.exe}[005005C0]CLObjectList.TTypedObjectList.AddObjectToSortedList(Line55,"CLObjectList.pas"+4)+$88<-(000FF435){chclient.exe}[00500435]CLObjectList.TTypedObjectList.AddObject(Line42,"CLObjectList.pas"+5)+$F<-(000FFFC2){chclient.exe}[00500FC2]CLLogins.TLoginFilterList.AddLoginFilter(Line140,"CLLogins.pas"+4)+$6<-(0015C1E3){chclient.exe}[0055D1E3]CLTerminal.TfCLTerminal.AddLoginFilter(Line728,"CLTerminal.pas"+3)+$12<-(0015D3A8){chclient.exe}[0055E3A8]CLTerminal.TfCLTerminal.RoomEnter(Line1075,"CLTerminal.pas"+4)+$C<-(00136BB5){chclient.exe}[00537BB5]CLCLS.TCLCLS.ProcessDatapack(Line1021,"CLCLS.pas"+40)+$D<-(00137A09){chclient.exe}[00538A09]CLCLS.TCLCLS.Receive(Line1219,"CLCLS.pas"+18)+$12<-(001590F4){chclient.exe}[0055A0F4]CLSocket.TCLSocket.FSocketRead(Line437,"CLSocket.pas"+19)+$D<-(000FE41F){chclient.exe}[004FF41F]ScktComp.TCustomSocket.Event(Line1869,"ScktComp.pas"+20)+$16<-(000FE02B){chclient.exe}[004FF02B]ScktComp.TAbstractSocket.DoEvent(Line1764,"ScktComp.pas"+1)+$B<-(000FD7AA){chclient.exe}[004FE7AA]ScktComp.TCustomWinSocket.Event(Line981,"ScktComp.pas"+1)+$1A<-(000FDB79){chclient.exe}[004FEB79]ScktComp.TCustomWinSocket.Read(Line1116,"ScktComp.pas"+2)+$C<-(000FD184){chclient.exe}[004FE184]ScktComp.TCustomWinSocket.CMSocketMessage(Line679,"ScktComp.pas"+6)+$B<-(000FDD49){chclient.exe}[004FED49]ScktComp.TCustomWinSocket.WndProc(Line1169,"ScktComp.pas"+2)+$8<-(0002CC74){chclient.exe}[0042DC74]Classes.StdWndProc(Line11572,"classes.pas"+8)+$0<-(0008B2F6){chclient.exe}[0048C2F6]Forms.TApplication.ProcessMessage(Line7651,"Forms.pas"+23)+$4<-(0008B33B){chclient.exe}[0048C33B]Forms.TApplication.HandleMessage(Line7670,"Forms.pas"+1)+$6<-(00086A62){chclient.exe}[00487A62]Forms.TCustomForm.ShowModal(Line5400,"Forms.pas"+29)+$5<-(001987A6){chclient.exe}[005997A6]CLMain.TfCLMain.miLoginClick(Line1651,"C 000000 timecontrolandanyresultd TLoginFilterList.AddObjectToSortedList: adding existing object TLoginFilter with key = 15920;3
+
+[2009-09-02 14:58:06:359]: (#4) => 2577
+[2009-09-02 14:58:06:359]: === ERROR ===
+[2009-09-02 14:58:06:359]: CurThreadID = 5444
+[2009-09-02 14:58:06:359]: Приложение использует для текущей операции значение неверного типа
+[2009-09-02 15:00:15:281]: *****************************************
+[2009-09-02 15:00:15:281]: dbo.proc_SaveLagStat
+[2009-09-02 15:00:15:281]: 4 params
+[2009-09-02 15:00:15:281]: (#1) => urise
+[2009-09-02 15:00:15:281]: (#2) => clienterror
+[2009-09-02 15:00:15:281]: (#3) => /clienterror 1 (000FF5C0){chclient.exe}[005005C0]CLObjectList.TTypedObjectList.AddObjectToSortedList(Line55,"CLObjectList.pas"+4)+$88<-(000FF435){chclient.exe}[00500435]CLObjectList.TTypedObjectList.AddObject(Line42,"CLObjectList.pas"+5)+$F<-(000FFFC2){chclient.exe}[00500FC2]CLLogins.TLoginFilterList.AddLoginFilter(Line140,"CLLogins.pas"+4)+$6<-(0015C1E3){chclient.exe}[0055D1E3]CLTerminal.TfCLTerminal.AddLoginFilter(Line728,"CLTerminal.pas"+3)+$12<-(0015D3A8){chclient.exe}[0055E3A8]CLTerminal.TfCLTerminal.RoomEnter(Line1075,"CLTerminal.pas"+4)+$C<-(00136BB5){chclient.exe}[00537BB5]CLCLS.TCLCLS.ProcessDatapack(Line1021,"CLCLS.pas"+40)+$D<-(00137A09){chclient.exe}[00538A09]CLCLS.TCLCLS.Receive(Line1219,"CLCLS.pas"+18)+$12<-(001590F4){chclient.exe}[0055A0F4]CLSocket.TCLSocket.FSocketRead(Line437,"CLSocket.pas"+19)+$D<-(000FE41F){chclient.exe}[004FF41F]ScktComp.TCustomSocket.Event(Line1869,"ScktComp.pas"+20)+$16<-(000FE02B){chclient.exe}[004FF02B]ScktComp.TAbstractSocket.DoEvent(Line1764,"ScktComp.pas"+1)+$B<-(000FD7AA){chclient.exe}[004FE7AA]ScktComp.TCustomWinSocket.Event(Line981,"ScktComp.pas"+1)+$1A<-(000FDB79){chclient.exe}[004FEB79]ScktComp.TCustomWinSocket.Read(Line1116,"ScktComp.pas"+2)+$C<-(000FD184){chclient.exe}[004FE184]ScktComp.TCustomWinSocket.CMSocketMessage(Line679,"ScktComp.pas"+6)+$B<-(000FDD49){chclient.exe}[004FED49]ScktComp.TCustomWinSocket.WndProc(Line1169,"ScktComp.pas"+2)+$8<-(0002CC74){chclient.exe}[0042DC74]Classes.StdWndProc(Line11572,"classes.pas"+8)+$0<-(0008B2F6){chclient.exe}[0048C2F6]Forms.TApplication.ProcessMessage(Line7651,"Forms.pas"+23)+$4<-(0008B33B){chclient.exe}[0048C33B]Forms.TApplication.HandleMessage(Line7670,"Forms.pas"+1)+$6<-(00086A62){chclient.exe}[00487A62]Forms.TCustomForm.ShowModal(Line5400,"Forms.pas"+29)+$5<-(001987A6){chclient.exe}[005997A6]CLMain.TfCLMain.miLoginClick(Line1651,"C 000000 505 TLoginFilterList.AddObjectToSortedList: adding existing object TLoginFilter with key = 15920;1
+
+[2009-09-02 15:00:15:281]: (#4) => 121124
+[2009-09-02 15:00:15:281]: === ERROR ===
+[2009-09-02 15:00:15:281]: CurThreadID = 5444
+[2009-09-02 15:00:15:281]: Приложение использует для текущей операции значение неверного типа
+[2009-09-02 15:02:57:796]: *****************************************
+[2009-09-02 15:02:58:484]: dbo.proc_SaveLagStat
+[2009-09-02 15:02:59:000]: 4 params
+[2009-09-02 15:02:59:921]: (#1) => urise
+[2009-09-02 15:03:00:687]: (#2) => clienterror
+[2009-09-02 15:03:01:468]: (#3) => /clienterror 1 (000FF5C0){chclient.exe}[005005C0]CLObjectList.TTypedObjectList.AddObjectToSortedList(Line55,"CLObjectList.pas"+4)+$88<-(000FF435){chclient.exe}[00500435]CLObjectList.TTypedObjectList.AddObject(Line42,"CLObjectList.pas"+5)+$F<-(000FFFC2){chclient.exe}[00500FC2]CLLogins.TLoginFilterList.AddLoginFilter(Line140,"CLLogins.pas"+4)+$6<-(0015C1E3){chclient.exe}[0055D1E3]CLTerminal.TfCLTerminal.AddLoginFilter(Line728,"CLTerminal.pas"+3)+$12<-(0015D3A8){chclient.exe}[0055E3A8]CLTerminal.TfCLTerminal.RoomEnter(Line1075,"CLTerminal.pas"+4)+$C<-(00136BB5){chclient.exe}[00537BB5]CLCLS.TCLCLS.ProcessDatapack(Line1021,"CLCLS.pas"+40)+$D<-(00137A09){chclient.exe}[00538A09]CLCLS.TCLCLS.Receive(Line1219,"CLCLS.pas"+18)+$12<-(001590F4){chclient.exe}[0055A0F4]CLSocket.TCLSocket.FSocketRead(Line437,"CLSocket.pas"+19)+$D<-(000FE41F){chclient.exe}[004FF41F]ScktComp.TCustomSocket.Event(Line1869,"ScktComp.pas"+20)+$16<-(000FE02B){chclient.exe}[004FF02B]ScktComp.TAbstractSocket.DoEvent(Line1764,"ScktComp.pas"+1)+$B<-(000FD7AA){chclient.exe}[004FE7AA]ScktComp.TCustomWinSocket.Event(Line981,"ScktComp.pas"+1)+$1A<-(000FDB79){chclient.exe}[004FEB79]ScktComp.TCustomWinSocket.Read(Line1116,"ScktComp.pas"+2)+$C<-(000FD184){chclient.exe}[004FE184]ScktComp.TCustomWinSocket.CMSocketMessage(Line679,"ScktComp.pas"+6)+$B<-(000FDD49){chclient.exe}[004FED49]ScktComp.TCustomWinSocket.WndProc(Line1169,"ScktComp.pas"+2)+$8<-(0002CC74){chclient.exe}[0042DC74]Classes.StdWndProc(Line11572,"classes.pas"+8)+$0<-(0008B2F6){chclient.exe}[0048C2F6]Forms.TApplication.ProcessMessage(Line7651,"Forms.pas"+23)+$4<-(0008B33B){chclient.exe}[0048C33B]Forms.TApplication.HandleMessage(Line7670,"Forms.pas"+1)+$6<-(00086A62){chclient.exe}[00487A62]Forms.TCustomForm.ShowModal(Line5400,"Forms.pas"+29)+$5<-(001987A6){chclient.exe}[005997A6]CLMain.TfCLMain.miLoginClick(Line1651,"C 000000 114 TLoginFilterList.AddObjectToSortedList: adding existing object TLoginFilter with key = 15920;2
+
+[2009-09-02 15:03:01:906]: (#4) => 125969
+[2009-09-02 15:03:01:906]: === ERROR ===
+[2009-09-02 15:03:01:906]: CurThreadID = 5444
+[2009-09-02 15:03:01:906]: Приложение использует для текущей операции значение неверного типа
+[2009-09-27 13:22:14:406]: *****************************************
+[2009-09-27 13:22:14:421]: dbo.proc_LoginTitleChange
+[2009-09-27 13:22:14:421]: 2 params
+[2009-09-27 13:22:14:421]: (#1) => urise
+[2009-09-27 13:22:14:421]: (#2) => 
+[2009-09-27 13:22:14:421]: === ERROR ===
+[2009-09-27 13:22:14:421]: CurThreadID = 2932
+[2009-09-27 13:22:14:437]: Cannot insert the value NULL into column 'Title', table 'CLServer.dbo.Logins'; column does not allow nulls. UPDATE fails

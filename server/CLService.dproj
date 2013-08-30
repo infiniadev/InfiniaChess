@@ -1,0 +1,85 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{7fe9a3e7-9c29-4c22-af08-9705eec4795b}</ProjectGuid>
+    <MainSource>CLService.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>output\CLService.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_UnitSearchPath>D:\Work\Infinia\stuff\Indy 9\Source;D:\Work\Infinia\stuff\jcl\jcl-2.3.1.4197\source\windows\;D:\Work\Infinia\stuff\jcl\jcl-2.3.1.4197\source\include\;D:\Work\Infinia\stuff\jcl\jcl-2.3.1.4197\source\common\</DCC_UnitSearchPath>
+    <DCC_ResourcePath>D:\Work\Infinia\stuff\Indy 9\Source;D:\Work\Infinia\stuff\jcl\jcl-2.3.1.4197\source\windows\;D:\Work\Infinia\stuff\jcl\jcl-2.3.1.4197\source\include\;D:\Work\Infinia\stuff\jcl\jcl-2.3.1.4197\source\common\</DCC_ResourcePath>
+    <DCC_ObjPath>D:\Work\Infinia\stuff\Indy 9\Source;D:\Work\Infinia\stuff\jcl\jcl-2.3.1.4197\source\windows\;D:\Work\Infinia\stuff\jcl\jcl-2.3.1.4197\source\include\;D:\Work\Infinia\stuff\jcl\jcl-2.3.1.4197\source\common\</DCC_ObjPath>
+    <DCC_IncludePath>D:\Work\Infinia\stuff\Indy 9\Source;D:\Work\Infinia\stuff\jcl\jcl-2.3.1.4197\source\windows\;D:\Work\Infinia\stuff\jcl\jcl-2.3.1.4197\source\include\;D:\Work\Infinia\stuff\jcl\jcl-2.3.1.4197\source\common\</DCC_IncludePath>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_UnitSearchPath>..\stuff\jcl\jcl-2.3.1.4197\source\windows\;..\stuff\jcl\jcl-2.3.1.4197\source\include\;..\stuff\jcl\jcl-2.3.1.4197\source\common\;..\stuff\Indy 9\Source</DCC_UnitSearchPath>
+    <DCC_ResourcePath>..\stuff\jcl\jcl-2.3.1.4197\source\windows\;..\stuff\jcl\jcl-2.3.1.4197\source\include\;..\stuff\jcl\jcl-2.3.1.4197\source\common\;..\stuff\Indy 9\Source</DCC_ResourcePath>
+    <DCC_ObjPath>..\stuff\jcl\jcl-2.3.1.4197\source\windows\;..\stuff\jcl\jcl-2.3.1.4197\source\include\;..\stuff\jcl\jcl-2.3.1.4197\source\common\;..\stuff\Indy 9\Source</DCC_ObjPath>
+    <DCC_IncludePath>..\stuff\jcl\jcl-2.3.1.4197\source\windows\;..\stuff\jcl\jcl-2.3.1.4197\source\include\;..\stuff\jcl\jcl-2.3.1.4197\source\common\;..\stuff\Indy 9\Source</DCC_IncludePath>
+    <DCC_Define>DEBUG</DCC_Define>
+    <DCC_DcpOutput>dcu</DCC_DcpOutput>
+    <DCC_ExeOutput>output</DCC_ExeOutput>
+    <DCC_DcuOutput>dcu</DCC_DcuOutput>
+    <DCC_ObjOutput>dcu</DCC_ObjOutput>
+    <DCC_HppOutput>dcu</DCC_HppOutput>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">True</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1033</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName"></VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">CLService.dpr</Source></Source></Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="CLService.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="CLOfferOdds.pas" />
+    <DCCReference Include="CLRating.pas" />
+    <DCCReference Include="CSAccessLevels.pas" />
+    <DCCReference Include="CSAchievements.pas" />
+    <DCCReference Include="CSActions.pas" />
+    <DCCReference Include="CSBanners.pas" />
+    <DCCReference Include="CSBot.pas" />
+    <DCCReference Include="CSClub.pas" />
+    <DCCReference Include="CSCommand.pas" />
+    <DCCReference Include="CSCommandMM.pas" />
+    <DCCReference Include="CSConnection.pas" />
+    <DCCReference Include="CSConnections.pas" />
+    <DCCReference Include="CSConst.pas" />
+    <DCCReference Include="CSDb.pas" />
+    <DCCReference Include="CSEngine.pas" />
+    <DCCReference Include="CSEvent.pas" />
+    <DCCReference Include="CSEvents.pas" />
+    <DCCReference Include="CSGame.pas" />
+    <DCCReference Include="CSGames.pas" />
+    <DCCReference Include="CSGameSaveThread.pas" />
+    <DCCReference Include="CSInit.pas" />
+    <DCCReference Include="CSLecture.pas" />
+    <DCCReference Include="CSLib.pas" />
+    <DCCReference Include="CSLibrary.pas" />
+    <DCCReference Include="CSMail.pas" />
+    <DCCReference Include="CSMessages.pas" />
+    <DCCReference Include="CSOffer.pas" />
+    <DCCReference Include="CSOffers.pas" />
+    <DCCReference Include="CSProfiles.pas" />
+    <DCCReference Include="CSReglament.pas" />
+    <DCCReference Include="CSRoom.pas" />
+    <DCCReference Include="CSRooms.pas" />
+    <DCCReference Include="CSService.pas">
+      <Form>CLServerService</Form>
+    </DCCReference>
+    <DCCReference Include="CSSocket.pas" />
+    <DCCReference Include="CSSocket2.pas" />
+    <DCCReference Include="CSTimeStat.pas" />
+    <DCCReference Include="CSTournament.pas" />
+  </ItemGroup>
+</Project>

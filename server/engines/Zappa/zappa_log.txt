@@ -1,0 +1,144 @@
+parse_options_file(): couldn't open zappa.ini, using defaults.
+game_start_thread(0): spawning worker thread!
+hash_reallocate(): Allocated transposition table: 64M
+hash_reallocate(): Allocated pawn hash table: 1024K
+hash_reallocate(): Allocated king hash table: 8M
+worker_cpu(): CPU0 starting.
+r n b q k b n r 
+p p - - p p p p 
+- - - - - - - - 
+- - - p - - - - 
+- - - P - - - - 
+- - - - - - - - 
+P P P - - P P P 
+R N B Q K B N R 
+
+WQC:1 WKC:1 BQC:1 BKC:1 Turn:WHITE EP:0
+MB:     0 WPC: 7 BPC: 7 HM:0 HKL:F283746 HKH:F7995164
+
+Book Lookup failed (0 entries / 0 bytes / 0 ms)
+
+1. Bc1-f4 
+ = (0.23)	Depth: 1/4	00:00:00.00	0kN (8 KN/s, 0 splits, 0 aborts)
+1. Bf1-b5 Nb8-c6 
+ = (-0.09)	Depth: 2/7	00:00:00.00	0kN (36 KN/s, 0 splits, 0 aborts)
+1. Bf1-b5!
+ + (0.21)	Depth: 3/8	00:00:00.00	0kN (45 KN/s, 0 splits, 0 aborts)
+1. Bf1-b5 Nb8-c6 2. Ng1-f3 
+ = (0.33)	Depth: 3/8	00:00:00.01	0kN (74 KN/s, 0 splits, 0 aborts)
+1. Bc1-f4 Nb8-c6 2. Nb1-c3 Bc8-f5 
+ = (-0.09)	Depth: 4/9	00:00:00.02	4kN (184 KN/s, 0 splits, 0 aborts)
+1. Bc1-f4!
+ + (0.21)	Depth: 5/14	00:00:00.03	7kN (191 KN/s, 0 splits, 0 aborts)
+1. Bc1-f4 Qd8-a5 2. Nb1-c3 Ng8-f6 3. Ng1-f3 
+ = (0.33)	Depth: 5/19	00:00:00.07	14kN (197 KN/s, 0 splits, 0 aborts)
+1. Bc1-f4 Qd8-a5 2. Nb1-c3 Nb8-c6 3. Ng1-f3 Bc8-f5 
+ = (-0.11)	Depth: 6/19	00:00:00.09	19kN (198 KN/s, 0 splits, 0 aborts)
+1. Bc1-f4 Qd8-a5 2. Nb1-c3 Nb8-c6 3. Ng1-f3 Bc8-f5 
+ = (-0.11)	Depth: 6/19	00:00:00.16	37kN (231 KN/s, 0 splits, 0 aborts)
+1. Bc1-f4!
+ + (0.19)	Depth: 7/19	00:00:00.25	57kN (231 KN/s, 0 splits, 0 aborts)
+1. Bc1-f4 Nb8-c6 2. Nb1-c3 Ng8-f6 3. Ng1-f3 Nc6-b4 4. Nf3-g5 
+ = (0.32)	Depth: 7/22	00:00:00.32	82kN (251 KN/s, 0 splits, 0 aborts)
+1. Bc1-f4 Nb8-c6 2. Nb1-c3 Ng8-f6 3. Ng1-f3 Nc6-b4 4. Nf3-g5 
+ = (0.32)	Depth: 7/22	00:00:00.35	90kN (256 KN/s, 0 splits, 0 aborts)
+1. Bc1-f4 Ng8-f6 2. Nb1-c3 Bc8-f5 3. Ng1-f3 Qd8-a5 4. Bf1-b5 Nb8-c6 
+ = (0.04)	Depth: 8/25	00:00:00.69	192kN (278 KN/s, 0 splits, 0 aborts)
+
+Count: Time: 1252ms, Nodes: 354065 Qnodes: 266927[75.4%][48.8%], NPS: 283K
+Hash:  TProbes: 354529[100.1%] TPings: 90873[25.6%] THits: 59542[16.8%]
+EHash: KHits 151926[81.0%] PHits 17559[49.1%] POverall: 169485[90.3%]
+Exts:  Check: 791 Singular: 0 Mate: 0 One-rep: 0
+TB:    Probes:0 Hits: 0[0.0%]
+Idle:  CPU0: 0
+
+r n b q k b - r 
+p p - - p p p p 
+- - - - - n - - 
+- - - p - - - - 
+- - - P - B - - 
+- - - - - - - - 
+P P P - - P P P 
+R N - Q K B N R 
+
+WQC:1 WKC:1 BQC:1 BKC:1 Turn:WHITE EP:0
+MB:     0 WPC: 7 BPC: 7 HM:2 HKL:6E1A6002 HKH:D7F3BC21
+
+Book Lookup failed (0 entries / 0 bytes / 0 ms)
+
+1. Nb1-c3 Bc8-f5 2. Ng1-f3 Qd8-a5 3. Bf1-b5 Nb8-c6 
+ = (0.04)	Depth: 1/0	00:00:00.00	0kN (1 KN/s, 0 splits, 0 aborts)
+1. Nb1-c3 Bc8-f5 2. Ng1-f3 Qd8-a5 3. Bf1-b5 Nb8-c6 
+ = (0.04)	Depth: 2/0	00:00:00.00	0kN (1 KN/s, 0 splits, 0 aborts)
+1. Nb1-c3 Bc8-f5 2. Ng1-f3 Qd8-a5 3. Bf1-b5 Nb8-c6 
+ = (0.04)	Depth: 3/0	00:00:00.00	0kN (1 KN/s, 0 splits, 0 aborts)
+1. Nb1-c3 Bc8-f5 2. Ng1-f3 Qd8-a5 3. Bf1-b5 Nb8-c6 
+ = (0.04)	Depth: 4/0	00:00:00.00	0kN (1 KN/s, 0 splits, 0 aborts)
+1. Nb1-c3 Bc8-f5 2. Ng1-f3 Qd8-a5 3. Bf1-b5 Nb8-c6 
+ = (0.04)	Depth: 5/0	00:00:00.00	0kN (1 KN/s, 0 splits, 0 aborts)
+1. Nb1-c3 Bc8-f5 2. Ng1-f3 Qd8-a5 3. Bf1-b5 Nb8-c6 
+ = (0.04)	Depth: 6/0	00:00:00.00	0kN (1 KN/s, 0 splits, 0 aborts)
+1. Nb1-c3 Nb8-c6 2. Nc3-b5 Qd8-a5 3. c2-c3 Bc8-g4 4. Nb5-c7 Qa5xc7 5. Bf4xc7 Bg4xd1 6. Ra1xd1 
+ = (0.23)	Depth: 7/18	00:00:00.21	49kN (229 KN/s, 0 splits, 0 aborts)
+1. Nb1-c3 Nb8-c6 2. Nc3-b5 Qd8-a5 3. c2-c3 Bc8-g4 4. Nb5-c7 Qa5xc7 5. Bf4xc7 Bg4xd1 6. Ra1xd1 
+ = (0.23)	Depth: 7/18	00:00:00.25	62kN (246 KN/s, 0 splits, 0 aborts)
+1. Nb1-c3 Qd8-a5 2. Qd1-d2 Nb8-c6 3. Nc3-b5 Qa5xd2 4. Bf4xd2 Ke8-d8 
+ = (0.10)	Depth: 8/22	00:00:00.58	150kN (258 KN/s, 0 splits, 0 aborts)
+
+Count: Time: 1172ms, Nodes: 306437 Qnodes: 247259[80.7%][53.0%], NPS: 261K
+Hash:  TProbes: 306750[100.1%] TPings: 67495[22.0%] THits: 40967[13.4%]
+EHash: KHits 157103[83.8%] PHits 15249[50.4%] POverall: 172352[92.0%]
+Exts:  Check: 690 Singular: 0 Mate: 0 One-rep: 0
+TB:    Probes:0 Hits: 0[0.0%]
+Idle:  CPU0: 0
+
+r - b q k b - r 
+p p - - p p p p 
+- - n - - n - - 
+- - - p - - - - 
+- - - P - B - - 
+- - N - - - - - 
+P P P - - P P P 
+R - - Q K B N R 
+
+WQC:1 WKC:1 BQC:1 BKC:1 Turn:WHITE EP:0
+MB:     0 WPC: 7 BPC: 7 HM:4 HKL:8E3E3DE2 HKH:10656E29
+
+Book Lookup failed (0 entries / 0 bytes / 0 ms)
+
+1. Nc3-b5 Qd8-a5 2. c2-c3 Ke8-d8 
+ = (0.24)	Depth: 1/2	00:00:00.00	0kN (1 KN/s, 0 splits, 0 aborts)
+1. Nc3-b5 Qd8-a5 2. c2-c3 Ke8-d8 
+ = (0.18)	Depth: 2/3	00:00:00.00	0kN (1 KN/s, 0 splits, 0 aborts)
+1. Nc3-b5!
+ + (0.53)	Depth: 3/3	00:00:00.00	0kN (1 KN/s, 0 splits, 0 aborts)
+1. Bf1-b5 Qd8-a5 2. Bf4-d2 Bc8-d7 
+ = (0.21)	Depth: 3/5	00:00:00.00	0kN (561 KN/s, 0 splits, 0 aborts)
+1. Nc3-b5!
+ + (0.53)	Depth: 4/9	00:00:00.00	1kN (336 KN/s, 0 splits, 0 aborts)
+1. Nc3-b5 Qd8-a5 2. c2-c3 Ke8-d8 3. Bf4-c7 Qa5xc7 4. Nb5xc7 Kd8xc7 
+ = (0.59)	Depth: 4/9	00:00:00.00	2kN (357 KN/s, 0 splits, 0 aborts)
+1. Nc3-b5 Qd8-a5 2. c2-c3 Ke8-d8 3. Bf4-c7 Qa5xc7 4. Nb5xc7 Kd8xc7 
+ = (0.59)	Depth: 5/11	00:00:00.00	3kN (423 KN/s, 0 splits, 0 aborts)
+1. Nc3-b5 e7-e5 2. d4xe5 Bf8-b4 3. c2-c3 Bc8-g4 
+ = (0.73)	Depth: 6/19	00:00:00.05	17kN (306 KN/s, 0 splits, 0 aborts)
+1. Nc3-b5 e7-e5 2. d4xe5 Bf8-b4 3. c2-c3 Bc8-g4 
+ = (0.73)	Depth: 6/19	00:00:00.06	20kN (308 KN/s, 0 splits, 0 aborts)
+1. Nc3-b5!
+ + (1.03)	Depth: 7/22	00:00:00.20	49kN (245 KN/s, 0 splits, 0 aborts)
+1. Nc3-b5 Qd8-a5 2. c2-c3 g7-g5 3. Nb5-c7 Ke8-d8 4. Ng1-f3 Bc8-g4 5. Nc7xa8 g5xf4 
+ = (1.29)	Depth: 7/24	00:00:00.40	97kN (240 KN/s, 0 splits, 0 aborts)
+1. Nc3-b5 Qd8-a5 2. c2-c3 g7-g5 3. Nb5-c7 Ke8-d8 4. Ng1-f3 Bc8-g4 5. Nc7xa8 g5xf4 
+ = (1.29)	Depth: 7/24	00:00:00.42	102kN (245 KN/s, 0 splits, 0 aborts)
+1. Nc3-b5 e7-e5 2. d4xe5 Nf6-g4 3. Qd1xd5 Qd8xd5 4. Nb5-c7 Ke8-d8 5. Nc7xd5 Nc6xe5 
+ = (1.11)	Depth: 8/24	00:00:01.06	261kN (246 KN/s, 0 splits, 0 aborts)
+
+Count: Time: 1072ms, Nodes: 264652 Qnodes: 216837[81.9%][53.0%], NPS: 246K
+Hash:  TProbes: 264784[100.0%] TPings: 81210[30.7%] THits: 39965[15.1%]
+EHash: KHits 120397[75.9%] PHits 20896[54.7%] POverall: 141293[89.1%]
+Exts:  Check: 1254 Singular: 0 Mate: 0 One-rep: 0
+TB:    Probes:0 Hits: 0[0.0%]
+Idle:  CPU0: 0
+
+game_stop_thread(): stopping CPU0
+worker_cpu(): CPU0 exiting.

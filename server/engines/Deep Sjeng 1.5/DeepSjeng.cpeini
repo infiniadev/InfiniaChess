@@ -1,0 +1,10 @@
+[Engine]
+; Anything in this file overules the settings in the ENGINEEXT.INI file.
+Options=34
+Protocol=16
+Icon=deepsjeng.ico,0
+
+
+[Variables]
+Personality=Beginner.per
+

@@ -1,0 +1,23 @@
+V0.24
+- new building system with autotools
+- added En Passant moves
+- added perft tests
+- better play
+Some bug fixes (thanks to Alex Schmidt again!)
+- fixed a PV display bug in UCI mode
+- fixed a castling bug
+- fixed a move ordering bug
+
+V0.23 (Mon, 07 Apr 2003 06:56:39 GMT)
+- fixed a scoring bug, no more resigns with a won postion (thanks to Alex Schmidt) 
+- added time controls in xboard mode 
+- better play ; added iterative deeping/quiescence
+
+V0.22 (Thu, 27 Mar 2003 12:42:59 GMT)
+- removed some bugs
+- updated engine name
+- now UCI compatible !
+- better opening playing 	
+
+V0.21 (Sat, 15 Mar 2003 15:08:58 GMT)
+- this is the first public release of Cassandre.

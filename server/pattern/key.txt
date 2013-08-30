@@ -1,0 +1,5 @@
+InfiniaChess Confirmation Key
+You asked to send you confirmation key for login %login% on www.infiniachess.com.
+You key is: %key%
+
+Thank you. 

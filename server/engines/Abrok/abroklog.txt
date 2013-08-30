@@ -1,0 +1,634 @@
+commandline: D:\Work\Chess\server\engines\abrok\abrok_20821.exe
+
+Eingabe: uci
+Eingabe: ucinewgame
+Eingabe: position startpos moves 
+Eingabe: go movetime 872
+Rechenzeit: 9900
+99	2	0	0	 g1f3
+g1f3 ponderzug: b8c6
+
+Eingabe: position startpos moves g1f3 g8f6
+Eingabe: go movetime 1169
+Rechenzeit: 9900
+99	2	0	0	 d2d4
+d2d4 ponderzug: b8c6
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5
+Eingabe: go movetime 905
+Rechenzeit: 9900
+99	2	0	0	 c2c4
+c2c4 ponderzug: b8c6
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4
+Eingabe: go movetime 1208
+Rechenzeit: 9900
+99	2	0	0	 e2e3
+e2e3 ponderzug: c8e6
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6
+Eingabe: go movetime 905
+Rechenzeit: 9900
+2	-44	1	381	 b1a3
+2	-16	1	422	 b1a3
+2	2	1	509	 b1a3
+2	4	1	757	 b1a3 b8c6 f1c4 e6c4 a3c4
+3	4	1	1265	 b1a3 b8c6 f1c4 e6c4 a3c4
+4	-4	4	3278	 b1a3 c4c3 b2c3 b8c6
+5	-2	9	7343	 b1a3 c4c3 b2c3 b8c6 f1d3
+5	4	15	14305	 b1a3 b8c6 f1c4 e6c4 a3c4
+5	6	17	15702	 b1a3 b8c6 c1d2 c4c3 d2c3
+6	-8	40	37554	 b1a3 b8c6 f1c4 e6c4 a3c4
+6	0	42	40378	 b1a3 b8c6 f1c4 e6c4 a3c4
+6	4	43	42929	 b1a3 b8c6 f1c4 e6c4 a3c4
+7	6	61	60746	 b1a3 b8c6 c1d2 c4c3 d2c3 f6e4 f1d3
+8	-8	400	399598	 b1a3 c7c5 f1c4 e6c4 a3c4 c5d4 e3d4 b8c6 c4e5 c6e5 f3e5
+8	0	407	407275	 b1a3 c7c5 f1c4 e6c4 a3c4 c5d4 e3d4 b8c6 c4e5 c6e5 f3e5
+b1a3 ponderzug: c7c5
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5
+Eingabe: go movetime 1020
+Rechenzeit: 9678
+2	28	1	516	 f1c4 b8c6 c1d2
+3	32	1	745	 f1c4 b8c6 c1d2
+3	40	3	1232	 f1c4 b8c6 c1d2
+4	26	6	3755	 f1c4 b8c6 c1d2
+4	34	6	3873	 f1c4 b8c6 c1d2
+5	36	9	6868	 f1c4 b8c6 c1d2 e7e6 d1b3
+5	42	15	13364	 f1c4 b8c6 c1d2 e7e6 d1b3
+6	28	32	26891	 f1c4 e7e6 d1b3 f5e4 e1g1 e4f3 g2f3
+7	14	148	135095	 f1c4 e7e6 d1b3 f8a3 b3a3 d8d6 a3b3 f5e4
+7	22	157	143353	 f1c4 e7e6 e1g1 b8c6 f3e5 c6e5 d4e5 f8a3 d1d8 a8d8 e5f6
+8	24	493	444530	 a3c4 b8c6 c4e5 c6e5 f3e5 c7c6 f1d3 d8a5 c1d2
+8	28	703	649449	 a3c4 b8c6 c4e5 c6e5 f3e5 d8d5 f1c4 d5g2 c4f7 e8d8
+a3c4 ponderzug: b8c6
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6
+Eingabe: go movetime 978
+Rechenzeit: 9443
+2	20	3	601	 c4e5 f8b4 c1d2
+2	28	3	602	 c4e5 f8b4 c1d2
+3	28	3	788	 c4e5 f8b4 c1d2
+4	28	4	1948	 c4e5 f8b4 c1d2
+5	28	11	6737	 c4e5 f8b4 c1d2
+6	14	23	17137	 c4e5 b8d7 d1b3 f5e4 f1d3 d7e5 d3e4 f6e4 f3e5
+6	22	25	17430	 c4e5 b8d7 d1b3 f5e4 f1b5 f8d6 b5d7 f6d7
+6	26	25	17615	 c4e5 b8d7 d1b3 f5e4 f1b5 f8d6 b5d7 f6d7
+7	12	129	109289	 c4e5 b8d7 e5d7 d8d7 f3e5 f8b4 c1d2 b4d2 d1d2 d7a4 f1d3
+7	16	334	287550	 c4e5 b8d7 e5d7 d8d7 f3e5 d7d5 d1a4 c7c6 c1d2
+7	18	343	297964	 c4e5 b8d7 d1b3 f5e4 f1d3 d7e5 d3e4 f6e4 f3e5
+8	20	617	536674	 c1d2 b8c6 d1a4
+c1d2 ponderzug: b8c6
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7
+Eingabe: go movetime 1215
+Rechenzeit: 9128
+2	20	3	526	 c4e5 b8d7
+2	26	3	527	 c4e5 b8d7
+3	30	3	656	 c4e5 b8d7
+4	20	6	2357	 c4e5 b8d7
+4	26	7	3121	 c4a5 f5e4 f1b5 b8d7 e1g1
+5	12	15	9042	 c4a5 b7b6 f1b5 e8f8 a5c6 b8c6 b5c6
+5	20	17	9893	 c4e5 b8d7
+6	22	23	15420	 c4e5 b8d7 d1b3 d7e5 d4e5
+6	26	61	48346	 c4e5 b8d7 d1b3 f5e4 a1c1 d7e5 f3e5
+7	12	159	139389	 c4e5 b8d7 f1c4 e8g8 e1g1 d7e5 f3e5 f5e4
+7	20	170	149365	 c4e5 b8d7 f1b5 e8g8 b5d7 f6d7 e1g1 d7e5 f3e5
+7	24	187	165294	 c4e5 b8d7 d1b3 f5e4 f1d3 d7e5 d3e4 f6e4 f3e5
+8	10	514	470206	 c4e5 b8d7 f1c4 e8g8 e1g1 e7d6 d1a4 d6e5 d4e5
+8	18	568	524140	 c4e5 b8d7 d1b3 f5e4 e5d7 d8d7 f3e5 d7d5 f1b5 c7c6
+8	22	643	593712	 c4e5 b8d7 d1b3 f5e4 f1d3 d7e5 d3e4 f6e4 f3e5
+8	24	675	625196	 c4e5 b8d7 d1b3 f5e4 f1d3 d7e5 d3e4 f6e4 f3e5
+c4e5 ponderzug: b8d7
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8
+Eingabe: go movetime 1061
+Rechenzeit: 8903
+2	24	1	323	 d1b3 f5e4 f1d3
+3	24	1	523	 d1b3 f5e4 f1d3
+4	26	3	880	 d1b3 f5e4 f1d3
+4	36	3	1563	 d1b3 f5e4 f1d3 d8c8
+5	24	4	3274	 d1b3 f5e4 f1d3 d8c8
+5	28	7	5151	 d1b3 f5e4 f1d3 d8c8
+6	30	9	7494	 d1b3 f5e4 f1d3 d8c8
+7	32	92	31695	 d1b3 f5e4 f1d3 d8d5 b3d5 e6d5 e1g1
+7	42	112	54587	 d1b3 f5e4 f1d3 e4d3 b3d3 b8d7 e1g1 d7e5 f3e5
+7	44	120	63422	 d1b3 f5e4 f1d3 e4d5 b3a4 b8c6 e1g1 c6e5 f3e5
+8	30	198	144464	 d1b3 f5e4 f1d3 e4d3 b3d3 b8d7 e1g1 e7d6
+8	34	342	281757	 d1b3 f5e4 f1d3 e4d3 b3d3 b8d7 e1g1 c7c5 a1c1 c5d4 e3d4 d7e5 f3e5
+9	20	667	626674	 d1b3 f5e4 f1d3 e4d3 b3d3 d8d5 e1g1 b8c6 e5c6 d5c6
+d1b3 ponderzug: f5e4
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7
+Eingabe: go movetime 1014
+Rechenzeit: 8606
+2	116	4	1083	 b3b7 d7e5 f3e5
+2	118	4	1122	 b3b7 d7e5 f3e5
+3	74	6	1911	 b3b7 d7e5 f3e5
+4	44	12	7479	 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1d3
+4	52	12	7616	 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1d3
+4	56	12	7757	 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1d3
+5	58	14	9123	 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1d3 f5d3 e5d3
+5	60	48	27560	 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1d3 f5d3 e5d3
+6	62	50	29568	 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1c4
+6	68	81	55638	 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1c4
+7	54	134	109321	 b3b7 d7e5 d4e5 f6e4 b7c6 a8b8 f1b5 d8d5
+7	62	145	122253	 b3b7 d7e5 d4e5 f6e4 b7c6 a8b8 f1b5 d8d5
+8	48	370	362936	 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 e5c6 d8d6 a1c1
+8	56	404	395592	 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 d2c3 b2c2 c3d2
+9	58	637	664912	 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 a1c1 c7c5 e5c6
+b3b7 ponderzug: d7e5
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5
+Eingabe: go movetime 1173
+Rechenzeit: 8319
+2	62	4	1027	 d4e5 f6e4 b7c6 a8b8 f1b5 d8d5
+3	54	6	1837	 d4e5 f6e4 b7c6 a8b8 f1b5 d8d5
+3	62	6	1892	 d4e5 f6e4 b7c6 a8b8 f1b5 d8d5
+4	64	7	2971	 d4e5 f6e4 b7c6 a8b8 f1b5 d8d5
+4	70	9	4354	 d4e5 f6e4 b7c6 a8b8 f1b5 d8d5
+5	56	14	8123	 d4e5 f6e4 b7c6 a8b8 f1b5 d8d5
+5	60	17	12319	 d4e5 f6e4 b7c6 a8b8 f1b5 d8d5
+5	62	18	13198	 d4e5 f6e4 b7c6 a8b8 f1b5 d8d5
+6	48	45	38763	 d4e5 f6e4 b7c6 a8b8 f1b5 d8d5
+6	52	62	58248	 d4e5 f6e4 b7c6 a8b8 f1b5 d8d5
+6	54	65	61577	 f3e5 a8b8 b7a7 b8a8 a7b7 a8b8 b7a6
+7	40	114	110901	 f3e5 a8b8 b7a7 b8a8 a7b7 a8b8 b7f3 b8b2
+7	54	114	111084	 f3e5 a8b8 b7a7 b8a8 a7b7 a8b8 b7f3 b8b2
+8	56	201	191204	 f3e5 a8b8 b7a7 b8a8 a7b7 a8b8 b7a6
+8	62	712	663463	 f3e5 a8b8 b7a7 b8b2 e5c6 d8d7 a1c1 f5c2 f1b5
+8	64	718	672802	 f3e5 a8b8 b7a7 b8b2 e5c6 d8d7 a1c1 f5c2 f1b5
+f3e5 ponderzug: a8b8
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8
+Eingabe: go movetime 928
+Rechenzeit: 8080
+2	64	4	1036	 b7a7 b8b2 e5c6 d8d7 a1c1 f5c2 f1b5
+3	64	4	1089	 b7a7 b8b2 e5c6 d8d7 a1c1 f5c2 f1b5
+4	64	4	1203	 b7a7 b8b2 e5c6 d8d7 a1c1 f5c2 f1b5
+5	64	4	1328	 b7a7 b8b2 e5c6 d8d7 a1c1 f5c2 f1b5
+6	64	17	1588	 b7a7 b8b2 e5c6 d8d7 a1c1 f5c2 f1b5
+7	56	26	7537	 b7a7 b8b2 e5c6 d8d7 a1c1 f5c2 f1b5
+7	64	26	7639	 b7a7 b8b2 e5c6 d8d7 a1c1 f5c2 f1b5
+8	50	212	180690	 b7a7 f5e4 a1c1 e7d6 a7a5 b8b2 e5d3 b2b6
+8	58	231	202088	 b7a7 f5e4 a1c1 e7d6 a7a5 b8b2 e5d3 b2b6
+8	60	270	241801	 b7a7 b8a8 a7b7 a8b8 b7c6 b8b2 f1d3 f5d3 e5d3
+9	46	814	714533	 b7a7 b8b2 a1c1 d8d5 e5c4 b2b7 a7a5
+b7a7 ponderzug: b8b2
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2
+Eingabe: go movetime 1160
+Rechenzeit: 7808
+2	46	3	632	 a1c1 d8d5 e5c4 b2b7 a7a5
+2	50	4	913	 d2c3 b2c2 c3d2 d8d6
+3	54	4	1118	 d2c3 b2c2 c3d2 d8d6
+3	56	7	2291	 d2c3 b2c2 c3d2 d8d6
+4	42	9	4098	 d2c3 b2c2 c3d2 d8d6
+4	46	14	7138	 d2c3 b2c2 c3d2 d8d6
+4	48	15	7511	 a1c1 d8d5 e5c4 b2b7 a7a5
+5	50	26	14957	 f2f3 e7d6 e5c4 b2c2 e3e4 f6e4
+5	52	43	23116	 f2f3 e7d6 e5c4 b2c2 e3e4 f6e4
+6	38	93	64853	 f2f3 e7d6 e5c4 b2c2 e3e4 f6e4 f3e4 d8h4 e1d1 f5e4
+6	46	103	71853	 f2f3 e7d6 e5c4 b2c2 e3e4 f6e4 f3e4 d8h4 e1d1 f5e4
+6	48	125	94212	 f2f3 e7d6 e5c4 b2c2 e3e4 f6e4 f3e4 d8h4 e1d1 f5e4
+7	50	209	150410	 f2f3 e7d6 e5c4 b2c2 g2g4 f5g6 e3e4
+8	52	775	611608	 f1e2 d8a8 a7c7 a8g2 e2f3
+f1e2 ponderzug: d8a8
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4
+Eingabe: go movetime 1043
+Rechenzeit: 7548
+2	58	4	978	 e5c6 d8d7
+2	60	4	1107	 e5c6 d8d7
+3	52	6	1378	 e5c4 b2c2 a1c1 e7c5 a7a4
+4	52	7	3205	 e5c4 b2c2 a1c1 e7c5 a7a4
+5	54	9	3625	 e5c4 b2c2 a1c1 e7c5 a7a4
+5	56	34	10947	 e5c4 b2c2 a1c1 e7c5 a7a4
+6	42	76	45857	 e5c4 b2c2 a1c1 e7c5 d4c5 e4d2 c1c2
+6	52	76	45914	 e5c4 b2c2 a1c1 e7c5 d4c5 e4d2 c1c2
+6	56	76	46037	 e5c4 b2c2 a1c1 e7c5 d4c5 e4d2 c1c2
+7	42	182	133713	 e5c4 b2c2 a7a4 e4d2 c4d2 d8a8 a4a8 f8a8
+7	44	367	271575	 e5c4 b2c2 a7a4 e4d2 c4d2 d8a8 a4a8 f8a8
+8	46	403	304691	 e5c4 b2c2 a7a4 e4d2 c4d2 d8a8 a4a8
+8	56	693	552780	 e5c6 d8d7 c6e7 d7e7 d2c1 e7b4 e1f1 b2c2 c1a3 b4d2 a7a6
+8	60	696	555954	 e5c6 d8d7 c6e7 d7e7 d2c1 e7b4 e1f1 b2c2 c1a3 b4d2 a7a6
+8	62	698	557153	 e5c6 d8d7 c6e7 d7e7 d2c1 e7b4 e1f1 b2c2 c1a3 b4d2 a7a6
+e5c6 ponderzug: d8d7
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6
+Eingabe: go movetime 1335
+Rechenzeit: 7315
+2	62	9	1974	 c6e7 d6e7 d2c1 e7b4 e1f1 b2c2 c1a3 b4d2 a7a6
+3	62	10	2248	 c6e7 d6e7 d2c1 e7b4 e1f1 b2c2 c1a3 b4d2 a7a6
+4	62	10	3434	 c6e7 d6e7 d2c1 e7b4 e1f1 b2c2 c1a3 b4d2 a7a6
+5	64	12	3864	 c6e7 d6e7 d2c1 e7b4 e1f1 b2c2 c1a3 b4d2 a7a6
+6	50	79	23652	 c6e7 d6e7 d2c1 b2c2 c1a3 e4d6 a1c1 e7g5
+6	58	79	23849	 c6e7 d6e7 d2c1 b2c2 c1a3 e4d6 a1c1 e7g5 c1c2 f5c2
+6	62	79	23999	 c6e7 d6e7 d2c1 b2c2 c1a3 e4d6 a1c1 e7g5 c1c2 f5c2
+7	-48	490	332404	 c6e7 d6e7 d2a5 e7a3 h1f1 c7c5 g2g4 f5g6 d4c5 a3c5 a7c5 e4c5
+7	-40	492	333862	 c6e7 d6e7 d2a5 e7a3 h1g1 c7c5 d4c5 a3c5 a7c5 e4c5
+7	-36	492	334393	 c6e7 d6e7 d2a5 e7a3 h1g1 c7c5 d4c5 a3c5 a7c5 e4c5
+7	-34	492	334685	 c6e7 d6e7 d2a5 e7a3 h1g1 c7c5 d4c5 a3c5 a7c5 e4c5
+c6e7 ponderzug: d6e7
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6 c6e7 d6e7
+Eingabe: go movetime 965
+Rechenzeit: 7151
+2	18	4	1133	 d2a5 e7a3 h1g1 c7c5 d4c5 a3c5 a7c5 e4c5
+2	20	6	1410	 d2a5 e7a3 h1g1 c7c5 d4c5 a3c5 a7c5 e4c5
+3	4	6	1656	 d2a5 e7a3 h1g1 c7c5 d4c5 a3c5 a7c5 e4c5
+4	-8	7	2014	 d2a5 e7a3 h1g1 c7c5 d4c5 a3c5 a7c5 e4c5
+5	-34	7	2591	 d2a5 e7a3 h1g1 c7c5 d4c5 a3c5 a7c5 e4c5
+6	-34	10	3085	 d2a5 e7a3 h1g1 c7c5 d4c5 a3c5 a7c5 e4c5
+7	-48	29	3611	 d2a5 e7a3 h1f1 c7c5 g2g4 f5g6 d4c5 a3c5 a7c5 e4c5
+7	-34	29	4071	 d2a5 e7a3 h1g1 c7c5 d4c5 a3c5 a7c5 e4c5
+8	-64	250	207711	 d2a5 e7g5 g2g3 f5g4 e2g4 e4f2 e1g1 f2g4
+8	-56	259	214033	 d2a5 e7g5 g2g3 f5g4 e2g4 e4f2 e1g1 f2g4
+8	-52	260	214935	 d2a5 e7g5 g2g3 f5g4 e2g4 e4f2 e1g1 f2g4
+8	-50	260	215421	 d2a5 e7g5 g2g3 f5g4 e2g4 e4f2 e1g1 f2g4
+9	-80	751	674575	 d2a5 e7g5 h1f1 f5g4 e2c4 e4f2 a5d2 f2e4
+d2a5 ponderzug: e7g5
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6 c6e7 d6e7 d2a5 e7a3
+Eingabe: go movetime 1107
+Rechenzeit: 6901
+2	-2	3	524	 h1f1 c7c5 g2g4
+3	-34	4	1089	 h1f1 c7c5 g2g4
+3	-26	4	1346	 h1f1 c7c5 g2g4
+3	-22	4	1605	 h1f1 c7c5 g2g4
+3	-20	4	1871	 h1f1 c7c5 g2g4
+4	-42	6	2557	 h1f1 c7c5 g2g4
+4	-34	6	2874	 h1f1 c7c5 g2g4
+4	-28	6	3229	 h1f1 c7c5 g2g4
+5	-44	9	5560	 h1f1 c7c5 g2g4
+5	-36	10	7463	 h1g1 c7c5 d4c5 a3c5 a7c5 e4c5
+5	-34	12	8915	 h1g1 c7c5 d4c5 a3c5 a7c5 e4c5
+6	-48	32	23624	 h1g1 c7c5 g2g4 f5g6 d4c5 a3c5 a7c5 e4c5
+6	-44	35	27303	 h1g1 c7c5 g2g4 f5g6 d4c5 a3c5 a7c5 e4c5
+7	-74	106	75960	 h1f1 c7c5 d4c5 e4c5
+7	-66	106	76287	 h1f1 c7c5 d4c5 e4c5
+7	-62	106	76605	 h1f1 c7c5 d4c5 e4c5
+7	-60	106	76757	 h1f1 c7c5 d4c5 e4c5
+8	-122	439	328032	 a7a6 b2e2 a6e2 a3a5 e1f1 c7c5 d4c5 a5c5
+8	-114	446	336181	 a7a6 b2e2 a6e2 a3a5 e1f1 c7c5 d4c5 a5c5
+9	-112	596	459347	 a7a6 b2e2 a6e2 a3a5 e1f1 c7c5 d4c5 a5c5 f1g1 f8d8 a1d1
+a7a6 ponderzug: b2e2
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6 c6e7 d6e7 d2a5 e7a3 a7a6 b2e2
+Eingabe: go movetime 1048
+Rechenzeit: 6670
+2	-70	0	106	 a6e2 a3a5 e1f1 e4c3 e2c4 f5b1 a2a4 b1e4
+3	-110	0	204	 a6e2 a3a5 e1f1 e4c3 e2c4 f5b1 a2a4 b1e4
+3	-102	0	340	 a6e2 a3a5 e1f1 e4c3 e2c4 f5b1 a2a4 b1e4
+3	-96	0	467	 a6e2 a3a5 e1f1 e4c3 e2c4 f5b1 a2a4 b1e4
+4	-110	1	670	 a6e2 a3a5 e1f1 e4c3 e2c4 f5b1 a2a4 b1e4
+5	-124	3	2975	 a6e2 a3a5 e1f1 e4c3 e2c4 f5b1 a2a4 b1e4
+5	-112	3	3138	 a6e2 a3a5 e1f1 e4c3 e2c4 f5b1 a2a4 b1e4
+5	-110	4	3616	 a6e2 a3a5 e1f1 e4c3 e2c4 f5b1 a2a4 b1e4
+6	-108	6	4855	 a6e2 a3a5 e1f1 e4c3 e2c4 f5b1 a2a4 b1e4
+6	-106	10	8944	 a6e2 a3a5 e1f1 e4c3 e2c4 f5b1 a2a4 b1e4
+7	-104	18	17415	 a6e2 a3a5 e1f1 e4c3 e2c4 f5b1 a2a4 b1e4
+8	-134	235	167543	 a6e2 a3a5 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+8	-126	242	174957	 a6e2 a3a5 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+8	-122	243	177023	 a6e2 a3a5 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+8	-120	245	179384	 a6e2 a3a5 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+9	-134	317	255371	 a6e2 a3a5 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+9	-126	343	282553	 a6e2 a3a5 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+9	-122	360	303253	 a6e2 a3a5 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2a6 f5e4 a1c1
+10	-136	560	517170	 a6e2 a3a5 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+a6e2 ponderzug: a3a5
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6 c6e7 d6e7 d2a5 e7a3 a7a6 b2e2 a6e2 a3a5
+Eingabe: go movetime 1154
+Rechenzeit: 6448
+2	-90	0	79	 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+2	-88	0	174	 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+3	-120	1	479	 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+3	-110	1	609	 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+4	-124	1	1000	 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+4	-122	1	1511	 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+5	-136	3	2508	 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+5	-128	3	2979	 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+5	-124	4	3561	 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+5	-122	4	4234	 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+6	-120	7	6594	 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+6	-110	10	10558	 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+7	-124	37	35347	 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+7	-120	45	44658	 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+8	-134	56	58914	 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+8	-132	87	89366	 e1f1 c7c5 d4c5 a5c5 f1g1 e4c3 e2h5 c3a2
+9	-144	159	157932	 e1f1 a5a3 f1g1 f8b8 e2e1 b8b2 f2f3 e4f2 g2g4 f2h3 g1f1
+9	-136	159	158283	 e1f1 a5a3 f1g1 f8b8 e2e1 b8b2 f2f3 e4f2 e1f2
+9	-132	167	168344	 e1f1 a5a3 f1g1 f8b8 e2e1 b8b2 f2f3 e4f2 e1f2
+10	-130	378	398082	 e1f1 a5a3 f1g1 f8b8 e2e1 b8b2 a1c1 b2f2 c1c7 f2a2 c7c8
+e1f1 ponderzug: a5a3
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6 c6e7 d6e7 d2a5 e7a3 a7a6 b2e2 a6e2 a3a5 e1f1 a5a3
+Eingabe: go movetime 982
+Rechenzeit: 6233
+2	-62	1	254	 f1g1 f8b8 e2e1 b8b2 a1c1 b2f2 c1c7 f2a2 c7c8
+2	-60	1	335	 f1g1 f8b8 e2e1 b8b2 a1c1 b2f2 c1c7 f2a2 c7c8
+3	-120	3	623	 f1g1 f8b8 e2e1 b8b2 a1c1 b2f2 c1c7 f2a2 c7c8
+3	-112	3	724	 f1g1 f8b8 e2e1 b8b2 a1c1 b2f2 c1c7 f2a2 c7c8
+3	-106	3	825	 f1g1 f8b8 e2e1 b8b2 a1c1 b2f2 c1c7 f2a2 c7c8
+4	-120	3	991	 f1g1 f8b8 e2e1 b8b2 a1c1 b2f2 c1c7 f2a2 c7c8
+4	-112	3	1095	 f1g1 f8b8 e2e1 b8b2 a1c1 b2f2 c1c7 f2a2 c7c8
+4	-106	3	1199	 f1g1 f8b8 e2e1 b8b2 a1c1 b2f2 c1c7 f2a2 c7c8
+5	-104	3	1664	 f1g1 f8b8 e2e1 b8b2 a1c1 b2f2 c1c7 f2a2 c7c8
+5	-100	4	2385	 f1g1 f8b8 e2e1 b8b2 a1c1 b2f2 c1c7 f2a2 c7c8
+5	-98	4	2773	 f1g1 f8b8 e2e1 b8b2 a1c1 b2f2 c1c7 f2a2 c7c8
+6	-130	17	3408	 f1g1 f8b8 e2e1 b8b2 a1c1 b2f2 c1c7 f2a2 c7c8
+6	-122	17	3771	 f1g1 f8b8 e2e1 b8b2 a1c1 b2f2 c1c7 f2a2 c7c8
+6	-120	17	4217	 f1g1 f8b8 e2e1 b8b2 a1c1 b2f2 c1c7 f2a2 c7c8
+7	-130	35	5004	 f1g1 f8b8 e2e1 b8b2 a1c1 b2f2 c1c7 f2a2 c7c8
+7	-128	54	7490	 f1g1 f8b8 e2e1 b8b2 a1c1 b2f2 c1c7 f2a2 c7c8
+8	-142	112	61790	 f1g1 e4c3 e2e1 f5d3 e1d2 d3b1
+8	-130	112	61922	 f1g1 e4c3 e2e1 f5d3 e1d2 d3b1
+8	-128	114	64283	 f1g1 e4c3 e2e1 f5d3 e1d2 d3b1
+9	-158	864	663770	 f1g1 e4c3 e2e1 f8b8 a1c1 a3c1
+f1g1 ponderzug: e4c3
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6 c6e7 d6e7 d2a5 e7a3 a7a6 b2e2 a6e2 a3a5 e1f1 a5a3 f1g1 f8b8
+Eingabe: go movetime 1249
+Rechenzeit: 5944
+2	-92	1	237	 e2e1 b8b2 f2f3 e4f2 e1f2 b2f2 g1f2
+3	-126	3	693	 f2f3 b8b2 e2e1 e4f2 e1f2 b2f2 g1f2
+4	-126	3	868	 f2f3 b8b2 e2e1 e4f2 e1f2 b2f2 g1f2
+5	-142	4	1518	 f2f3 b8b2 e2e1 e4f2 e1f2 b2f2 g1f2
+5	-134	4	1939	 f2f3 b8b2 e2e1 e4f2 e1f2 b2f2 g1f2
+5	-132	4	2493	 f2f3 b8b2 e2e1 e4f2 e1f2 b2f2 g1f2
+6	-146	12	9125	 f2f3 b8b2 e2e1 e4f2 e1f2 b2f2 g1f2
+6	-138	12	9602	 f2f3 b8b2 e2e1 e4f2 e1f2 b2f2 g1f2
+6	-132	12	9849	 f2f3 b8b2 e2e1 e4f2 e1f2 b2f2 g1f2
+7	-162	68	55848	 f2f3 e4c3 e2e1 f5b1
+7	-154	98	86673	 e2f1 e4c3 h2h4 c7c5 d4c5 a3c5
+7	-152	106	94944	 e2f1 b8b2 a1b1 a3a2 b1a1 a2d5 f1a6
+8	-166	165	149785	 f2f3 e4c3 e2e1 f5b1
+9	-196	709	631483	 e2f1 e4c3 h2h3 f5b1 f1c4 a3b2 c4c7 b8f8
+e2f1 ponderzug: e4c3
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6 c6e7 d6e7 d2a5 e7a3 a7a6 b2e2 a6e2 a3a5 e1f1 a5a3 f1g1 f8b8 e2f1 b8b2
+Eingabe: go movetime 971
+Rechenzeit: 5708
+2	-172	3	632	 a1b1 e4c3 b1b2 a3b2 h2h4 b2a2
+2	-160	3	643	 a1b1 e4c3 b1b2 a3b2 h2h4 b2a2
+3	-176	3	754	 a1b1 e4c3 b1b2 a3b2 h2h4 b2a2
+3	-168	3	857	 a1b1 e4c3 b1b2 a3b2 h2h4 b2a2
+3	-162	3	968	 a1b1 e4c3 b1b2 a3b2 h2h4 b2a2
+4	-160	3	1146	 a1b1 e4c3 b1b2 a3b2 h2h4 b2a2
+4	-148	3	1388	 a1b1 e4c3 b1b2 a3b2 h2h4 b2a2
+5	-166	4	2780	 a1b1 e4c3 b1b2 a3b2 h2h4 b2a2
+6	-180	6	3467	 a1b1 e4c3 b1b2 a3b2 h2h4 b2a2
+6	-172	6	5264	 a1b1 e4c3 b1b2 a3b2 h2h4 b2a2
+6	-168	7	6949	 a1b1 e4c3 b1b2 a3b2 h2h4 b2a2
+7	-180	12	8218	 a1b1 e4c3 b1b2 a3b2 h2h4 b2a2
+7	-172	14	11361	 a1b1 e4c3 b1b2 a3b2 h2h4 b2a2 f1c1 f5c2
+7	-168	15	13346	 a1b1 e4c3 b1b2 a3b2 h2h3 b2a2 f1c1 a2c4
+8	-166	42	37958	 a1b1 e4c3 b1b2 a3b2 f1e1 b2a2 f2f3 c7c6 e3e4
+9	-164	187	175292	 a1b1 a3a2 b1a1 a2d5 f1c1 b2f2 c1c7
+10	-178	579	533464	 a1b1 e4c3 b1b2 a3b2 h2h4 b2a2 h4h5
+a1b1 ponderzug: e4c3
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6 c6e7 d6e7 d2a5 e7a3 a7a6 b2e2 a6e2 a3a5 e1f1 a5a3 f1g1 f8b8 e2f1 b8b2 a1b1 a3a2
+Eingabe: go movetime 1403
+Rechenzeit: 5515
+2	-130	1	476	 b1b2 a2b2 f1e1 e4c3
+3	-172	1	685	 b1b2 a2b2 f1e1 e4c3
+3	-168	1	867	 b1b2 a2b2 f1e1 e4c3
+3	-162	1	969	 b1b2 a2b2 f1e1 e4c3
+4	-178	3	1189	 b1b2 a2b2 f1e1 e4c3
+4	-168	3	1534	 b1b2 a2b2 f1e1 e4c3
+4	-166	3	1813	 b1b2 a2b2 f1e1 e4c3
+5	-178	3	2154	 b1b2 a2b2 f1e1 e4c3
+5	-168	4	2744	 b1b2 a2b2 f1e1 e4c3
+5	-166	4	2952	 b1b2 a2b2 f1e1 e4c3
+6	-178	6	4682	 b1b2 a2b2 f1e1 e4c3
+6	-168	6	5308	 b1b2 a2b2 f1e1 e4c3
+6	-166	6	5537	 b1b2 a2b2 f1e1 e4c3
+7	-164	7	7048	 b1a1 a2d5 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7
+7	-154	9	10629	 b1a1 a2d5 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7
+7	-152	14	14530	 b1a1 a2d5 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7
+8	-150	35	32248	 b1a1 a2d5 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7 a1a7
+8	-140	48	44018	 b1a1 a2d5 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7 a1a7
+8	-136	50	45666	 b1a1 a2d5 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7 a1a7
+9	-150	196	165235	 b1a1 a2d5 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7 a1a7 f2c2
+9	-142	204	177235	 b1a1 a2d5 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7 a1a7 f2c2
+9	-140	215	191171	 b1a1 a2d5 f1c1 b2f2 c1c7 h7h6 a1a7 f5g4 c7b8 g8h7
+10	-154	545	459057	 b1a1 a2d5 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7 a1a7 f5g4
+b1a1 ponderzug: a2d5
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6 c6e7 d6e7 d2a5 e7a3 a7a6 b2e2 a6e2 a3a5 e1f1 a5a3 f1g1 f8b8 e2f1 b8b2 a1b1 a3a2 b1a1 a2d5
+Eingabe: go movetime 1058
+Rechenzeit: 5331
+2	-146	3	695	 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7 a1a7 f5g4
+3	-154	4	811	 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7 a1a7 f5g4
+3	-146	4	866	 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7 a1a7 f5g4
+4	-154	4	952	 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7 a1a7 f5g4
+4	-146	4	1052	 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7 a1a7 f5g4
+5	-154	4	1205	 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7 a1a7 f5g4
+5	-146	4	1372	 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7 a1a7 f5g4
+6	-144	4	1950	 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7 a1a7 f5g4
+6	-140	7	3783	 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7 a1a7 f5g4
+6	-138	7	4878	 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7 a1a7 f5g4
+7	-152	15	5436	 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7 a1a7 f5g4
+7	-144	17	6713	 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7 a1a7 f5g4
+7	-142	18	8481	 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7 a1a7 f5g4
+8	-140	26	17196	 f1c1 b2f2 c1c7 h7h6 c7b8 g8h7 a1a8 e6e5 b8h8 h7g6
+f1c1 ponderzug: b2f2
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6 c6e7 d6e7 d2a5 e7a3 a7a6 b2e2 a6e2 a3a5 e1f1 a5a3 f1g1 f8b8 e2f1 b8b2 a1b1 a3a2 b1a1 a2d5 f1c1 b2f2
+Eingabe: go movetime 1079
+Rechenzeit: 4975
+2	-198	3	585	 c1c7 f2g2 g1g2 e4g5 e3e4 d5e4 g2g3 e4f3
+3	-168	3	720	 c1c7 f2g2 g1g2 e4g5 e3e4 d5e4 g2g3 e4f3
+4	-168	6	2568	 c1c7 f2g2 g1g2 e4g5 e3e4 d5e4 g2g3 e4f3
+5	-170	10	5208	 c1c7 f2g2 g1g2 e4g5 e3e4 d5e4 g2g3 e4f3
+6	-264	76	33495	 h2h3 d5b7 g2g4 f5g6 h1h2 f2h2 g1h2
+6	-256	78	35007	 h2h3 d5b7 g2g4 f5g6 h1h2 f2h2 g1h2
+6	-252	79	36110	 h2h3 d5b7 g2g4 f5g6 h1h2 f2h2 g1h2
+7	-266	135	75855	 h2h3 e4c5 h1h2 f2c2 c1a3 c5b7
+7	-258	137	76244	 h2h3 e4c5 h1h2 f2c2 c1a3 c5b7
+7	-254	137	76729	 h2h3 e4c5 h1h2 f2c2 c1a3 c5b7 a3a8 b7d8
+7	-252	137	77022	 h2h3 e4c5 h1h2 f2c2 c1a3 c5b7 a3a8 b7d8
+8	-250	198	125534	 h2h3 e4c5 h1h2 f2c2 c1a3 c5b7 a1f1
+8	-244	464	312559	 h2h3 d5b7 h1h2
+h2h3 ponderzug: d5b7
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6 c6e7 d6e7 d2a5 e7a3 a7a6 b2e2 a6e2 a3a5 e1f1 a5a3 f1g1 f8b8 e2f1 b8b2 a1b1 a3a2 b1a1 a2d5 f1c1 b2f2 h2h3 f2e2
+Eingabe: go movetime 1422
+Rechenzeit: 4817
+2	-178	3	413	 c1c7
+2	-176	3	625	 c1c7
+3	-174	4	720	 c1c7
+3	-156	4	880	 c1c7
+4	-170	7	2976	 c1c7 h7h5 a1a7
+4	-166	9	3534	 c1c7 h7h5 a1a7
+4	-164	9	3636	 c1c7 h7h5 a1a7
+5	-162	14	5791	 c1c7 h7h5 a1a7
+5	-156	20	9898	 c1c7 h7h5 a1a7
+6	-202	73	43467	 c1c7 h7h6 c7b8 g8h7 a1a3 e4c3
+6	-198	81	48923	 c1c7 h7h6 c7b8 g8h7 b8f4 e4c3 f4g3
+7	-212	143	90081	 c1c7 h7h6 c7b8 g8h7 a1a3 e4d6 h1h2 e2e1 g1f2
+7	-204	160	100758	 c1c7 h7h6 c7b8 g8h7 a1a3 e4d6 h1h2 e2e1 g1f2
+7	-202	175	111524	 c1c7 h7h6 a1a3 e4d6 c7b8 g8h7 h1h2 e2e1 g1f2
+8	-232	650	399233	 c1c7 h7h6 a1a3 e4d6 h1h2 d6c4 a3a7 e2e1 g1f2 e1e3 c7f7
+c1c7 ponderzug: h7h6
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6 c6e7 d6e7 d2a5 e7a3 a7a6 b2e2 a6e2 a3a5 e1f1 a5a3 f1g1 f8b8 e2f1 b8b2 a1b1 a3a2 b1a1 a2d5 f1c1 b2f2 h2h3 f2e2 c1c7 h7h6
+Eingabe: go movetime 1130
+Rechenzeit: 4601
+2	-196	3	546	 a1a3 e4d6 h1h2 d6c4 a3a7 e2e1 g1f2 e1e3 c7f7
+2	-188	3	608	 a1a3 e4d6 h1h2 d6c4 a3a7 e2e1 g1f2 e1e3 c7f7
+2	-184	3	667	 a1a3 e4d6 h1h2 d6c4 a3a7 e2e1 g1f2 e1e3 c7f7
+2	-182	3	731	 a1a3 e4d6 h1h2 d6c4 a3a7 e2e1 g1f2 e1e3 c7f7
+3	-226	4	1133	 a1a3 e4d6 h1h2 d6c4 a3a7 e2e1 g1f2 e1e3 c7f7
+3	-216	4	1209	 a1a3 e4d6 h1h2 d6c4 a3a7 e2e1 g1f2 e1e3 c7f7
+3	-214	4	1286	 a1a3 e4d6 h1h2 d6c4 a3a7 e2e1 g1f2 e1e3 c7f7
+4	-226	4	1524	 a1a3 e4d6 h1h2 d6c4 a3a7 e2e1 g1f2 e1e3 c7f7
+4	-216	4	1712	 a1a3 e4d6 h1h2 d6c4 a3a7 e2e1 g1f2 e1e3 c7f7
+4	-214	4	1872	 a1a3 e4d6 h1h2 d6c4 a3a7 e2e1 g1f2 e1e3 c7f7
+5	-212	6	2219	 a1a3 e4d6 h1h2 d6c4 a3a7 e2e1 g1f2 e1e3 c7f7
+5	-210	7	4080	 a1a3 e4d6 h1h2 d6c4 a3a7 e2e1 g1f2 e1e3 c7f7
+6	-224	10	5289	 a1a3 e4d6 h1h2 g8h7 a3a6 e2e1 g1f2
+6	-216	26	5771	 a1a3 e4d6 h1h2 g8h7 a3a6 e2e1 g1f2
+6	-212	26	6024	 a1a3 e4d6 h1h2 g8h7 a3a6 e2e1 g1f2
+6	-210	28	6410	 a1a3 e4d6 h1h2 g8h7 c7c1 e2c2
+7	-224	153	87290	 a1a3 e4d6 h1h2 g8h7 c7c1 e6e5
+7	-216	162	92940	 a1a3 e4d6 h1h2 g8h7 c7c1 e6e5 c1d1
+7	-212	164	93502	 a1a3 e4d6 h1h2 g8h7 c7c1 e6e5 c1d1
+a1a3 ponderzug: e4d6
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6 c6e7 d6e7 d2a5 e7a3 a7a6 b2e2 a6e2 a3a5 e1f1 a5a3 f1g1 f8b8 e2f1 b8b2 a1b1 a3a2 b1a1 a2d5 f1c1 b2f2 h2h3 f2e2 c1c7 h7h6 a1a3 e4d2
+Eingabe: go movetime 1383
+Rechenzeit: 4294
+2	-172	6	1151	 c7b8 g8h7 b8g3
+3	-170	7	1895	 c7g3
+4	-182	10	3519	 c7b8 g8h7 b8g3 d2c4 a3c3
+5	-212	25	10083	 c7b8 g8h7 b8g3 d2e4 g3h4 h7h8
+5	-202	25	10247	 c7b8 g8h7 b8g3 d2e4 g3h4 h7h8
+5	-198	25	10455	 c7b8 g8h7 b8g3 d2e4 g3h4 h7h8
+6	-228	46	23804	 c7b8 g8h7 b8g3 d2c4 a3c3 e6e5 d4e5 c4e5
+6	-220	46	24036	 c7b8 g8h7 b8g3 d2c4 a3c3 e6e5 d4e5 c4e5
+7	-232	96	46179	 c7b8 g8h7 b8g3 e6e5 d4e5 d2c4 a3c3 c4e5
+7	-220	96	46507	 c7b8 g8h7 b8g3 e6e5 d4e5 d2c4 a3c3 c4e5
+8	-314	509	320835	 c7b8 g8h7 b8g3 e6e5 d4e5 f5e4 h1h2 d2f3
+c7b8 ponderzug: g8h7
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6 c6e7 d6e7 d2a5 e7a3 a7a6 b2e2 a6e2 a3a5 e1f1 a5a3 f1g1 f8b8 e2f1 b8b2 a1b1 a3a2 b1a1 a2d5 f1c1 b2f2 h2h3 f2e2 c1c7 h7h6 a1a3 e4d2 c7b8 g8h7
+Eingabe: go movetime 1176
+Rechenzeit: 4124
+2	-192	3	530	 b8g3 e6e5 d4e5 f5e4 h1h2 d2f3
+3	-314	4	650	 b8g3 e6e5 d4e5 f5e4 h1h2 d2f3
+3	-306	4	729	 b8g3 e6e5 d4e5 f5e4 h1h2 d2f3
+3	-300	4	809	 b8g3 e6e5 d4e5 f5e4 h1h2 d2f3
+4	-314	4	851	 b8g3 e6e5 d4e5 f5e4 h1h2 d2f3
+4	-306	4	936	 b8g3 e6e5 d4e5 f5e4 h1h2 d2f3
+4	-298	4	1022	 b8g3 e6e5 d4e5 f5e4 h1h2 d2f3
+5	-314	4	1066	 b8g3 e6e5 d4e5 f5e4 h1h2 d2f3
+5	-306	6	1584	 b8g3 e6e5 d4e5 f5e4 h1h2 d2f3
+5	-302	6	2025	 b8g3 e6e5 d4e5 f5e4 h1h2 d2f3
+5	-300	6	2480	 b8g3 e6e5 d4e5 f5e4 h1h2 d2f3
+6	-314	6	2525	 b8g3 e6e5 d4e5 f5e4 h1h2 d2f3
+6	-306	7	3328	 b8g3 e6e5 d4e5 f5e4 h1h2 d2f3
+6	-302	7	3810	 b8g3 e6e5 d4e5 f5e4 h1h2 d2f3
+6	-300	7	4469	 b8g3 e6e5 d4e5 f5e4 h1h2 d2f3
+7	-314	18	4577	 b8g3 e6e5 d4e5 f5e4 h1h2 d2f3
+7	-306	23	7932	 b8g3 e6e5 d4e5 f5e4 h1h2 d2f3
+8	-416	254	169080	 b8g3 d2c4 a3a4 c4e3 h1h2 f5e4 g3f4 e4g2 f4f7 e2e1
+8	-408	268	180852	 b8g3 d2c4 a3a4 c4e3 h1h2 f5e4 g3f4 e4g2 f4f7 e2e1
+8	-404	270	182243	 b8g3 d2c4 a3a4 c4e3 h1h2 f5e4 g3f4 e4g2 f4f7 e2e1
+b8g3 ponderzug: d2c4
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6 c6e7 d6e7 d2a5 e7a3 a7a6 b2e2 a6e2 a3a5 e1f1 a5a3 f1g1 f8b8 e2f1 b8b2 a1b1 a3a2 b1a1 a2d5 f1c1 b2f2 h2h3 f2e2 c1c7 h7h6 a1a3 e4d2 c7b8 g8h7 b8g3 f5e4
+Eingabe: go movetime 948
+Rechenzeit: 3849
+2	-186	4	828	 h1h2 d2b3
+3	-206	4	1292	 h1h2 d2b3 a3a7
+4	-214	6	1816	 h1h2 d2b3 a3a7
+4	-208	6	1999	 h1h2 d2b3 a3a7
+4	-206	6	2233	 h1h2 d2b3 a3a7
+5	-246	9	4548	 h1h2 d2b3 a3a7
+5	-238	10	5458	 h1h2 d2b3 a3a7
+5	-234	10	6271	 h1h2 d2b3 a3a7
+6	-296	35	12170	 h1h2 e6e5 g1h1 e5d4 e3d4 d5d4
+7	-374	120	58225	 h1h2 d2c4 a3c3 d5a5 c3c1 c4e3 g3f4
+7	-370	123	63371	 h1h2 d2c4 a3c3 d5a5 c3c1 c4e3 g3f4
+8	-416	193	128380	 h1h2 d2c4 a3a7 c4e3 g3e5 d5b3 e5e4 f7f5 a7g7 h7g7
+8	-408	198	133687	 h1h2 d2c4 a3a7 c4e3 g3e5 d5b3 e5e4 f7f5 a7g7 h7g7
+8	-404	200	134741	 h1h2 d2c4 a3a7 c4e3 g3e5 d5b3 e5e4 f7f5 a7g7 h7g7 e4e5 g7h7
+9	-418	362	281388	 h1h2 d2c4 g3g4 e2e3 a3e3 c4e3 g4f4 e3f5
+h1h2 ponderzug: d2c4
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6 c6e7 d6e7 d2a5 e7a3 a7a6 b2e2 a6e2 a3a5 e1f1 a5a3 f1g1 f8b8 e2f1 b8b2 a1b1 a3a2 b1a1 a2d5 f1c1 b2f2 h2h3 f2e2 c1c7 h7h6 a1a3 e4d2 c7b8 g8h7 b8g3 f5e4 h1h2 d5f5
+Eingabe: go movetime 1287
+Rechenzeit: 3720
+2	-194	3	802	 a3a1 d2b3 a1a7
+2	-192	4	918	 a3a1 d2b3 a1a7
+3	-204	4	1296	 a3a1 d2b3 a1a7
+4	-202	6	1945	 a3a1 d2b3 a1a7
+5	-298	37	10423	 a3a1 d2b3 a1a7 e4d5 h2h1 d5g2 g3g2
+5	-290	39	10955	 a3a1 d2b3 a1a7 e4d5 h2h1 d5g2 g3g2
+5	-286	39	11761	 a3a1 d2b3 a1a7 e4d5 h2h1 d5g2 g3g2
+5	-284	40	12394	 a3a1 d2b3 a1a7 e4d5 h2h1 d5g2 g3g2
+6	-314	59	19438	 a3a1 d2b3 a1a7 e4d5 h2h1 d5g2 g3g2
+6	-306	59	20649	 a3a1 d2b3 a1a7 e4d5 h2h1 d5g2 g3g2
+6	-302	60	21816	 a3a1 d2b3 a1a7 e4d5 h2h1 d5g2 g3g2
+6	-300	62	23758	 a3a1 d2b3 a1a7 e4d5 h2h1 d5g2 g3g2
+7	-314	79	36446	 a3a1 d2c4 a1f1 f5g6 g3g6 h7g6 g2g4 e2h2 g1h2 c4e3
+7	-306	84	40522	 a3a1 d2c4 a1f1 f5g6 g3g6 h7g6 g2g4 e2h2 g1h2 c4e3
+7	-302	85	42709	 a3a1 d2c4 a1f1 f5g6 g3g6 h7g6 g2g4 e2h2 g1h2 c4e3
+8	-860	476	335652	 a3a1 e4b1 h2h1 f5f1 g1h2 d2f3 g3f3 f1f3 h1g1
+a3a1 ponderzug: e4b1
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6 c6e7 d6e7 d2a5 e7a3 a7a6 b2e2 a6e2 a3a5 e1f1 a5a3 f1g1 f8b8 e2f1 b8b2 a1b1 a3a2 b1a1 a2d5 f1c1 b2f2 h2h3 f2e2 c1c7 h7h6 a1a3 e4d2 c7b8 g8h7 b8g3 f5e4 h1h2 d5f5 a3a1 e4b1
+Eingabe: go movetime 1018
+Rechenzeit: 3562
+2	-846	3	469	 h2h1 f5f1 g1h2 d2f3 g3f3 f1f3 h1g1
+3	-856	3	555	 h2h1 f5f1 g1h2 d2f3 g3f3 f1f3 h1g1
+4	-856	3	845	 h2h1 f5f1 g1h2 d2f3 g3f3 f1f3 h1g1
+5	-856	4	1194	 h2h1 f5f1 g1h2 d2f3 g3f3 f1f3 h1g1
+6	-858	4	1610	 h2h1 f5f1 g1h2 d2f3 g3f3 f1f3 h1g1
+7	-872	12	9087	 h2h1 f5f1 g1h2 d2f3 g3f3 f1f3 h1g1 b1d3
+7	-868	12	9886	 h2h1 f5f1 g1h2 d2f3 g3f3 f1f3 h1g1 b1d3
+7	-866	14	10135	 h2h1 f5f1 g1h2 d2f3 g3f3 f1f3 h1g1 b1d3
+8	-992	79	47165	 h2h1 f5f1 g1h2 d2f3 g3f3 f1f3 h1g1 b1e4 h2h1 e2g2
+8	-984	92	47863	 h2h1 f5f1 g1h2 d2f3 g3f3 f1f3 h1g1 b1e4 h2h1 e2g2
+9	-998	145	88363	 h2h1 f5f1 g1h2 d2f3 g3f3 f1f3 h1g1 b1e4 h2h1 f3e3
+9	-990	156	100759	 h2h1 f5f1 g1h2 d2f3 g3f3 f1f3 h1g1 b1e4 h2h1 f3e3
+9	-986	157	103596	 h2h1 f5f1 g1h2 d2f3 g3f3 f1f3 h1g1 b1e4 h2h1 f3e3
+9	-984	159	105173	 h2h1 f5f1 g1h2 d2f3 g3f3 f1f3 h1g1 b1e4 h2h1 f3e3
+10	-1362	623	516288	 h2h1 f5f1 g1h2 d2f3 g3f3 f1f3 h1g1 b1e4 a1a8 e4a8
+h2h1 ponderzug: f5f1
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6 c6e7 d6e7 d2a5 e7a3 a7a6 b2e2 a6e2 a3a5 e1f1 a5a3 f1g1 f8b8 e2f1 b8b2 a1b1 a3a2 b1a1 a2d5 f1c1 b2f2 h2h3 f2e2 c1c7 h7h6 a1a3 e4d2 c7b8 g8h7 b8g3 f5e4 h1h2 d5f5 a3a1 e4b1 h2h1 f5f1
+Eingabe: go movetime 1028
+Rechenzeit: 3353
+2	-162	0	141	 g1h2 d2f3 g3f3 f1f3 h1g1 b1e4 a1a8 e4a8
+2	-156	0	201	 g1h2 d2f3 g3f3 f1f3 h1g1 b1e4 a1a8 e4a8
+2	-152	0	269	 g1h2 d2f3 g3f3 f1f3 h1g1 b1e4 a1a8 e4a8
+g1h2 ponderzug: d2f3
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6 c6e7 d6e7 d2a5 e7a3 a7a6 b2e2 a6e2 a3a5 e1f1 a5a3 f1g1 f8b8 e2f1 b8b2 a1b1 a3a2 b1a1 a2d5 f1c1 b2f2 h2h3 f2e2 c1c7 h7h6 a1a3 e4d2 c7b8 g8h7 b8g3 f5e4 h1h2 d5f5 a3a1 e4b1 h2h1 f5f1 g1h2 d2f3
+Eingabe: go movetime 1447
+Rechenzeit: 3353
+2	-56	1	6	 g3f3 f1f3 h1g1 b1e4 a1a8 e4a8
+g3f3 ponderzug: f1f3
+
+Eingabe: position startpos moves g1f3 g8f6 d2d4 d7d5 c2c4 d5c4 e2e3 c8e6 b1a3 e6f5 a3c4 e7e6 c1d2 f8e7 c4e5 e8g8 d1b3 b8d7 b3b7 d7e5 f3e5 a8b8 b7a7 b8b2 f1e2 f6e4 e5c6 d8d6 c6e7 d6e7 d2a5 e7a3 a7a6 b2e2 a6e2 a3a5 e1f1 a5a3 f1g1 f8b8 e2f1 b8b2 a1b1 a3a2 b1a1 a2d5 f1c1 b2f2 h2h3 f2e2 c1c7 h7h6 a1a3 e4d2 c7b8 g8h7 b8g3 f5e4 h1h2 d5f5 a3a1 e4b1 h2h1 f5f1 g1h2 d2f3 g3f3 f1f3
+Eingabe: go movetime 1140
+Rechenzeit: 3353
+2	-878	1	225	 h1g1 b1e4 a1a8 e4a8
+2	-866	1	273	 h1g1 b1e4 a1a8 e4a8
+3	-1352	1	501	 h1g1 b1e4 a1a8 e4a8
+4	-1352	1	555	 h1g1 b1e4 a1a8 e4a8
+5	-1352	3	704	 h1g1 b1e4 a1a8 e4a8
+6	-1352	4	1926	 h1g1 b1e4 a1a8 e4a8
+7	-1512	32	9224	 h1g1 b1e4 a1a2 e2a2 h3h4 f3e3
+7	-1510	50	9791	 h1g1 b1e4 a1a2 e2a2 h3h4 f3e3
+8	-1512	57	17008	 h1g1 b1e4 a1a2 e2a2 h3h4 f3e3
+8	-1510	57	17211	 h1g1 b1e4 a1a2 e2a2 h3h4 f3e3
+9	-29990	160	45123	 h1g1 b1e4 a1a2 e2a2 h3h4 a2g2 h2h1 f3h3
+9	-29982	164	48767	 h1g1 b1e4 a1a2 e2a2 h3h4 a2g2 g1g2 f3g2
+h1g1 ponderzug: b1e4
+
+0-1 {Abrok resigns}
