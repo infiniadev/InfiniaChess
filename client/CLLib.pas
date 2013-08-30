@@ -1129,12 +1129,15 @@ end;
 function MultiKeyExists: Boolean;
 var
   F: Text;
-  s: string;
+  s, filename: string;
   i, sum: integer;
 begin
   result := false;
   try
-    AssignFile(F,GetCurrentDir + '\multikey.ini');
+    filename := GetCurrentDir + '\multikey.ini';
+    if not FileExists(filename) then exit;
+
+    AssignFile(F,filename);
     Reset(F);
     Readln(F, s);
     if length(s) <> 7 then exit;
