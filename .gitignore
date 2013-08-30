@@ -1,4 +1,3 @@
-*.dcu
 *.~*~
 *.local
 *.identcache
@@ -8,3 +7,10 @@ __history
 *.dll
 bin/*
 server/output
+client/output
+server/dcu
+client/dcu
+comp/dcu
+installshields/full/output
+installshields/update/output
+installshields/!files/chclient.exe
