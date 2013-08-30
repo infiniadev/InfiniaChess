@@ -545,6 +545,8 @@ var
   Login, Password, Option, Ver, Mac, email,filename,s: string;
   DateUntil: TDateTime;
   Invisible: Boolean;
+  conn: TConnection;
+  slDumb: TStrings;
   //****************************************************************************
   procedure LoginError(p_Code, p_Msg: string; p_Result: integer);
   begin
@@ -606,7 +608,7 @@ var
     conn: TConnection;
   begin
     conn := GetConnection(Login);
-    result := Assigned(conn);
+    result := Assigned(conn) and (conn.Socket = nil);
     if not result then exit;
 
     { Switch to exisiting connection object. one that was
@@ -687,6 +689,8 @@ begin
   if Connection.LoginID > -1 then exit;
   if not ProcessLoginAttempts then exit;
 
+  conn := GetLiveConnection(Login);
+
   Connection.Option := StrToInt(Option);
   Connection.Version := Ver;
   Connection.MAC := Mac;
@@ -697,7 +701,12 @@ begin
     if Connection.LoginID < 0 then begin
       ProcessDbError;
       exit;
-    end;
+    end
+  end;
+
+  if (conn<>nil) then begin
+    fSocket.Send(conn,[DP_SERVER_MSG, DP_ERR_2, 'You are nuked by server because another user with your name logged in.']);
+    CMD_Bye(conn, slDumb);
   end;
 
   SendRoomsInfo;
@@ -831,9 +840,7 @@ const
 var
   i,res: integer;
   sLogin,Version,MacAddress,IpAddress: string;
-  conn: TConnection;
   Invisible: Boolean;
-  slDumb: TStrings;
 begin
   for i:=CMD.Count to 7 do CMD.Add('');
   sLogin:=CMD[1];
@@ -847,12 +854,6 @@ begin
     IpAddress:=Connection.Socket.RemoteAddress
   else
     IpAddress := '';
-
-  conn := GetLiveConnection(sLogin);
-  if conn<>nil then begin
-    fSocket.Send(conn,[DP_SERVER_MSG, DP_ERR_2, 'You are nuked by server because another user with your name logged in.']);
-    CMD_Bye(conn, slDumb);
-  end;
 
   try
      res:=CMD_Login2(Connection,CMD);
