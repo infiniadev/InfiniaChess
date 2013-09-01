@@ -9,7 +9,7 @@
             <p>This area is for Members only to access their accounts. All activity will be 
                 monitored and recorded.</p>
            
-            <table align="center">
+            <table align="left">
                 <tr>
                     <td align="right">Login: </td>
                     <td><asp:TextBox ID="txtLogin" runat="server" size="15" Width="96px" TabIndex="1"></asp:TextBox>

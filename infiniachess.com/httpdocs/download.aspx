@@ -21,8 +21,7 @@
                 <p>
                     <strong>If you find you cannot create an account - Please go to &quot;Contact Us&quot;and
                         follow the instructions there. </strong><strong>We apologize for any inconvenience.
-                            &quot;Contact Us&quot; and we will make the account for you. You may also email
-                            us at infinia@usa.com</strong>.</p>
+                            &quot;Contact Us&quot; and we will make the account for you. </strong>.</p>
                 <p>
                     <strong>PLEASE NOTE:</strong> In the section <strong>MEMBER INFORMATION</strong>
                     your user name<strong> must not begin with a number</strong>, must have <strong>at least

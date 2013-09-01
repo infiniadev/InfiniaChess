@@ -18,67 +18,8 @@
     <form id="form1" runat="server">
     <div>
         <table cellpadding="0" cellspacing="0" border="0" width="974" align="center"> 
-          <tr> 
-            <td><img src="images/infinia-chess-header.jpg" width="974" height="140" border="0" alt="Infinia Chess" /></td> 
-          </tr> 
-          <tr> 
-            <td background="images/button-back.jpg" width="974" height="40" class="topnav" align="center"> 
-                <a href="index.html" class=topnav>Home </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
-                <a href="chess-school.html" class=topnav>Chess School</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
-                <a href="rules-of-chess.html" class=topnav>Rules of Chess</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
-                <a href="chess-lesson.html" class=topnav>Chess Lesson </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
-                <a href="chess-clubs.html" class=topnav>Chess Clubs</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
-                <a href="Features.html" class=topnav>Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
-                <a href="customer-login.aspx" class=topnav>Account</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
-                <a href="contactus.html" class=topnav>Contact Us</a> </td> 
-          </tr> 
           <tr id="trUsual" runat="server" visible="true"> 
-            <td id="tdLeftPanel" runat="server" visible="true"> <table cellpadding="0" cellspacing="0" border="0" width="974"> 
-                <tr> 
-                  <td background="images/leftback.jpg" width="254" valign=top> <!--Begin Left Panel-->             
-                    <table width="100%"  border="0" cellspacing="0" cellpadding="0">
-                      <tr>
-                        <td>
-                        <table>
-							<tr>
-								<td>
-								<h2>Features of Infinia Chess include: </h2>
-                                
-                                <UL>
-                                				<LI>Get Achievements for Playing Chess Games!
-									<LI>A graphical interface fully customizable 
-									<LI>Game play many types 
-									<LI>Rated (and unrated) 
-									<LI>Time Odds 
-									<LI>Material Odds Challenges. 
-									<LI>Multiple game play 
-									<LI>Crazy House 
-									<LI>Fischer Random 
-									<LI>Loser Variations 
-									<LI>Personal Game library 
-									<LI>Private chat rooms 
-									<LI>Message System 
-									<LI>Premove  
-									<LI>Aggressive Premove 
-									<LI>Live Tournaments 
-									<LI>King of the Hill 
-									<LI>Master Challenges 
-									<LI>Lectures given by world class Masters 
-									<LI>Simul Against GM's IM's FM's 
-									<LI>Lobby open to all members 
-									<LI>Forum for chess discussions & theory 
-									<LI>Clubs Public and Private 
-								</UL>
-								<a href="features.html">More...</a>
-								</td>
-							</tr>
-						</table>
-                        
-                        </td>
-                      </tr>
-                    </table>
-                    <!--End Left Panel--> </td> 
-                  <td width="720" align="left" valign=top bgcolor=white>
+            <td id="tdLeftPanel" runat="server" visible="true" align="left" valign=top bgcolor=white>
                     
                     <!-- InstanceBeginEditable name="content-area" -->
                     <!--Begin Main Body-->
@@ -86,19 +27,13 @@
                     <!--End Main Body-->
                     <!-- InstanceEndEditable -->
                     
-                  </td> 
-                </tr> 
-              </table></td>
+            </td>
           </tr> 
           <tr id="trAdmin" runat="server" visible="true"> 
             <td valign="top" bgcolor="white">
                <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder> 
             </td>
           </tr>
-          <tr> 
-            <td height="70" align="right" valign="top" bgcolor=#000000 class="footer" style="padding-top:10px; ">&copy; Infinia Chess <%=Now.Year()%>. All rights reserved.<br> 
-              Website design and developed by <a href="http://www.enettechnologies.com">EnetTechnologies.com</a> </td> 
-          </tr> 
         </table> 
 
     </div>
