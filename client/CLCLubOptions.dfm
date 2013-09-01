@@ -1,9 +1,9 @@
 object fCLCLubOptions: TfCLCLubOptions
   Left = 292
   Top = 155
-  Width = 326
-  Height = 379
   Caption = 'Club Options'
+  ClientHeight = 345
+  ClientWidth = 318
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -13,6 +13,9 @@ object fCLCLubOptions: TfCLCLubOptions
   OldCreateOrder = False
   Position = poDesktopCenter
   OnCreate = FormCreate
+  DesignSize = (
+    318
+    345)
   PixelsPerInch = 96
   TextHeight = 13
   object PageControl1: TPageControl
@@ -48,6 +51,9 @@ object fCLCLubOptions: TfCLCLubOptions
         BevelInner = bvRaised
         BevelOuter = bvLowered
         TabOrder = 0
+        DesignSize = (
+          105
+          165)
         object Label26: TLabel
           Left = 2
           Top = 142
@@ -121,6 +127,10 @@ object fCLCLubOptions: TfCLCLubOptions
     object TabSheet2: TTabSheet
       Caption = 'Information'
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object reInformation: TRichEdit
         Left = 0
         Top = 0

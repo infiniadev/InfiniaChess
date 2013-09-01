@@ -17,6 +17,9 @@ object fCLRegister: TfCLRegister
   OnClose = FormClose
   OnCreate = FormCreate
   OnPaint = FormPaint
+  DesignSize = (
+    419
+    349)
   PixelsPerInch = 96
   TextHeight = 13
   object lblAccount: TLabel
@@ -26,9 +29,9 @@ object fCLRegister: TfCLRegister
     Height = 30
     AutoSize = False
     Caption = 
-      'Use this form to register a new login name with the Infinia Ches' +
-      's server. A login name is required in order to connect to the se' +
-      'rver and play.'
+      'Use this form to register a new login name with the Perpetual Ch' +
+      'ess server. A login name is required in order to connect to the ' +
+      'server and play.'
     Color = clWhite
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText

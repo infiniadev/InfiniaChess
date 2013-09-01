@@ -1,8 +1,8 @@
 {*******************************************************}
 {                                                       }
 {       Chesslink by                                    }
-{       Brian Sheeres                                   }
-{       Copyright (c) 1995-2001                         }
+{       Perpetual Chess LLC                             }
+{       Copyright (c) 1995-2013                         }
 {                                                       }
 {*******************************************************}
 
@@ -23,10 +23,10 @@ type
     lblInfo: TLabel;
     lblLogin: TLabel;
     lblPassword: TLabel;
-    imgMain: TImage;
     cbRemember: TCheckBox;
     btnForgot: TBitBtn;
-    imgChristmas: TImage;
+    Image1: TImage;
+    Label1: TLabel;
 
     procedure btnCancelClick(Sender: TObject);
     procedure btnLoginClick(Sender: TObject);
@@ -137,8 +137,8 @@ begin
   OldPassword:=edtPassword.Text;
 
   DecodeDate(Date, y, m, d);
-  imgChristmas.Visible := (m = 12) and (d >= 23) or (m = 1) and (d <= 2);
-  imgMain.Visible := not imgChristmas.Visible;
+  //imgChristmas.Visible := (m = 12) and (d >= 23) or (m = 1) and (d <= 2);
+  //imgMain.Visible := not imgChristmas.Visible;
 
 
 end;

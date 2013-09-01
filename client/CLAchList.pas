@@ -1,3 +1,11 @@
+{*******************************************************}
+{                                                       }
+{       Chesslink by                                    }
+{       Perpetual Chess LLC                             }
+{       Copyright (c) 1995-2013                         }
+{                                                       }
+{*******************************************************}
+
 unit CLAchList;
 
 interface
@@ -526,7 +534,7 @@ begin
       if Assigned(Parent) and (Parent is TfCLAchievements) then
         TfCLAchievements(Parent).OnGroupIDChange(btn.Tag);
     BTN_TOP100:
-      ShellExecute(Handle, 'open', PChar('http://www.infiniachess.com/achievements-top.aspx'), '', '', SW_SHOWNORMAL);
+      ShellExecute(Handle, 'open', PChar('http://www.perpetualchess.com'), '', '', SW_SHOWNORMAL);
   end;
 end;
 //==============================================================================================

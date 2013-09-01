@@ -23,9 +23,9 @@ object fCLAccounts: TfCLAccounts
     Height = 30
     AutoSize = False
     Caption = 
-      'A Infinia Chess account is required in order to connect and play' +
-      '. Choose if you'#39'd like to register for a new account or edit an ' +
-      'existing one.'
+      'A Perpetual Chess account is required in order to connect and pl' +
+      'ay. Choose if you'#39'd like to register for a new account or edit a' +
+      'n existing one.'
     Color = clWhite
     ParentColor = False
     Layout = tlCenter
@@ -57,7 +57,7 @@ object fCLAccounts: TfCLAccounts
     Top = 160
     Width = 309
     Height = 17
-    Caption = 'I have an existing Infinia Chess account that I'#39'd like to use.'
+    Caption = 'I have an existing Perpetual Chess account that I'#39'd like to use.'
     TabOrder = 1
   end
   object rbNew: TRadioButton
@@ -65,7 +65,7 @@ object fCLAccounts: TfCLAccounts
     Top = 112
     Width = 309
     Height = 17
-    Caption = 'I'#39'd like to register for a new Infinia Chess account.'
+    Caption = 'I'#39'd like to register for a new Perpetual Chess account.'
     Checked = True
     TabOrder = 0
     TabStop = True

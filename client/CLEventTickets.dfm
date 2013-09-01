@@ -1,9 +1,9 @@
 object fCLEventTickets: TfCLEventTickets
   Left = 569
   Top = 449
-  Width = 310
-  Height = 335
   Caption = 'Invited Players'
+  ClientHeight = 301
+  ClientWidth = 302
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,7 +18,7 @@ object fCLEventTickets: TfCLEventTickets
     Left = 0
     Top = 0
     Width = 302
-    Height = 274
+    Height = 267
     Align = alClient
     Columns = <
       item
@@ -48,16 +48,20 @@ object fCLEventTickets: TfCLEventTickets
     ViewStyle = vsReport
     OnDrawItem = lvDrawItem
     OnKeyDown = lvKeyDown
+    ExplicitHeight = 274
   end
   object Panel5: TPanel
     Left = 0
-    Top = 274
+    Top = 267
     Width = 302
     Height = 34
     Align = alBottom
     BevelInner = bvRaised
     BevelOuter = bvLowered
     TabOrder = 1
+    DesignSize = (
+      302
+      34)
     object lblPlayersCount: TLabel
       Left = 178
       Top = 10

@@ -78,7 +78,7 @@ object fCLEventControl: TfCLEventControl
       Left = 2
       Top = 0
       Width = 217
-      Height = 35
+      Height = 31
       Align = alNone
       AutoSize = True
       ButtonHeight = 31
@@ -89,7 +89,7 @@ object fCLEventControl: TfCLEventControl
       Wrapable = False
       object tbSwitchMode: TToolButton
         Left = 0
-        Top = 2
+        Top = 0
         Caption = 'tbSwitchMode'
         DropdownMenu = pmSwitch
         ImageIndex = 2
@@ -99,14 +99,14 @@ object fCLEventControl: TfCLEventControl
       end
       object tbPause: TToolButton
         Left = 31
-        Top = 2
+        Top = 0
         Caption = 'tbPause'
         ImageIndex = 10
         OnClick = tbPauseClick
       end
       object tbFollow: TToolButton
         Left = 62
-        Top = 2
+        Top = 0
         Hint = 'Follow Leader'
         AllowAllUp = True
         Caption = 'tbFollow'
@@ -115,7 +115,7 @@ object fCLEventControl: TfCLEventControl
       end
       object tbRotate: TToolButton
         Left = 93
-        Top = 2
+        Top = 0
         Hint = 'Autorotate'
         AllowAllUp = True
         Caption = 'tbRotate'
@@ -125,7 +125,7 @@ object fCLEventControl: TfCLEventControl
       end
       object tbStandings: TToolButton
         Left = 124
-        Top = 2
+        Top = 0
         Hint = 'Standings'
         Caption = 'tbStandings'
         ImageIndex = 11
@@ -135,7 +135,7 @@ object fCLEventControl: TfCLEventControl
       end
       object tbMyGame: TToolButton
         Left = 155
-        Top = 2
+        Top = 0
         Hint = 'My Game'
         Caption = 'tbMyGame'
         ImageIndex = 12
@@ -145,7 +145,7 @@ object fCLEventControl: TfCLEventControl
       end
       object tbAbortGame: TToolButton
         Left = 186
-        Top = 2
+        Top = 0
         Hint = 'Abort current game'
         Caption = 'tbAbortGame'
         ImageIndex = 13

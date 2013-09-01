@@ -25,6 +25,9 @@ object fCLLectureNew: TfCLLectureNew
     BevelInner = bvRaised
     BevelOuter = bvLowered
     TabOrder = 0
+    DesignSize = (
+      359
+      139)
     object Label1: TLabel
       Left = 8
       Top = 8
@@ -81,6 +84,9 @@ object fCLLectureNew: TfCLLectureNew
     BevelInner = bvRaised
     BevelOuter = bvLowered
     TabOrder = 1
+    DesignSize = (
+      359
+      34)
     object Panel10: TPanel
       Left = 285
       Top = 2
@@ -219,13 +225,8 @@ object fCLLectureNew: TfCLLectureNew
         Top = 24
         Width = 145
         Height = 21
-        CalAlignment = dtaLeft
-        Date = 39100.9341147569
-        Time = 39100.9341147569
-        DateFormat = dfShort
-        DateMode = dmComboBox
-        Kind = dtkDate
-        ParseInput = False
+        Date = 39100.934114756900000000
+        Time = 39100.934114756900000000
         TabOrder = 0
       end
       object dtTime: TDateTimePicker
@@ -233,13 +234,9 @@ object fCLLectureNew: TfCLLectureNew
         Top = 68
         Width = 143
         Height = 21
-        CalAlignment = dtaLeft
-        Date = 39100.9341147569
-        Time = 39100.9341147569
-        DateFormat = dfShort
-        DateMode = dmComboBox
+        Date = 39100.934114756900000000
+        Time = 39100.934114756900000000
         Kind = dtkTime
-        ParseInput = False
         TabOrder = 1
       end
       object cbAdminOnly: TCheckBox
@@ -268,6 +265,9 @@ object fCLLectureNew: TfCLLectureNew
       BevelInner = bvRaised
       BevelOuter = bvLowered
       TabOrder = 1
+      DesignSize = (
+        190
+        161)
       object lblShoutStart: TLabel
         Left = 6
         Top = 22
@@ -314,13 +314,11 @@ object fCLLectureNew: TfCLLectureNew
         Width = 15
         Height = 21
         Associate = edShoutStart
-        Min = 0
         Max = 9999
         Increment = 10
         Position = 60
         TabOrder = 2
         Thousands = False
-        Wrap = False
       end
       object edShoutInc: TEdit
         Left = 119
@@ -339,12 +337,10 @@ object fCLLectureNew: TfCLLectureNew
         Height = 21
         Anchors = [akTop, akRight]
         Associate = edShoutInc
-        Min = 0
         Max = 9999
         Position = 5
         TabOrder = 4
         Thousands = False
-        Wrap = False
       end
       object edShoutMsg: TEdit
         Left = 6

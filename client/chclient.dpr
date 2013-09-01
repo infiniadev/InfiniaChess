@@ -6,10 +6,9 @@
 {                                                       }
 {*******************************************************}
 
-program Chclient;
+program chclient;
 
-{%ToDo 'chclient.todo'}
-{%TogetherDiagram 'ModelSupport_chclient\default.txaPackage'}
+
 
 uses
   Forms,
@@ -166,7 +165,7 @@ begin
   Log('fCLSocket created');
   fCLSocket2 := TCLSocket2.Create;
   Log('fCLSocket2 created');
-  Application.Title := 'Infinia Chess';
+  Application.Title := 'Perpetual Chess';
   Application.CreateForm(TfCLMain, fCLMain);
   Log('fCLMain created.');
   Application.Run;
@@ -181,7 +180,7 @@ begin
   MAIN_DIR := ExtractFileDir(Application.ExeName)+'\';
   {if DebugHook = 0 then
     begin
-      Hwnd := FindWindow('TfCLMain', 'Infinia Chess');
+      Hwnd := FindWindow('TfCLMain', 'Perpetual Chess');
       if Hwnd = 0 then
         RunApp
       else

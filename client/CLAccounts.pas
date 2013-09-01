@@ -1,8 +1,8 @@
 {*******************************************************}
 {                                                       }
 {       Chesslink by                                    }
-{       Brian Sheeres                                   }
-{       Copyright (c) 1995-2001                         }
+{       Perpetual Chess LLC                             }
+{       Copyright (c) 1995-2013                         }
 {                                                       }
 {*******************************************************}
 
@@ -12,7 +12,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
-  StdCtrls;
+  StdCtrls, ShellAPI;
 
 type
   TfCLAccounts = class(TForm)
@@ -55,8 +55,10 @@ begin
     end
   else
     begin
-      fCLRegister := TfCLRegister.Create(nil);
-      fCLRegister.ShowModal;
+      ShellExecute(Handle, 'open', PChar('http://www.perpetualchess.com'), '', '', SW_SHOWNORMAL);
+  exit;
+      //fCLRegister := TfCLRegister.Create(nil);
+      //fCLRegister.ShowModal;
     end;
 end;
 //______________________________________________________________________________

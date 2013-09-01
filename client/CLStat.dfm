@@ -1,10 +1,10 @@
 object fCLStat: TfCLStat
   Left = 483
   Top = 233
-  Width = 397
-  Height = 380
   BorderIcons = [biSystemMenu]
   Caption = 'Admin Statistics'
+  ClientHeight = 346
+  ClientWidth = 389
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -19,7 +19,7 @@ object fCLStat: TfCLStat
     Left = 0
     Top = 0
     Width = 389
-    Height = 353
+    Height = 346
     ActivePage = tsQuery
     Align = alClient
     TabOrder = 0
@@ -30,11 +30,14 @@ object fCLStat: TfCLStat
         Left = 228
         Top = 0
         Width = 153
-        Height = 325
+        Height = 320
         Align = alRight
         BevelInner = bvRaised
         BevelOuter = bvLowered
         TabOrder = 0
+        DesignSize = (
+          153
+          320)
         object lblDateFrom: TLabel
           Left = 6
           Top = 2
@@ -61,13 +64,8 @@ object fCLStat: TfCLStat
           Top = 16
           Width = 93
           Height = 21
-          CalAlignment = dtaLeft
-          Date = 39371.6199041435
-          Time = 39371.6199041435
-          DateFormat = dfShort
-          DateMode = dmComboBox
-          Kind = dtkDate
-          ParseInput = False
+          Date = 39371.619904143500000000
+          Time = 39371.619904143500000000
           TabOrder = 0
         end
         object dateTo: TDateTimePicker
@@ -75,13 +73,8 @@ object fCLStat: TfCLStat
           Top = 54
           Width = 93
           Height = 21
-          CalAlignment = dtaLeft
-          Date = 39371.6199041435
-          Time = 39371.6199041435
-          DateFormat = dfShort
-          DateMode = dmComboBox
-          Kind = dtkDate
-          ParseInput = False
+          Date = 39371.619904143500000000
+          Time = 39371.619904143500000000
           TabOrder = 1
         end
         object edStrParam: TRichEdit
@@ -140,7 +133,7 @@ object fCLStat: TfCLStat
         end
         object reDescription: TRichEdit
           Left = 2
-          Top = 270
+          Top = 265
           Width = 149
           Height = 53
           Align = alBottom
@@ -153,7 +146,7 @@ object fCLStat: TfCLStat
         Left = 0
         Top = 0
         Width = 228
-        Height = 325
+        Height = 320
         Align = alClient
         Columns = <
           item
@@ -174,6 +167,10 @@ object fCLStat: TfCLStat
       Caption = 'Result'
       ImageIndex = 1
       TabVisible = False
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object pnlHead: TPanel
         Left = 0
         Top = 0
@@ -191,6 +188,9 @@ object fCLStat: TfCLStat
         ParentColor = True
         ParentFont = False
         TabOrder = 0
+        DesignSize = (
+          381
+          47)
         object SpeedButton1: TSpeedButton
           Left = 342
           Top = 6
@@ -296,7 +296,7 @@ object fCLStat: TfCLStat
         Left = 0
         Top = 47
         Width = 381
-        Height = 278
+        Height = 273
         Align = alClient
         Color = clHighlightText
         Columns = <>
@@ -309,6 +309,7 @@ object fCLStat: TfCLStat
         ParentFont = False
         TabOrder = 1
         ViewStyle = vsReport
+        ExplicitHeight = 278
       end
     end
   end

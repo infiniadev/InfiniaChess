@@ -16,6 +16,9 @@ object fCLRooms: TfCLRooms
   PopupMenu = pmRooms
   OnClose = FormClose
   OnCreate = FormCreate
+  DesignSize = (
+    590
+    324)
   PixelsPerInch = 96
   TextHeight = 13
   object bvlHeader: TBevel

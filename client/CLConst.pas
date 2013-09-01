@@ -1,8 +1,8 @@
 {*******************************************************}
 {                                                       }
 {       Chesslink by                                    }
-{       Brian Sheeres                                   }
-{       Copyright (c) 1995-2001                         }
+{       Perpetual Chess LLC                             }
+{       Copyright (c) 1995-2013                         }
 {                                                       }
 {*******************************************************}
 
@@ -37,12 +37,13 @@ RESULTCODES: array [0..13] of string =
 
 { General }
 DAT_VERSION = 6;
-CLIENT_VERSION = '8.1an';
-CHESSLINK_WEB = 'http://www.infiniachess.com';
+CLIENT_VERSION = '1.5.1';
+CHESSLINK_WEB = 'http://www.perpetualchess.com';
 
 //CHESSLINK_PORT = 1025;
 //CHESSLINK_SERVER = '127.0.0.1';
-CHESSLINK_SERVER = '65.60.190.184';
+//CHESSLINK_SERVER = '67.192.255.154';
+CHESSLINK_SERVER = '65.60.190.184';    //New
 CHESSLINK_PORT = 15125;
 CHESSLINK_PORT_MM = 1025;
 
@@ -630,7 +631,7 @@ LOAD_DIR = 'load\'; // folder for autoupdate
 
 PIECE_BASIC_SIZE = 90;
 
-DEFAULT_LOG_NAME = 'infiniachess.log';
+DEFAULT_LOG_NAME = 'perpetualchess.log';
 LOGGING = FALSE;
 
 MOVE_STYLE_DD = 0;

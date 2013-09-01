@@ -1,8 +1,8 @@
 {*******************************************************}
 {                                                       }
 {       Chesslink by                                    }
-{       Brian Sheeres                                   }
-{       Copyright (c) 1995-2001                         }
+{       Perpetual Chess LLC                             }
+{       Copyright (c) 1995-2013                         }
 {                                                       }
 {*******************************************************}
 
@@ -1447,7 +1447,7 @@ procedure TfCLOptions.btnPasswordClick(Sender: TObject);
 var
   F: TfCLPassword;
 begin
-  ShellExecute(Handle, 'open', PChar('http://www.infiniachess.com/customer-login.aspx'), '', '', SW_SHOWNORMAL);
+  ShellExecute(Handle, 'open', PChar('http://www.perpetualchess.com'), '', '', SW_SHOWNORMAL);
   exit;
 
   if fCLSocket.InitState < isLoginComplete then begin

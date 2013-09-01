@@ -29,6 +29,9 @@ object fCLTable: TfCLTable
     BevelInner = bvRaised
     BevelOuter = bvNone
     TabOrder = 0
+    DesignSize = (
+      630
+      18)
     object lblGames: TLabel
       Left = 4
       Top = 2

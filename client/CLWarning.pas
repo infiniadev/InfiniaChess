@@ -1,3 +1,11 @@
+{*******************************************************}
+{                                                       }
+{       Chesslink by                                    }
+{       Perpetual Chess LLC                             }
+{       Copyright (c) 1995-2013                         }
+{                                                       }
+{*******************************************************}
+
 unit CLWarning;
 
 interface
@@ -81,7 +89,7 @@ end;
 //==============================================================================
 procedure TfCLWarning.SpeedButton1Click(Sender: TObject);
 begin
-  ShellExecute(Handle, 'open', PChar('http://www.infiniachess.com/customer-login.aspx'), '', '', SW_SHOWNORMAL)
+  ShellExecute(Handle, 'open', PChar('http://www.perpetualchess.com'), '', '', SW_SHOWNORMAL)
 end;
 //==============================================================================
 function TfCLWarning.DrawText: integer;

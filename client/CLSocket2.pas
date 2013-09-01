@@ -1,3 +1,12 @@
+
+{*******************************************************}
+{                                                       }
+{       Chesslink by                                    }
+{       Perpetual Chess LLC                             }
+{       Copyright (c) 1995-2013                         }
+{                                                       }
+{*******************************************************}
+
 unit CLSocket2;
 
 interface
@@ -97,7 +106,7 @@ begin
   //showmessage('Priority = '+IntToStr(ord(Priority)));
   if fCLSocket2.Client.Connected then fCLSOcket2.Client.Disconnect;
   try
-    fCLSOcket2.Client.Connect(1000);
+    fCLSOcket2.Client.Connect;
   except
     Terminate;
   end;
@@ -106,7 +115,7 @@ begin
     if not fCLSocket2.Client.Connected then Terminate
     else
       try
-        cmd:=fCLSOcket2.Client.Readln; //(#0, -2, 64*1024);//WaitFor(DP_END);
+        cmd:=fCLSOcket2.Client.ReadLn; //(#0, -2, 64*1024);//WaitFor(DP_END);
         fCLSocket2.MMThreadLog('-> '+cmd);
         if cmd[length(cmd)]=DP_END then
           SetLength(cmd,length(cmd)-1);

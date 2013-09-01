@@ -1,8 +1,8 @@
 {*******************************************************}
 {                                                       }
 {       Chesslink by                                    }
-{       Brian Sheeres                                   }
-{       Copyright (c) 1995-2001                         }
+{       Perpetual Chess LLC                             }
+{       Copyright (c) 1995-2013                         }
 {                                                       }
 {*******************************************************}
 
@@ -1829,12 +1829,12 @@ end;
 //==================================================================================================
 procedure TfCLProfile.btnChatLogURLClick(Sender: TObject);
 begin
-  ShellExecute(0, 'open', PChar('www.infiniachess.com/chat-log.aspx'), '', '', SW_SHOWNORMAL);
+  ShellExecute(0, 'open', PChar('www.perpetualchess.com'), '', '', SW_SHOWNORMAL);
 end;
 //==================================================================================================
 procedure TfCLProfile.sbPayHereClick(Sender: TObject);
 begin
-  ShellExecute(Handle, 'open', PChar('http://www.infiniachess.com/customer-login.aspx'), '', '', SW_SHOWNORMAL)
+  ShellExecute(Handle, 'open', PChar('http://www.perpetualchess.com'), '', '', SW_SHOWNORMAL)
 end;
 //==================================================================================================
 end.

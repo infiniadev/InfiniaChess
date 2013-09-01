@@ -30,7 +30,7 @@ object fCLTakeback: TfCLTakeback
     Top = 32
     Width = 113
     Height = 17
-    Caption = '½ Move'
+    Caption = #189' Move'
     TabOrder = 0
     OnClick = RadioButtonClick
   end
@@ -52,7 +52,7 @@ object fCLTakeback: TfCLTakeback
     Top = 80
     Width = 113
     Height = 17
-    Caption = '1 and ½ Moves'
+    Caption = '1 and '#189' Moves'
     TabOrder = 2
     OnClick = RadioButtonClick
   end

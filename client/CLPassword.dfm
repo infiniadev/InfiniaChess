@@ -13,6 +13,9 @@ object fCLPassword: TfCLPassword
   Font.Style = []
   OldCreateOrder = False
   Position = poDesktopCenter
+  DesignSize = (
+    303
+    184)
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel

@@ -1,8 +1,8 @@
 {*******************************************************}
 {                                                       }
 {       Chesslink by                                    }
-{       Brian Sheeres                                   }
-{       Copyright (c) 1995-2001                         }
+{       Perpetual Chess LLC                             }
+{       Copyright (c) 1995-2013                         }
 {                                                       }
 {*******************************************************}
 
@@ -20,7 +20,7 @@ type
     lblSheeres: TLabel;
     lblURL: TLabel;
     lblVersion: TLabel;
-    imgChesslink: TImage;
+    Image1: TImage;
 
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormPaint(Sender: TObject);
@@ -62,7 +62,8 @@ end;
 //______________________________________________________________________________
 procedure TfCLAbout.lblURLClick(Sender: TObject);
 begin
-  ShellExecute(Handle, 'open', PChar(CHESSLINK_WEB), '', '', SW_SHOWNORMAL);
+  ShellExecute(Handle, 'open', PChar('http://www.perpetualchess.com'), '', '',
+   SW_SHOWNORMAL);
 end;
 //______________________________________________________________________________
 end.

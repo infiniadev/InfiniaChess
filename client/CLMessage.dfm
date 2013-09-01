@@ -69,8 +69,6 @@ object fCLMessage: TfCLMessage
     Caption = 'Cancel'
     ModalResult = 2
     TabOrder = 3
-    ExplicitLeft = 346
-    ExplicitTop = 245
   end
   object btnSend: TButton
     Left = 430
@@ -82,8 +80,6 @@ object fCLMessage: TfCLMessage
     Enabled = False
     TabOrder = 4
     OnClick = btnSendClick
-    ExplicitLeft = 427
-    ExplicitTop = 245
   end
   object cmbTo: TComboBox
     Left = 8
@@ -110,7 +106,6 @@ object fCLMessage: TfCLMessage
     MaxLength = 50
     TabOrder = 1
     OnChange = edtMessageChange
-    ExplicitWidth = 400
   end
   object memoMessage: TMemo
     Left = 8
@@ -122,8 +117,6 @@ object fCLMessage: TfCLMessage
     TabOrder = 2
     WantReturns = False
     OnChange = edtMessageChange
-    ExplicitWidth = 400
-    ExplicitHeight = 83
   end
   object pnlType: TPanel
     Left = 159
@@ -164,7 +157,6 @@ object fCLMessage: TfCLMessage
     BevelOuter = bvLowered
     TabOrder = 6
     Visible = False
-    ExplicitWidth = 260
     object CheckBox1: TCheckBox
       Tag = 1
       Left = 6

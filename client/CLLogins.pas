@@ -1,3 +1,11 @@
+{*******************************************************}
+{                                                       }
+{       Chesslink by                                    }
+{       Perpetual Chess LLC                             }
+{       Copyright (c) 1995-2013                         }
+{                                                       }
+{*******************************************************}
+
 unit CLLogins;
 
 interface
@@ -118,7 +126,8 @@ begin
     s := '#' + IntToStr(LoginID);
     if SendRequest and (slRequestSent.IndexOf(s) = -1) then begin
       fCLSocket.InitialSend([CMD_STR_REQUEST_USER_INFO, s]);
-      SendErrorToServer('Interface', 'TLoginList.GetLogin(LoginID)', 0, 'Login ' + s + ' has not been found', '');
+      // stop this as it is filling the log
+      // SendErrorToServer('Interface', 'TLoginList.GetLogin(LoginID)', 0, 'Login ' + s + ' has not been found', '');
       slRequestSent.Add(s);
     end;
   end;
@@ -137,7 +146,8 @@ begin
     end;
   if SendRequest and (slRequestSent.IndexOf(p_Login) = -1) then begin
     fCLSocket.InitialSend([CMD_STR_REQUEST_USER_INFO, p_Login]);
-    SendErrorToServer('Interface', 'TLoginList.GetLogin(Login)', 0, 'Login ' + p_Login + ' has not been found', '');
+    // stop this as it is filling the log
+    //SendErrorToServer('Interface', 'TLoginList.GetLogin(Login)', 0, 'Login ' + p_Login + ' has not been found', '');
     slRequestSent.Add(p_Login);
   end;
 end;

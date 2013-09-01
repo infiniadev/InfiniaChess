@@ -1,9 +1,9 @@
 object fClubNew: TfClubNew
   Left = 386
   Top = 292
-  Width = 304
-  Height = 192
   Caption = 'New Club'
+  ClientHeight = 158
+  ClientWidth = 296
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,13 +15,16 @@ object fClubNew: TfClubNew
   TextHeight = 13
   object pnlButtons: TPanel
     Left = 0
-    Top = 131
+    Top = 124
     Width = 296
     Height = 34
     Align = alBottom
     BevelInner = bvRaised
     BevelOuter = bvLowered
     TabOrder = 0
+    DesignSize = (
+      296
+      34)
     object Panel11: TPanel
       Left = 234
       Top = 2
@@ -102,11 +105,14 @@ object fClubNew: TfClubNew
     Left = 0
     Top = 0
     Width = 296
-    Height = 131
+    Height = 124
     Align = alClient
     BevelInner = bvRaised
     BevelOuter = bvLowered
     TabOrder = 1
+    DesignSize = (
+      296
+      124)
     object lblID: TLabel
       Left = 212
       Top = 10
@@ -169,7 +175,6 @@ object fClubNew: TfClubNew
       Position = 1
       TabOrder = 2
       Visible = False
-      Wrap = False
     end
     object edName: TEdit
       Left = 6

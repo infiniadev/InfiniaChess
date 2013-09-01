@@ -1,8 +1,10 @@
-{
-*** Get MAC Adress ***
-*** by Filip Skalka, fip@post.cz ***
-*** September 2002 ***
-}
+{*******************************************************}
+{                                                       }
+{       Chesslink by                                    }
+{       Perpetual Chess LLC                             }
+{       Copyright (c) 1995-2013                         }
+{                                                       }
+{*******************************************************}
 
 unit CLNet;
 

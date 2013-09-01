@@ -14,11 +14,14 @@ inherited fCLClubs: TfCLClubs
   inherited sbHor: TScrollBar
     Top = 384
     Width = 638
+    ExplicitTop = 384
+    ExplicitWidth = 638
   end
   inherited sbVer: TScrollBar
     Left = 622
     Top = 19
     Height = 365
+    ExplicitLeft = 622
     ExplicitTop = 19
     ExplicitHeight = 365
   end

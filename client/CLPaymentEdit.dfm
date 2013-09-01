@@ -1,9 +1,9 @@
 object fCLPaymentEdit: TfCLPaymentEdit
   Left = 433
   Top = 247
-  Width = 461
-  Height = 421
   Caption = 'Payment'
+  ClientHeight = 387
+  ClientWidth = 453
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,7 +17,7 @@ object fCLPaymentEdit: TfCLPaymentEdit
   TextHeight = 13
   object Panel5: TPanel
     Left = 0
-    Top = 359
+    Top = 352
     Width = 453
     Height = 35
     Align = alBottom
@@ -128,14 +128,14 @@ object fCLPaymentEdit: TfCLPaymentEdit
     Left = 0
     Top = 0
     Width = 453
-    Height = 359
+    Height = 352
     Align = alClient
     BevelInner = bvRaised
     BevelOuter = bvLowered
     TabOrder = 1
     DesignSize = (
       453
-      359)
+      352)
     object Label9: TLabel
       Left = 6
       Top = 204

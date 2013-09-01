@@ -1,8 +1,8 @@
 {*******************************************************}
 {                                                       }
 {       Chesslink by                                    }
-{       Brian Sheeres                                   }
-{       Copyright (c) 1995-2001                         }
+{       Perpetual Chess LLC                             }
+{       Copyright (c) 1995-2013                         }
 {                                                       }
 {*******************************************************}
 
@@ -46,7 +46,6 @@ type
   end;
 
   TfCLMain = class(TForm)
-    cbFrame: TCLColorButton;
     ilMain: TImageList;
     miAbort: TMenuItem;
     miAbout: TMenuItem;
@@ -187,6 +186,7 @@ type
     timerServerTime: TTimer;
     tbGameSave: TToolButton;
     ApplicationEvents1: TApplicationEvents;
+    cbFrame: TCLColorButton;
     procedure ApplicationEvents1Exception(Sender: TObject; E: Exception);
     procedure cbFrameClick(Sender: TObject);
     procedure Connect(Sender: TObject);
@@ -977,7 +977,7 @@ begin
     MessageDlg(
       'There were errors during work of this program. '+#13#10+
       'Please, send file '+ERROR_LOG_FILENAME+#13#10+
-      'to email support@infiniachess.com. '+#13#10+
+      'to email perpetualchess@gmail.com. '+#13#10+
       'You will help to make program better. '+#13#10+
       'Thank you very much :-)',
       mtInformation,[mbOk],0);
@@ -1051,10 +1051,10 @@ begin
   FCreating:=true;
   { Load custom cursor. }
   FULL_LOAD_DIR:=MAIN_DIR+LOAD_DIR;
-  fname:=FULL_LOAD_DIR+'infiniachess.exe';
+  fname:=FULL_LOAD_DIR+'perpetualchess.exe';
   if DirectoryExists(FULL_LOAD_DIR) and FileExists(fname) then
     begin
-      CopyFile(PChar(fname),PChar(MAIN_DIR+'infiniachess.exe'),false);
+      CopyFile(PChar(fname),PChar(MAIN_DIR+'perpetualchess.exe'),false);
       DeleteFile(fname);
     end;
 
@@ -1443,7 +1443,7 @@ end;
 //______________________________________________________________________________
 procedure TfCLMain.miChessLinkHomePageClick(Sender: TObject);
 begin
-  ShellExecute(Handle, 'open', PChar(CHESSLINK_WEB), '', '', SW_SHOWNORMAL);
+  ShellExecute(Handle, 'open', PChar('http://perpetualchess.com'), '', '', SW_SHOWNORMAL);
 end;
 //______________________________________________________________________________
 procedure TfCLMain.miClearPGNLibClick(Sender: TObject);

@@ -35,6 +35,9 @@ object fCLEventNew: TfCLEventNew
       BevelInner = bvRaised
       BevelOuter = bvLowered
       TabOrder = 0
+      DesignSize = (
+        165
+        133)
       object Label1: TLabel
         Left = 8
         Top = 8
@@ -100,6 +103,9 @@ object fCLEventNew: TfCLEventNew
       BevelInner = bvRaised
       BevelOuter = bvLowered
       TabOrder = 1
+      DesignSize = (
+        122
+        133)
       object lblLeader: TLabel
         Left = 8
         Top = 8
@@ -250,7 +256,6 @@ object fCLEventNew: TfCLEventNew
         Position = 1
         TabOrder = 3
         Thousands = False
-        Wrap = False
       end
       object edMinPeople: TEdit
         Left = 141
@@ -267,12 +272,10 @@ object fCLEventNew: TfCLEventNew
         Width = 15
         Height = 21
         Associate = edMinPeople
-        Min = 0
         Max = 9999
         Position = 2
         TabOrder = 5
         Thousands = False
-        Wrap = False
       end
       object edMaxPeople: TEdit
         Left = 141
@@ -289,12 +292,10 @@ object fCLEventNew: TfCLEventNew
         Width = 15
         Height = 21
         Associate = edMaxPeople
-        Min = 0
         Max = 9999
         Position = 1000
         TabOrder = 7
         Thousands = False
-        Wrap = False
       end
     end
   end
@@ -335,13 +336,8 @@ object fCLEventNew: TfCLEventNew
         Top = 24
         Width = 145
         Height = 21
-        CalAlignment = dtaLeft
-        Date = 39100.9341147569
-        Time = 39100.9341147569
-        DateFormat = dfShort
-        DateMode = dmComboBox
-        Kind = dtkDate
-        ParseInput = False
+        Date = 39100.934114756900000000
+        Time = 39100.934114756900000000
         TabOrder = 0
       end
       object dtTime: TDateTimePicker
@@ -349,13 +345,9 @@ object fCLEventNew: TfCLEventNew
         Top = 68
         Width = 143
         Height = 21
-        CalAlignment = dtaLeft
-        Date = 39100.9341147569
-        Time = 39100.9341147569
-        DateFormat = dfShort
-        DateMode = dmComboBox
+        Date = 39100.934114756900000000
+        Time = 39100.934114756900000000
         Kind = dtkTime
-        ParseInput = False
         TabOrder = 1
       end
       object cbAdminOnly: TCheckBox
@@ -427,12 +419,10 @@ object fCLEventNew: TfCLEventNew
         Width = 15
         Height = 21
         Associate = edGames
-        Min = 0
         Max = 9999
         Position = 20
         TabOrder = 1
         Thousands = False
-        Wrap = False
       end
       object edSec: TEdit
         Left = 9
@@ -449,12 +439,10 @@ object fCLEventNew: TfCLEventNew
         Width = 15
         Height = 21
         Associate = edSec
-        Min = 0
         Max = 9999
         Position = 12
         TabOrder = 3
         Thousands = False
-        Wrap = False
       end
       object edMin: TEdit
         Left = 9
@@ -471,12 +459,10 @@ object fCLEventNew: TfCLEventNew
         Width = 15
         Height = 21
         Associate = edMin
-        Min = 0
         Max = 9999
         Position = 2
         TabOrder = 5
         Thousands = False
-        Wrap = False
       end
       object cbTimeLimit: TCheckBox
         Left = 80
@@ -507,12 +493,10 @@ object fCLEventNew: TfCLEventNew
         Width = 15
         Height = 21
         Associate = edTimeLimit
-        Min = 0
         Max = 9999
         Position = 5
         TabOrder = 8
         Thousands = False
-        Wrap = False
       end
       object cbRatedType: TComboBox
         Left = 9
@@ -559,6 +543,9 @@ object fCLEventNew: TfCLEventNew
     BevelInner = bvRaised
     BevelOuter = bvLowered
     TabOrder = 2
+    DesignSize = (
+      417
+      34)
     object Panel10: TPanel
       Left = 343
       Top = 2
@@ -790,13 +777,11 @@ object fCLEventNew: TfCLEventNew
         Width = 15
         Height = 21
         Associate = edPause
-        Min = 0
         Max = 1000
         Increment = 10
         Position = 60
         TabOrder = 4
         Thousands = False
-        Wrap = False
       end
       object cbProvisional: TCheckBox
         Left = 8
@@ -828,6 +813,9 @@ object fCLEventNew: TfCLEventNew
       BevelInner = bvRaised
       BevelOuter = bvLowered
       TabOrder = 1
+      DesignSize = (
+        234
+        171)
       object lblShoutStart: TLabel
         Left = 6
         Top = 22
@@ -881,13 +869,11 @@ object fCLEventNew: TfCLEventNew
         Width = 15
         Height = 21
         Associate = edShoutStart
-        Min = 0
         Max = 9999
         Increment = 10
         Position = 60
         TabOrder = 2
         Thousands = False
-        Wrap = False
       end
       object edShoutInc: TEdit
         Left = 163
@@ -906,12 +892,10 @@ object fCLEventNew: TfCLEventNew
         Height = 21
         Anchors = [akTop, akRight]
         Associate = edShoutInc
-        Min = 0
         Max = 9999
         Position = 5
         TabOrder = 4
         Thousands = False
-        Wrap = False
       end
       object edShoutMsg: TEdit
         Left = 6

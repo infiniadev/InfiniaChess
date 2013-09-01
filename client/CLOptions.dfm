@@ -556,7 +556,6 @@ object fCLOptions: TfCLOptions
           BevelInner = bvRaised
           BevelOuter = bvLowered
           TabOrder = 1
-          Visible = False
           DesignSize = (
             148
             89)
@@ -593,9 +592,7 @@ object fCLOptions: TfCLOptions
             Width = 113
             Height = 17
             Caption = 'Plain Color'
-            Checked = True
             TabOrder = 0
-            TabStop = True
             OnClick = rbPlainColorClick
           end
           object rbThemeColor: TRadioButton
@@ -604,7 +601,9 @@ object fCLOptions: TfCLOptions
             Width = 105
             Height = 17
             Caption = 'Theme Color'
+            Checked = True
             TabOrder = 1
+            TabStop = True
             OnClick = rbThemeColorClick
           end
         end

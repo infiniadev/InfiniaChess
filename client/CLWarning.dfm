@@ -14,6 +14,9 @@ object fCLWarning: TfCLWarning
   OldCreateOrder = True
   Position = poDesktopCenter
   OnPaint = FormPaint
+  DesignSize = (
+    418
+    200)
   PixelsPerInch = 96
   TextHeight = 13
   object Image1: TImage

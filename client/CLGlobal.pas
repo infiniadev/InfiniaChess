@@ -1,8 +1,8 @@
 {*******************************************************}
 {                                                       }
 {       Chesslink by                                    }
-{       Brian Sheeres                                   }
-{       Copyright (c) 1995-2001                         }
+{       Perpetual Chess LLC                             }
+{       Copyright (c) 1995-2013                         }
 {                                                       }
 {*******************************************************}
 
@@ -396,8 +396,8 @@ uses
   FileCtrl, CLTerminal, CLMain, PNGUnit, CLLib;
 
 const
-  DAT_FILE = 'infiniachess.dat';
-  PGN_FILE = 'infiniachess.pgn';
+  DAT_FILE = 'perpetualchess.dat';
+  PGN_FILE = 'perpetualchess.pgn';
 
 var
   SoundsDef: array[0..SOUND_COUNT-1] of string =
@@ -462,7 +462,7 @@ begin
       Read(L, SizeOf(L));
       SetLength(FServer, L);
       Read(FServer[1], L);
-      if FServer = 'server1.infiniachess.com' then
+      if FServer = 'server1.perpepetualchess.com' then
         FServer:=CHESSLINK_SERVER;
       Read(FPort, SizeOf(FPort));
       if FPort = 1024 then
@@ -474,7 +474,7 @@ begin
       SetLength(FCommand, L);
       Read(FCommand[1], L);
     end;
-  if pos('infiniachess',lowercase(FServer))>0 then
+  if pos('perpetualchess',lowercase(FServer))>0 then
     FServer:=CHESSLINK_SERVER;
 end;
 //______________________________________________________________________________

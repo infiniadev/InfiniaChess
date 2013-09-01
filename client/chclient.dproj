@@ -1,6 +1,7 @@
-﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <ProjectGuid>{f24a949a-8a6b-4f80-af54-356cb2d40484}</ProjectGuid>
+    <ProjectGuid>{7e64cb83-0c0e-44ef-8d6d-9e6b8f22a121}</ProjectGuid>
     <MainSource>chclient.dpr</MainSource>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>

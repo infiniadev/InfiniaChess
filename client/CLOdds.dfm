@@ -1,9 +1,9 @@
 object fCLOdds: TfCLOdds
   Left = 697
   Top = 265
-  Width = 334
-  Height = 426
   Caption = 'Odds'
+  ClientHeight = 392
+  ClientWidth = 326
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -21,7 +21,7 @@ object fCLOdds: TfCLOdds
     Left = 0
     Top = 0
     Width = 326
-    Height = 252
+    Height = 245
     Align = alClient
     Columns = <
       item
@@ -54,16 +54,20 @@ object fCLOdds: TfCLOdds
     ViewStyle = vsReport
     OnClick = lvClick
     OnKeyUp = lvKeyUp
+    ExplicitHeight = 252
   end
   object Panel1: TPanel
     Left = 0
-    Top = 252
+    Top = 245
     Width = 326
     Height = 112
     Align = alBottom
     BevelInner = bvRaised
     BevelOuter = bvLowered
     TabOrder = 1
+    DesignSize = (
+      326
+      112)
     object Label1: TLabel
       Left = 8
       Top = 8
@@ -144,7 +148,7 @@ object fCLOdds: TfCLOdds
       Width = 41
       Height = 21
       TabOrder = 0
-      Text = '1 600'
+      Text = '1,600'
     end
     object edInitTime: TEdit
       Left = 68
@@ -171,11 +175,9 @@ object fCLOdds: TfCLOdds
       Height = 21
       Associate = edIncTime
       Enabled = False
-      Min = 0
       Max = 1000
       Position = 12
       TabOrder = 3
-      Wrap = False
     end
     object udInitTime: TUpDown
       Left = 97
@@ -184,11 +186,9 @@ object fCLOdds: TfCLOdds
       Height = 21
       Associate = edInitTime
       Enabled = False
-      Min = 0
       Max = 1000
       Position = 2
       TabOrder = 4
-      Wrap = False
     end
     object udRating: TUpDown
       Left = 49
@@ -196,12 +196,10 @@ object fCLOdds: TfCLOdds
       Width = 15
       Height = 21
       Associate = edRating
-      Min = 0
       Max = 3000
       Increment = 100
       Position = 1600
       TabOrder = 5
-      Wrap = False
     end
     object cbInitTime: TCheckBox
       Left = 68
@@ -224,13 +222,16 @@ object fCLOdds: TfCLOdds
   end
   object Panel2: TPanel
     Left = 0
-    Top = 364
+    Top = 357
     Width = 326
     Height = 35
     Align = alBottom
     BevelInner = bvRaised
     BevelOuter = bvLowered
     TabOrder = 2
+    DesignSize = (
+      326
+      35)
     object Panel3: TPanel
       Left = 195
       Top = 2

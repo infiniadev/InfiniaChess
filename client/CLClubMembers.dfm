@@ -1,9 +1,9 @@
 object fCLClubMembers: TfCLClubMembers
   Left = 452
   Top = 300
-  Width = 357
-  Height = 493
   Caption = 'Club Manager'
+  ClientHeight = 459
+  ClientWidth = 349
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,7 +18,7 @@ object fCLClubMembers: TfCLClubMembers
     Left = 0
     Top = 101
     Width = 349
-    Height = 331
+    Height = 324
     Align = alClient
     Color = clWhite
     Columns = <
@@ -52,13 +52,16 @@ object fCLClubMembers: TfCLClubMembers
   end
   object Panel5: TPanel
     Left = 0
-    Top = 432
+    Top = 425
     Width = 349
     Height = 34
     Align = alBottom
     BevelInner = bvRaised
     BevelOuter = bvLowered
     TabOrder = 1
+    DesignSize = (
+      349
+      34)
     object pnlOk: TPanel
       Left = 276
       Top = 2
@@ -147,6 +150,9 @@ object fCLClubMembers: TfCLClubMembers
     BevelInner = bvRaised
     BevelOuter = bvLowered
     TabOrder = 2
+    DesignSize = (
+      349
+      101)
     object lblName: TLabel
       Left = 106
       Top = 8

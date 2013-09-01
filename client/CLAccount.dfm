@@ -16,6 +16,9 @@ object fCLAccount: TfCLAccount
   OnClose = FormClose
   OnCreate = FormCreate
   OnPaint = FormPaint
+  DesignSize = (
+    420
+    292)
   PixelsPerInch = 96
   TextHeight = 13
   object lblAccountEdit: TLabel
@@ -25,8 +28,8 @@ object fCLAccount: TfCLAccount
     Height = 30
     AutoSize = False
     Caption = 
-      'Add/edit an account for the Infinia Chess server. Connect to the' +
-      ' server by choosing File | Connect from the main menu.'
+      'Add/edit an account for the Perpetual Chess server. Connect to t' +
+      'he server by choosing File | Connect from the main menu.'
     Color = clWhite
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -111,10 +114,11 @@ object fCLAccount: TfCLAccount
     Top = 152
     Width = 145
     Height = 21
+    Style = csSimple
     ItemHeight = 13
     MaxLength = 50
     TabOrder = 3
-    Text = '71.133.55.56'
+    Text = '65.60.190.184'
     OnChange = ControlChanged
     Items.Strings = (
       'infiniachess.com')
@@ -124,9 +128,9 @@ object fCLAccount: TfCLAccount
     Top = 184
     Width = 132
     Height = 21
-    MaxLength = 4
+    MaxLength = 5
     TabOrder = 4
-    Text = '1025'
+    Text = '15125'
     OnChange = ControlChanged
   end
   object edtCommands: TEdit
@@ -169,10 +173,9 @@ object fCLAccount: TfCLAccount
     Associate = edtPort
     Min = 1
     Max = 32000
-    Position = 1025
+    Position = 15125
     TabOrder = 8
     Thousands = False
-    Wrap = False
   end
   object edtName: TEdit
     Left = 72

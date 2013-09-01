@@ -2,9 +2,9 @@ object fCLClubList: TfCLClubList
   Tag = 22
   Left = 467
   Top = 325
-  Width = 372
-  Height = 391
   Caption = 'Clubs'
+  ClientHeight = 357
+  ClientWidth = 364
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,13 +18,16 @@ object fCLClubList: TfCLClubList
   TextHeight = 13
   object pnlButtons: TPanel
     Left = 0
-    Top = 330
+    Top = 323
     Width = 364
     Height = 34
     Align = alBottom
     BevelInner = bvRaised
     BevelOuter = bvLowered
     TabOrder = 0
+    DesignSize = (
+      364
+      34)
     object Panel11: TPanel
       Left = 302
       Top = 2
@@ -106,7 +109,7 @@ object fCLClubList: TfCLClubList
     Left = 0
     Top = 0
     Width = 364
-    Height = 330
+    Height = 323
     Align = alClient
     Columns = <
       item
@@ -158,6 +161,9 @@ object fCLClubList: TfCLClubList
       ParentColor = True
       TabOrder = 0
       OnMouseMove = pnlCommonMouseMove
+      DesignSize = (
+        249
+        129)
       object lblNum: TLabel
         Left = 4
         Top = 4
