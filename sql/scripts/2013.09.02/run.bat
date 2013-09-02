@@ -1,0 +1,1 @@
+isql -U clsa -P Nf6=Q -i script.sql
