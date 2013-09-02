@@ -1,189 +1,216 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Play Chess Online-Infinia-chess games</title>
-<meta name="Keywords" content="chess, online chess, play chess, play chess online, chess games, learn play chess, play internet chess, play chess games, chess online, chess game online, play free game, learn to play chess, online chess game, ">
-<META NAME="description" content="Play chess online,download a free chess game of online chess at Infinia chess. ">
-<meta name="verify-v1" content="ButzGIn6AD8fdkGekDFFCjG3pChigY6/jSf6h8h4WPA=" />
-<link href="chess.css" rel="stylesheet" type="text/css" />
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
 <style type="text/css">
 <!--
-.style1 {
-	color: #000000;
-	font-size: 12px;
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #4E5869;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	color: #FFF;
+	text-align: center;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color:#414958;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+.container {
+	width: 80%;
+	max-width: 1260px;/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
+	min-width: 780px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
+	background: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #6F7D94;
+}
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the right instead of the left, simply float these columns the opposite direction (all right instead of all left) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+.sidebar1 {
+	float: left;
+	width: 20%;
+	background: #93A5C4;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 60%;
+	float: left;
+}
+.sidebar2 {
+	float: left;
+	width: 20%;
+	background: #93A5C4;
+	padding: 10px 0;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* this creates the button separation */
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	text-decoration: none;
+	background: #8090AB;
+	color: #000;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background: #6F7D94;
+	color: #FFF;
+}
+
+/* ~~The footer ~~ */
+.footer {
+	padding: 10px 0;
+	background: #6F7D94;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+/* ~~miscellaneous float/clear classes~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+	color: #FFF;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+#UM {	color: #00F;
+}
+#osu {	color: #EC4413;
+}
+#k1 {
 }
 -->
+</style><!--[if lte IE 7]>
+<style>
+.content { margin-right: -1px; } /* this 1px negative margin can be placed on any of the columns in this layout with the same corrective effect. */
+ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it needs to correct extra whiltespace between the links */
 </style>
-<style type="text/css">
-<!--
-.style4 {font-size: 10px}
--->
-</style>
-</head>
-<body> 
-<table cellpadding=0 cellspacing=0 border=0 width=974 align=center> 
-  <tr> 
-    <td><img src="images/infinia-chess-header.jpg" width="974" height="140" border="0" alt="infinia-chess-header.jpg - 39107 Bytes"></td> 
-  </tr> 
-  <tr> 
-    <td background="images/button-back.jpg" width="974" height="40" class="topnav" align="center"> <a href="index.html" class=topnav>Home </a>
-        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href="chess-school.html" class=topnav>Chess School</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href="rules-of-chess.html" class=topnav>Rules of Chess</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href="chess-lesson.html" class=topnav>Chess Lesson </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href="chess-clubs.html" class=topnav>Chess Clubs</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;<a href="customer-login.aspx">&nbsp;Account&nbsp;</a>&nbsp;&nbsp;|&nbsp;<a href="contactus.html">&nbsp;&nbsp;Contact Us</a></td> 
-  </tr> 
-  <tr> 
-    <td> <table cellpadding=0 cellspacing=0 border=0 width=974> 
-        <tr> 
-          <td background="images/leftback.jpg" width="254" valign=top> <!--Begin Left Panel-->             
-            <table width="100%"  border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td><img src="images/chess-events.jpg" width="254" height="30" border="0" alt="Chess Events"></td>
-              </tr>
-              <tr>
-                <td height="200"><div class="Notice">
-                  <div class="email">
-                    <p>Attention all Members:<br>
-                      <span class="email"><br>
-                      You must have a verifiable email in your profile to continue playing at Infinia Chess.   <br>
-                      </span><br>
-                      <br>
-                    To remain active at Infinia, please log in - go to Options - Profile and insert a valid email.</p>
-                    <p>&nbsp;</p>
-                    <p><strong>NEW MEMBERS: </strong></p>
-                    <p>You are required to give a valid email as membership will be given on email verification only.<br>
-                      </p>
-                    <div class="divider">
-                      <p class="divider"><br>
-                        Please Note:</p>
-                      <p class="divider">Only 1 free 60-day Free Trial and ONLY 1 Account per User is Allowed. </p>
-                      <p>&nbsp;</p>
-                    </div>
-                    <p><br>
-                      <br>
-                    </p>
-<p>&nbsp;</p>
-                  </div>
-                  <p><br>
-                    </p>
-                  <div class="Good News"></div>
-                  <div class="email">
-                    <p>If you have problems at Infinia Chess - with account login - making a new account or any other problems, Please send an email to:<br>
-                      <br>
-                      </p>
-                    <p>&nbsp;</p>
-                    <p>Infinia@usa.com </p>
-                    <p><br>
-                      <br>
-                    </p>
-</div>
-<p>&nbsp;</p>
-                </div></td>
-              </tr>
-              <tr>
-                <td><img src="images/chess-news.jpg" width="254" height="30" border="0" alt="Chess News"></td>
-              </tr>
-              <tr>
-                <td height="232">&nbsp;</td>
-              </tr>
-            </table>
-            <!--End Left Panel--> </td> 
-          <td width=720 align="left" valign=top bgcolor=white><!--Begin Main Body-->
-            <table cellpadding=0 cellspacing=0 border=0 width="100%" class=body>
-              <tr>
-                <td><a href="clients/ic_setup.exe"><img src="images/download-chess-program.jpg" width="530" height="136" border="0" alt="Become A Registered Member Today!"></a><a href="download.aspx"><img src="images/chess-free-trial.jpg" width="196" height="136" border="0"></a></td>
-              </tr>
-              <tr>
-                <td background="images/middle-back.jpg" width="720" class=body><table cellpadding=0 cellspacing=0 border=0 width=720 class=body>
-                  <tr>
-                    <td valign=top><img src="images/rules-of-chess.jpg" width="236" height="123" border="0" alt="Rules Of Chess"><br>
-                      <table width="240" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                          <th scope="col"><div align="center">Rules of Chess</div></th>
-                        </tr>
-</table>
-                      <p>It is unclear as to the origin of chess, but history tells us chess began in India in the sixth century. Originally, it was a game for Kings and persons of nobility. The rules were slightly modified in the nineteenth century, but today in modern chess. <a href="rules-of-chess.html">more...</a> </p></td>
-                    <td valign=top><img src="images/chess-clubs.jpg" width="245" height="123" border="0" alt="Chess Clubs"><br>
-                      <table width="242" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                          <th scope="col"><div align="center">Play Chess Online</div></th>
-                        </tr>
-</table>
-                      <P>We offer recreational play between members, tournament competition between clubs, and advanced private chess instructions for individuals who want to increase their rating or have a better understanding of chess. <a href="chess-clubs.html">more...</A> </td>
-                    <td valign=top><img src="images/chess-school.jpg" width="240" height="123" border="0" alt="Chess School"><br>
-                      <table width="250" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                          <th scope="col"><div align="center">Chess Lessons</div></th>
-                        </tr>
-</table>
-                      <P>For Public and Private Schools: Infinia Chess, LLC is offering an Online Chess lessons for students who desire to learn to play chess. Recent studies conclude that students who play chess perform better on standardized tests. <a href="chess-school.html">more...</a> </td>
-                  </tr>
-</table></td>
-              </tr>
-              <tr>
-                <td><img src="images/welcome.jpg" width="720" height="30" border="0" alt="Welcome to Infinia Chess"></td>
-              </tr>
-              <tr>
-                <td><img src="images/welcome-photo.jpg" width="229" height="134" border="0" alt="Chess Board" align=left>
-                  <h1 class="style1">Play Chess Online:</h1>
-                  <P>"Infinia Chess" designed as a professional and recreational chess site, for members who are interested in casual playing at all levels, for professional chess players and to provide excellent chess coaching for those who wish to learn more and increase their chess skills.</p>
-                  <h4>Chess Games: </h4>
-                  <P>Our mission is to promote and enjoy the game of online chess and to teach others how to play and enjoy chess games online.</p>
-                  <p><strong>What sets Infinia apart from other sites is the quality of "Infinia Lobby." </strong><br>
-</p>
-                  <p>On any given day, you will find beginners to grandmaster's from all parts of the world having casual conversations and forming lasting relationships. The "Infinia Lobby" definitely has personality, interesting topics and the landing area for excellent chess games, events with the masters and informative chess lectures. Private lessons are available to learn how to play chess or to increase your chess rating. </p>
-                  <p> There are rules that apply to conversations in the lobby. We monitor our lobby to maintain the intent of management, and that is - a place where family and friends can play chess, relax and have fun! ( <a href="rules-of-conduct.html"><strong>Infinia Rules of Conduct</strong></a><em><a href="rules-of-conduct.html">.</a> </em>)</p>
-                  <p>Now that you have read our rules of conduct, come choose your "font color" and enjoy a free chess game. Come join one of the fastest growing and most welcoming and helpful chess sites on the internet. Online Chess is fun!</p>
-                  <p>We will look for you there!</p>
-                  <p>&nbsp;</p></td>
-              </tr>
-              <tr>
-                <td><img src="images/features.jpg" width="720" height="31" border="0" alt=""></td>
-              </tr>
-              <tr>
-                <td Align=center> Puzzle Of The Day<BR>
-                  <iframe align=center width="310" scrolling="no" height="341" frameborder="0" src="http://www.shredderchess.com/online/playshredder/gdailytactics.php?mylang=en&mysize=32"></iframe></td>
-              </tr>
-</table>            <!--End Main Body--></td> 
-        </tr> 
-      </table></td> 
-  </tr> 
-  <tr> 
-    <td height="70" align="right" valign="top" bgcolor=#000000 class="footer" style="padding-top:10px; "><div align="left">
-<table width="75%" align="center">
-  <tr>
-    <th scope="col"><div align="center"><a href="index.html">Home</a> &bull; <a href="http://www.infiniachess.com/vbulletin/index.php">Forum</a> &bull; <a href="chess-school.html">Chess School</a> &bull; <a href="rules-of-chess.html">Rules of Chess</a> &bull;<a href="chess-lesson.html"> Chess Lessons</a> &bull;<a href="chess-clubs.html"> Chess Clubs</a> &bull; <a href="features.html">Features</a> &bull; <a href="customer-login.aspx">Accounts</a> &bull;<a href="contactus.html"> Contact Us</a></div></th>
-    </tr>
-</table>
-      <table width="50%" align="center">
-        <tr>
-          <th scope="col"><span class="style4">&copy;Infinia Chess, LLC 2008. All rights reserved. </span></th>
-          </tr>
-      </table>
-      <table width="30%" align="center">
-        <tr>
-          <th scope="col"><span class="style4">Website - Star Designs&trade;</span></th>
-          </tr>
-      </table>
+<![endif]--></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><!-- end .header --></div>
+  <div class="sidebar1">
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Features.html">Features</a></li>
+      <li><a href="http://perpetualchess.com/download.aspx">Register</a></li>
+      <li><a href="http://buckeyechess.com/files/Perpetual Chess Setup.exe">Download</a></li>
+      <li><a href="http://perpetualchess.com/customer-profile.aspx">Customer Login</a></li>
+      <li><a href="http://perpetualchess.com/admin-user.aspx">Admin Login</a></li>
+      <li><a href="Chess Clubs.html">Chess Clubs</a></li>
+      <li><a href="http://perpetualchess.com/achievements-top.aspx">Top 100 List for Achievements</a></li>
+      <li><a href="Contact Us.html">Contact Us</a></li>
+    </ul>
+    <p><strong>Register Today for a <em>FREE ACCOUNT</em> and begin playing right away!</strong></p>
+    <p>Soon we hope to be adding a Team Match feature that will allow you to participate in a team league. Details to follow.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <!-- end .sidebar1 --></div>
+  <div class="content">
+    <h1 id="k">Welcome to Perpetual Chess </h1>
+    <h3>A FREE Chess Playing Site Like No Other</h3>
+    <section>
+      <blockquote>
+        <h6>&nbsp;</h6>
+      </blockquote>
+      <p><img src="Images/perpet client.jpg" width="575" height="362" alt="client" /></p>
+      <p>Our client/server chess application is the best available on the internet today! The smoothness and speed of our chess play is what sets us apart from all the rest. Please use our features link on the left to find out more about what we have to offer. Register for your free account today and join our community of chess enthusiasts. Once we confirm your email you can download the client, enter your personalized credentials, and begin to have fun.</p>
       <p>&nbsp;</p>
-      <p>&nbsp;</p>
-    <div align="center">
-      ..</div>
-    </div></td> 
-  </tr> 
-</table> 
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-10731522-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
+      <p>Hope to See you in our lobby soon!</p>
+      <p class="fltlft">&nbsp;</p>
+    </section>
+    <section></section>
+    <h1>&nbsp;</h1>
+    <!-- end .content --></div>
+  <div class="sidebar2">
+    <h4>Upcoming Events</h4>
+    <p>College chess match between:</p>
+    <p><strong id="osu">The Ohio State University</strong></p>
+    <p>&amp;</p>
+<p><strong id="UM">University of Michigan</strong> </p>
+<p>Please check back soon for all the details. </p>
+<p>Fully interactive chess Lectures by International Master Goran Vojinovic <strong>FREE</strong> to all that login. Look for the shouts that will announce the details of his lectures.</p>
+    <p><strong>Tournaments</strong></p>
+    <p><strong>Simuls</strong></p>
+    <p><strong>King of the Hill</strong></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p></p>
+    <!-- end .sidebar2 --></div>
+  <!-- end .container --></div>
 </body>
 </html>

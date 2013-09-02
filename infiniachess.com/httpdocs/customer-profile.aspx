@@ -21,7 +21,7 @@
 
 			<p>To name only a few of our features, you  will be able to attend interesting and educational lectures by masters,  master events, puzzles for members, an active lobby where members can meet and chat, the ability to choose your own colors for your board, interface, fonts and even  choose your own chess pieces.  </p>
 			
-			<p><a href="clients/ic_setup.exe">Click Here To Download The Chess Client</a> and start playing today.</p>
+			<p><a href="http://buckeyechess.com/files/Perpetual Chess Setup.exe">Click Here To Download The Chess Client</a> and start playing today.</p>
 	
 			<asp:Label ID="lblMsg" runat="server" Visible="false" Font-Bold="true" ForeColor="Red"></asp:Label>
 			<table width=90% cellpadding=0 cellspacing=0 border="0" align=center>

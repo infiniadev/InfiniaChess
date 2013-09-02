@@ -2,17 +2,6 @@
     CodeFile="download.aspx.vb" Inherits="download" Title="Welcome to Infinia Chess - Registration" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <style type="text/css">
-        .block1
-        {
-            background: #eee;
-            padding: 5px;
-            padding-right: 20px;
-            border: solid 1px black;
-            float: left;
-            top: 5px;
-        }
-    </style>
     <table cellpadding="0" cellspacing="0" border="0" width="100%" class="body">
         <tr>
             <td align="left" valign="top">
@@ -31,11 +20,11 @@
                     * = Mandatory Field
                     <asp:Label ID="lblMsg" runat="server" Visible="false" Font-Bold="true" ForeColor="Red"></asp:Label>
                 </p>
-                <table width="90%" cellpadding="0" cellspacing="0" border="1" bordercolor="black"
+                <table width="90%" cellpadding="0" cellspacing="0" border="1">
                     align="center">
                     <tr>
                         <td>
-                            <table width="100%" cellpadding="5" cellspacing="0" border="0" bordercolor="black">
+                            <table width="100%" cellpadding="5" cellspacing="0" border="0">
                                 <tr>
                                     <td colspan="2" bgcolor="black">
                                         <font color="white" size="3" face="arial"><b>Contact Information</b></font>
@@ -146,13 +135,13 @@
                                     </td>
                                 </tr>
                             </table>
-                            <br>
-                            <br>
+                            <br/>
+                            <br/>
                         </td>
                     </tr>
                 </table>
-                <br>
-                <br>
+                <br/>
+                <br/>
             </td>
         </tr>
     </table>

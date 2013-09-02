@@ -6,7 +6,7 @@
         <br />
         <center>
         <asp:Image ID="imgHeader" runat="server" Height="66px" 
-            ImageUrl="images/achtop100_by_score.jpg" Width="672px" />
+            ImageUrl="Images/PerpetHeader-2.jpg" Width="623px" />
         </center>
         <br />
         <br />
@@ -17,7 +17,6 @@
         <br />
         <hr />
     
-    </div>
     <center>
     <asp:GridView ID="gridAch" runat="server" AutoGenerateColumns="False">
         <RowStyle Font-Size="Medium" />
