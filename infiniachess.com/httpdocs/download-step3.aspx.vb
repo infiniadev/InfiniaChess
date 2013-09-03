@@ -2,31 +2,8 @@
     Inherits System.Web.UI.Page
     Dim myDB As New DBChess
     Public CardConfirmation As String
-	' ========================================================================================================
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        If IsPostBack Then Return
-
-        lblFirstName.Text = Session("FirstName")
-        lblLastName.Text = Session("LastName")
-        lblCountry.Text = Session("CountryText")
-        lblEmail.Text = Session("Email")
-        lblLogin.Text = Session("Login") ' Session("Login")
-        lblSubscribeExpire.Text = Now.AddDays(Session("SubscribeDays"))
-        lblSubscribeTypeText.Text = Session("SubscribeText")
-
-        myDB.Session = Session
-        If Session("LoginID") = Nothing Then
-            If Not myDB.CreateNewUser() Then
-                Response.Redirect("sqlerror.aspx")
-            End If
-            'Try
-            '    If Not myDB.CreateVBulletinUser(Session("LoginID"), Session("Login"), Session("PasswordPlain"), Session("Email"), 0, True) Then
-            '        Response.Redirect("sqlerror.aspx")
-            '    End If
-            'Catch ex As Exception
-            'End Try
-        End If
-
+    ' ========================================================================================================
+    Private Sub ProcessPayment()
         myDB.CountAmounts()
 
         If Session("PromoCode") <> "" Then
@@ -67,6 +44,25 @@
 
         If Session("PromoCode") <> "" Then
             Message = Message & "Promotion Code: " & Session("PromoCode")
+        End If
+    End Sub
+    ' ========================================================================================================
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        If IsPostBack Then Return
+
+        lblFirstName.Text = Session("FirstName")
+        lblLastName.Text = Session("LastName")
+        lblCountry.Text = Session("CountryText")
+        lblEmail.Text = Session("Email")
+        lblLogin.Text = Session("Login") ' Session("Login")
+        lblSubscribeExpire.Text = Now.AddDays(Session("SubscribeDays"))
+        lblSubscribeTypeText.Text = Session("SubscribeText")
+
+        myDB.Session = Session
+        If Session("LoginID") = Nothing Then
+            If Not myDB.CreateNewUser() Then
+                Response.Redirect("sqlerror.aspx")
+            End If
         End If
 
         'myDB.SendMail("Infinia Chess", "info@infiniachess.com", MemberName, Session("Email"), "Infinia Chess Registration", Message)

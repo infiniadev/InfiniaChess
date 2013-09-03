@@ -7,7 +7,10 @@ create table LoginsNotConfirmed (
 	LastName varchar(32) null,
 	CountryId int null,
 	Email varchar(100) not null,
+	ConfirmationCode varchar(32) not null,
 	constraint PK_LoginsNotConfirmed
-		primary key (LoginNotConfirmedId)
+		primary key (LoginNotConfirmedId),
+	constraint UQ_LoginsNotConfirmed_ConfirmationCode
+		unique (ConfirmationCode)
 )
 go
