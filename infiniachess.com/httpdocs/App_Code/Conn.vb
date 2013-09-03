@@ -67,8 +67,9 @@ Public Class Conn
     End Function
     ' ========================================================================================================
     Function GetIntegerValue(ByVal p_SQL As String) As Integer
+        Dim dbWasAlreadyOpened As Boolean = Connection.State = ConnectionState.Open
         Try
-            dbopen()
+            If Not dbWasAlreadyOpened Then dbopen()
             Dim myCommand As SqlCommand = Connection.CreateCommand
             myCommand.CommandText = p_SQL
             GetIntegerValue = myCommand.ExecuteScalar()
@@ -76,7 +77,7 @@ Public Class Conn
             GetIntegerValue = 0
             System.Diagnostics.Trace.WriteLine("[ValidateUser] Exception " & ex.Message)
         Finally
-            dbclose()
+            If Not dbWasAlreadyOpened Then dbclose()
         End Try
     End Function
 	' ========================================================================================================

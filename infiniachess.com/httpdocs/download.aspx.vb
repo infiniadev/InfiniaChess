@@ -56,6 +56,7 @@ Partial Class download
     ' ========================================================================================================
     Public Sub CheckEmailAllowed(ByVal sender As Object, ByVal e As ServerValidateEventArgs)
         Try
+            If Not ApplicationSettings.CheckEmailExists Then Return
             e.IsValid = Not myDB.CheckEmailExists(txtEmail.Text)
         Catch ex As Exception
             lblMsg.Text = ex.Message.ToString()

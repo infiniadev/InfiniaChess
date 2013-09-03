@@ -3,6 +3,7 @@ Imports System.Data
 Imports System.Data.SqlClient
 Imports Microsoft.VisualBasic
 Imports System.Security.Cryptography
+Imports System.Net
 
 Public Class DBChess
     Dim myConnection As New Conn
@@ -341,7 +342,10 @@ Public Class DBChess
     ' ========================================================================================================
     Function SendMail(ByVal SenderName As String, ByVal SenderEmail As String, ByVal RecipientName As String, ByVal RecipientEmail As String, ByVal Subject As String, ByVal Message As String) As Boolean
         Try
-            Dim smtpObj As New System.Net.Mail.SmtpClient("localhost")
+            Dim smtpObj As New System.Net.Mail.SmtpClient(ApplicationSettings.SmtpHost)
+            smtpObj.Port = ApplicationSettings.SmtpPort
+            smtpObj.Credentials = New NetworkCredential(ApplicationSettings.SmtpUser, ApplicationSettings.SmtpPassword)
+            smtpObj.EnableSsl = True
 
             'Specify the sender
             Dim o_FromAddress As System.Net.Mail.MailAddress = New System.Net.Mail.MailAddress(SenderEmail, SenderName)
@@ -400,7 +404,7 @@ Public Class DBChess
     End Function
     ' ========================================================================================================
     Function FillLoginInfo(ByVal p_LoginID As Integer) As Boolean
-        Dim dt As New Datatable
+        Dim dt As New DataTable
 
         dt = GetLogin(p_LoginID)
         If Not dt Is Nothing And dt.Rows.Count > 0 Then

@@ -71,7 +71,8 @@
             End If
         End If
 
-        'myDB.SendMail("Infinia Chess", "info@infiniachess.com", MemberName, Session("Email"), "Infinia Chess Registration", Message)
+        Dim MemberName As String = Session("FirstName").ToString() & " " & Session("LastName").ToString()
+        myDB.SendMail("Perpetual Chess", "infiniadev@gmail.com", MemberName, Session("Email").ToString(), "Perpetual Chess Registration", "Hello! Glad to see you!")
         'myDB.SendMail(MemberName, Session("Email"), "Infinia Chess", "info@infiniachess.com", "New Member Signup", Message)
     End Sub
 	' ========================================================================================================
