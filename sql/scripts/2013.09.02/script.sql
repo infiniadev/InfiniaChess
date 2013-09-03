@@ -1,6 +1,6 @@
 create table LoginsNotConfirmed (
 	LoginNotConfirmedId int not null identity,
-	Created datetime not null,
+	Created datetime not null default getdate(),
 	Login varchar(15) not null,
 	Password varchar(15) not null,
 	FirstName varchar(32) null,

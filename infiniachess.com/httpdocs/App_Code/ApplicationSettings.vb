@@ -5,7 +5,7 @@ Public Class ApplicationSettings
 
     Public Shared ReadOnly Property EmailConfirmationRequired As Boolean
         Get
-            Return AppSettings("EmailConfirmationRequired") = "True"
+            Return AppSettings("EmailConfirmationRequired").ToLower() = "true"
         End Get
     End Property
 

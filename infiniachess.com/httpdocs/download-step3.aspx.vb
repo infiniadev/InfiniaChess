@@ -60,8 +60,14 @@
 
         myDB.Session = Session
         If Session("LoginID") = Nothing Then
-            If Not myDB.CreateNewUser() Then
-                Response.Redirect("sqlerror.aspx")
+            If ApplicationSettings.EmailConfirmationRequired Then
+                If Not myDB.CreateNewNotConfirmedUser() Then
+                    Response.Redirect("sqlerror.aspx")
+                End If
+            Else
+                If Not myDB.CreateNewUser() Then
+                    Response.Redirect("sqlerror.aspx")
+                End If
             End If
         End If
 

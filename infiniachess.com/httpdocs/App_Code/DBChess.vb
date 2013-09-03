@@ -98,6 +98,61 @@ Public Class DBChess
         Return myConnection.GetIntegerValue("select AdminLevel from Logins where Login = '" & p_Login & "'")
     End Function
     ' ========================================================================================================
+    Function GetRandomConfirmationCode() As String
+        Dim Symbols = "abcdefghijklmnopqrstuvwxyz0123456789"
+        Dim sb = New StringBuilder()
+        Dim Generator As System.Random = New System.Random()
+        For i = 1 To 20
+            Dim position As Integer = Generator.Next(1, Symbols.Length)
+            sb.Append(Symbols(position))
+        Next
+        Return sb.ToString()
+    End Function
+    ' ========================================================================================================
+    Function GetUniqueConfirmationCode() As String
+        Dim code As String
+        Do
+            code = GetRandomConfirmationCode()
+        Loop Until Not ConfirmationCodeExists(code)
+
+        Return code
+    End Function
+    ' ========================================================================================================
+    Function ConfirmationCodeExists(code As String) As Boolean
+        Return myConnection.GetIntegerValue("select count(*) from LoginsNotConfirmed where ConfirmationCode = '" + code + "'") > 0
+    End Function
+    ' ========================================================================================================
+    Function CreateNewNotConfirmedUser() As Boolean
+        Dim myCommand As SqlCommand = myConnection.Connection.CreateCommand
+        Dim myTrans As SqlTransaction
+
+        myConnection.Connection.Open()
+        myTrans = myConnection.Connection.BeginTransaction(IsolationLevel.ReadCommitted, "CreateNewUser")
+
+        myCommand.Connection = myConnection.Connection
+        myCommand.Transaction = myTrans
+
+        Try
+            Dim ConfirmationCode As String = GetUniqueConfirmationCode()
+            Session("LastSQL") = "insert into LoginsNotConfirmed (Login, Password, FirstName, LastName, CountryId, Email, ConfirmationCode) " & _
+                "values ('" & Session("Login") & "', '" & Session("PasswordPlain") & "', '" & Session("FirstName") & "', '" & Session("LastName") & "', '" & _
+                Session("CountryID") & "', '" & Session("Email") & "', '" & ConfirmationCode & "')"
+            myCommand.CommandText = Session("LastSQL")
+            myCommand.ExecuteNonQuery()
+
+            myTrans.Commit()
+            Session("SQLError") = Nothing
+            Return True
+        Catch e As Exception
+            Session("SQLError") = e.Message
+            myTrans.Rollback("CreateNewUser")
+            System.Diagnostics.Trace.WriteLine("[ValidateUser] Exception " & e.Message)
+            Return False
+        Finally
+            myConnection.Connection.Close()
+        End Try
+    End Function
+    ' ========================================================================================================
     Function CreateNewUser() As Boolean
         Dim myCommand As SqlCommand = myConnection.Connection.CreateCommand
         Dim myTrans As SqlTransaction
