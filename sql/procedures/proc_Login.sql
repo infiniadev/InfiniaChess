@@ -18,9 +18,6 @@ declare @maxid int
 declare @cnt int
 declare @LoggedIn bit
 
-
-begin tran
-
 --Retreive the LoginID from a table of clustered Logins
 set @LoginID = (select LoginID from LoginXRef where Login = @Login)
 if @LoginID is null return -2
@@ -39,7 +36,6 @@ begin
 	if (select count(*)  from LoginMAC where BannedMAC = @MAC and not @MAC like '44-45%') > 0
 	  or (select count(*)  from LoginIp where @IP like BannedIp) > 0 
 	begin
-		rollback tran
 		return -4
 	end 
 
@@ -55,7 +51,6 @@ begin
 		else 
 		if @type_ <> 2
 		begin
-			rollback tran
 			return -4
 		end 
 	end 
@@ -65,7 +60,6 @@ if @TestAuthKey = 1
 begin
 	if (select auth_key from dbo.LoginPrivate where LoginId = @LoginId and sent = 1 and confirmed = 0) is not null
 	begin
-		rollback tran
 		return -8
 	end
 end
@@ -79,7 +73,6 @@ begin
 		MAC = @MAC,
 		ip_address = @IP
 	where Login = @Login
-	commit tran
 
 	--Temporary, log the maximun number of players logged in
 	set @MaxCount = (select count(*) from Logins where LoggedIn = 1)
@@ -104,4 +97,3 @@ begin
 
 	return 0
 end
-go
