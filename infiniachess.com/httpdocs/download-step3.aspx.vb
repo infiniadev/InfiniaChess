@@ -47,6 +47,17 @@
         End If
     End Sub
     ' ========================================================================================================
+    Private Function GetEmailConfirmationText(ByVal fullName As String, ByVal link As String) As String
+        Dim text = System.IO.File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "App_Code\EmailPatterns\EmailConfirmation.ptrn")
+        Return text.Replace("%FULL_NAME%", fullName).Replace("%CONFIRMATION_LINK%", link)
+    End Function
+    ' ========================================================================================================
+    Private Function GetConfirmationLink() As String
+        Dim uri = HttpContext.Current.Request.Url.AbsoluteUri
+        Dim n = uri.IndexOf("download-step3.aspx")
+        Return uri.Substring(0, n) & "email-confirmation.aspx?code=" & Session("ConfirmationCode")
+    End Function
+    ' ========================================================================================================
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If IsPostBack Then Return
 
@@ -64,6 +75,9 @@
                 If Not myDB.CreateNewNotConfirmedUser() Then
                     Response.Redirect("sqlerror.aspx")
                 End If
+                Dim MemberName As String = Session("FirstName").ToString() & " " & Session("LastName").ToString()
+                myDB.SendMail("Perpetual Chess", "infiniadev@gmail.com", MemberName, Session("Email").ToString(), "Perpetual Chess Registration", _
+                              GetEmailConfirmationText(MemberName, GetConfirmationLink()))
             Else
                 If Not myDB.CreateNewUser() Then
                     Response.Redirect("sqlerror.aspx")
@@ -71,8 +85,6 @@
             End If
         End If
 
-        Dim MemberName As String = Session("FirstName").ToString() & " " & Session("LastName").ToString()
-        myDB.SendMail("Perpetual Chess", "infiniadev@gmail.com", MemberName, Session("Email").ToString(), "Perpetual Chess Registration", "Hello! Glad to see you!")
         'myDB.SendMail(MemberName, Session("Email"), "Infinia Chess", "info@infiniachess.com", "New Member Signup", Message)
     End Sub
 	' ========================================================================================================
