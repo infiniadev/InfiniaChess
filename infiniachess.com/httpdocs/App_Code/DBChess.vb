@@ -10,7 +10,7 @@ Public Class DBChess
     'Dim myConn As New Odbc.OdbcConnection(myConnection.ConnVBulletinStr)
     Public Session As HttpSessionState
     Const VBULLETIN_SALT As String = "AQI"
-    Dim ConnString As String = "data source=localhost;initial catalog=CLServer;persist security info=False;user id=clsa;password=Nf6=Q;packet size=4096"
+    Dim ConnString As String = "data source=U\SQLSERVER;initial catalog=CLServer;persist security info=False;user id=clsa;password=Nf6=Q;packet size=4096"
     ''Dim ConnString As String = "data source=67.192.255.154;initial catalog=CLServer;persist security info=False;user id=clsa;password=Nf6=Q;packet size=4096"
 
     Public ErrDesc As String
@@ -43,7 +43,7 @@ Public Class DBChess
         End If
     End Function
     ' ========================================================================================================
-    Public Function CheckLoginExists(ByVal p_Login As String) As Boolean
+    Public Function LoginExists(ByVal p_Login As String) As Boolean
         Try
             Dim sql As String = "select count(*) from Logins where Login='" & p_Login & "'"
             Return myConnection.GetIntegerValue(sql) > 0
@@ -52,7 +52,7 @@ Public Class DBChess
         End Try
     End Function
     ' ========================================================================================================
-    Public Function CheckEmailExists(ByVal p_Email As String) As Boolean
+    Public Function EmailExists(ByVal p_Email As String) As Boolean
         Try
             Dim sql As String = "select count(*) from LoginPrivate where Email='" & p_Email & "'"
             Return myConnection.GetIntegerValue(sql) > 0
@@ -135,6 +135,7 @@ Public Class DBChess
 
         Try
             Dim ConfirmationCode As String = GetUniqueConfirmationCode()
+            Session("ConfirmationCode") = ConfirmationCode
             Session("LastSQL") = "insert into LoginsNotConfirmed (Login, Password, FirstName, LastName, CountryId, Email, ConfirmationCode) " & _
                 "values ('" & Session("Login") & "', '" & Session("PasswordPlain") & "', '" & Session("FirstName") & "', '" & Session("LastName") & "', '" & _
                 Session("CountryID") & "', '" & Session("Email") & "', '" & ConfirmationCode & "')"
@@ -152,6 +153,21 @@ Public Class DBChess
         Finally
             myConnection.Connection.Close()
         End Try
+    End Function
+    ' ========================================================================================================
+    Function ConfirmUser(confirmationCode As String) As String
+        Session("LastSQL") = "select * from LoginsNotConfirmed where ConfirmationCode = '" & confirmationCode & "'"
+        Dim notConfirmedUser As DataTable = myConnection.SelectTable(Session("LastSQL"))
+        If notConfirmedUser.Rows.Count = 0 Then Return "Confirmation Code does not exists"
+        If LoginExists(notConfirmedUser.Rows(0).Item("Login").ToString()) Then Return "User has already been registered"
+        Session("FirstName") = notConfirmedUser.Rows(0).Item("FirstName")
+        Session("LastName") = notConfirmedUser.Rows(0).Item("LastName")
+        Session("CountryID") = notConfirmedUser.Rows(0).Item("CountryID")
+        Session("Email") = notConfirmedUser.Rows(0).Item("Email")
+        Session("Login") = notConfirmedUser.Rows(0).Item("Login")
+        Session("PasswordPlain") = notConfirmedUser.Rows(0).Item("Password")
+        If Not CreateNewUser() Then Return Session("SQLError")
+        Return String.Empty
     End Function
     ' ========================================================================================================
     Function CreateNewUser() As Boolean
@@ -184,6 +200,10 @@ Public Class DBChess
             Session("LastSQL") = "insert into LoginPrivate (LoginID, FirstName, LastName, Email, CountryID)" & _
              " values (" & Session("LoginID") & ", '" & Session("FirstName") & "', '" & Session("LastName") & "', '" & _
              Session("Email") & "', " & Session("CountryID") & ")"
+            myCommand.CommandText = Session("LastSQL")
+            myCommand.ExecuteNonQuery()
+
+            Session("LastSQL") = "delete from LoginsNotConfirmed where Login = '" + Session("Login") + "'"
             myCommand.CommandText = Session("LastSQL")
             myCommand.ExecuteNonQuery()
 
@@ -358,7 +378,7 @@ Public Class DBChess
             o_Message.Body = Message
 
             'Set message body
-            o_Message.IsBodyHtml = True
+            o_Message.IsBodyHtml = False
 
             'Send the message
             smtpObj.Send(o_Message)

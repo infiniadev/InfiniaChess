@@ -21,7 +21,6 @@ Partial Class download
             Session("CountryID") = DLCountry.SelectedValue
             Session("Email") = txtEmail.Text
             Session("Login") = txtLogin.Text
-            Session("Login") = txtLogin.Text
 
             Session("PasswordPlain") = Trim(txtPassword.Text)
             Session("PasswordMySQL") = GetVBulletinPassword(Session("PasswordPlain"))
@@ -48,7 +47,7 @@ Partial Class download
 	' ========================================================================================================
     Public Sub CheckLoginAllowed(ByVal sender As Object, ByVal e As ServerValidateEventArgs)
         Try
-            e.IsValid = not myDB.CheckLoginExists(txtLogin.Text)
+            e.IsValid = not myDB.LoginExists(txtLogin.Text)
         Catch ex As Exception
             lblMsg.Text = ex.Message.ToString()
         End Try
@@ -57,7 +56,7 @@ Partial Class download
     Public Sub CheckEmailAllowed(ByVal sender As Object, ByVal e As ServerValidateEventArgs)
         Try
             If Not ApplicationSettings.CheckEmailExists Then Return
-            e.IsValid = Not myDB.CheckEmailExists(txtEmail.Text)
+            e.IsValid = Not myDB.EmailExists(txtEmail.Text)
         Catch ex As Exception
             lblMsg.Text = ex.Message.ToString()
         End Try

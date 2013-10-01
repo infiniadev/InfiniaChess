@@ -40,7 +40,7 @@ Public Class ApplicationSettings
 
     Public Shared ReadOnly Property CheckEmailExists As Boolean
         Get
-            Return AppSettings("CheckEmailExists").ToLower() = "true"
+            Return AppSettings("EmailExists").ToLower() = "true"
         End Get
     End Property
 
