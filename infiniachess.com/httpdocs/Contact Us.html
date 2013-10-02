@@ -1,16 +1,31 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Perpetual Chess Contact</title>
+ 
+<META NAME="description" CONTENT="Perpetual Chess Contact information">
+<META NAME="keywords" CONTENT="play online chess computer, play chess online games, play live chess online, play chess beginners, learn chess online, online international chess, play chess on internet, learn play chess, online chess for kids, play internet chess, chess online gaming, play live chess, play chess games, internet chess online, online chess website, play chess game online, chess on line, online chess training, chess online, play chess online now, chess game online, online internet chess, learn to play chess game, play chess game, learn to play chess well, online chess site, play chess online, online chess games, online chess sites, learn to play chess online, play chess live, playing chess games, playing chess online, play chess live, playing chess games, playing chess online, chess live, internet chess games, internet chess game, online chess clubs learn to play chess, online chess game, internet chess clubs, online chess lessons, play chess, learn to play chess games, learn how to play chess, chess games, internet chess, chess lessons, chess instruction, play chess on the internet, chess tournaments, learning to play chess, playing chess game, online chess tournament, internet chess club, chess site, playing chess, online chess club, chess clubs, buckeye chess, kelly bloomfield">
+ 
+<link rel="shortcut icon" href="/images/rook3.ico">
+<link href="styles/site_styles.css" rel="stylesheet" type="text/css" />
+ 
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+
+
 <style type="text/css">
 <!--
 body {
 	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
-	background: #4E5869;
+	background-color: #0098CC;
 	margin: 0;
 	padding: 0;
 	color: #000;
+	background-image: url(images/newback.jpg);
+	background-repeat: repeat-x;
 }
 
 /* ~~ Element/tag selectors ~~ */
@@ -22,8 +37,6 @@ h1, h2, h3, h4, h5, h6, p {
 	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
 	padding-right: 15px;
 	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
-	color: #FFF;
-	text-align: center;
 }
 a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
 	border: none;
@@ -31,29 +44,27 @@ a img { /* this selector removes the default blue border displayed in some brows
 
 /* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
 a:link {
-	color:#414958;
+	color: #000;
 	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
 }
 a:visited {
-	color: #4E5869;
+	color: #6E6C64;
 	text-decoration: underline;
 }
 a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
 	text-decoration: none;
 }
 
-/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+/* ~~ This fixed width container surrounds all other divs ~~ */
 .container {
-	width: 80%;
-	max-width: 1260px;/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
-	min-width: 780px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
-	background: #FFF;
-	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+	width: 960px;
+	background-color: #FFFFFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
 
-/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+/* ~~ The header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo. ~~ */
 .header {
-	background: #6F7D94;
+	background-color: #949398;
 }
 
 /* ~~ These are the columns for the layout. ~~ 
@@ -69,26 +80,26 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 */
 .sidebar1 {
 	float: left;
-	width: 20%;
-	background: #93A5C4;
+	width: 180px;
+	background-color: #999999;
 	padding-bottom: 10px;
 }
 .content {
+
 	padding: 10px 0;
-	width: 60%;
+	width: 600px;
 	float: left;
 }
 .sidebar2 {
 	float: left;
-	width: 20%;
-	background: #93A5C4;
+	width: 180px;
+	background-color: #C6E2ED;
 	padding: 10px 0;
 }
 
 /* ~~ This grouped selector gives the lists in the .content area space ~~ */
-.content ul, .content ol {
+.content ul, .content ol { 
 	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
-	color: #FFF;
 }
 
 /* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
@@ -102,25 +113,26 @@ ul.nav li {
 }
 ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
 	padding: 5px 5px 5px 15px;
-	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	display: block; /* this gives the anchor block properties so it fills out the whole LI that contains it so that the entire area reacts to a mouse click. */
+	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
 	text-decoration: none;
-	background: #8090AB;
+	background-color: #C3DFEA;
 	color: #000;
 }
 ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
-	background: #6F7D94;
-	color: #FFF;
+	background-color: #33FF33;
+	color: #333;
 }
 
-/* ~~The footer ~~ */
+/* ~~ The footer styles ~~ */
 .footer {
 	padding: 10px 0;
-	background: #6F7D94;
+	background-color: #666666;
 	position: relative;/* this gives IE6 hasLayout to properly clear */
 	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
 }
 
-/* ~~miscellaneous float/clear classes~~ */
+/* ~~ Miscellaneous float/clear classes ~~ */
 .fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
 	float: right;
 	margin-left: 8px;
@@ -128,38 +140,33 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 .fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
 	float: left;
 	margin-right: 8px;
-	color: #FFF;
 }
-.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the .container) if the .footer is removed or taken out of the .container */
 	clear:both;
 	height:0;
 	font-size: 1px;
 	line-height: 0px;
 }
-#UM {	color: #00F;
+body,td,th {
+	color: #000;
+	font-size: 12px;
 }
-#osu {	color: #EC4413;
-}
-#k1 {
-}
-#k3 {
+.container .footer table tr td {
 	color: #FFF;
-}
-#k {
-	color: #FFF;
+	font-weight: bold;
+	font-size: 13px;
 }
 -->
-</style><!--[if lte IE 7]>
-<style>
-.content { margin-right: -1px; } /* this 1px negative margin can be placed on any of the columns in this layout with the same corrective effect. */
-ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it needs to correct extra whiltespace between the links */
-</style>
-<![endif]--></head>
+</style></head>
 
 <body>
 
 <div class="container">
-  <div class="header"><!-- end .header --></div>
+  <div class="header"><img src="images/header.jpg" alt="Perpetual Chess" width="960" height="301" border="0" usemap="#Map" />
+    <map name="Map" id="Map">
+      <area shape="rect" coords="98,163,414,263" href="http://perpetualchess.com/download.aspx" target="_new" />
+    </map>
+  </div>
   <div class="sidebar1">
     <ul class="nav">
       <li><a href="index.html">Home</a></li>
@@ -170,10 +177,12 @@ ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it ne
       <li><a href="http://perpetualchess.com/admin-user.aspx">Admin Login</a></li>
       <li><a href="Chess Clubs.html">Chess Clubs</a></li>
       <li><a href="http://perpetualchess.com/achievements-top.aspx">Top 100 List for Achievements</a></li>
+      <li><a href="help.html">Help & FAQ</a></li>
       <li><a href="Contact Us.html">Contact Us</a></li>
+
     </ul>
-    <p><strong>Register Today for a <em>FREE ACCOUNT</em> and begin playing right away!</strong></p>
-    <p>Soon we hope to be adding a Team Match feature that will allow you to participate in a team league. Details to follow.</p>
+    <p align="center"><strong>Register Today for a <em>FREE ACCOUNT</em> and begin playing right   away!</strong></p>
+    <p align="center">Soon we hope to be adding a Team Match feature that will allow you to   participate in a team league. Details to follow.</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
@@ -185,40 +194,33 @@ ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it ne
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p><!-- end .sidebar1 --></p>
-  </div>
+  <!-- end .sidebar1 --></div>
   <div class="content">
-    <h1 id="k">Contact Us    </h1>
-    <section>
-<p class="fltlft">&nbsp;</p>
-  </section>
-    <section></section>
-    <h1>Email: perpetualchess@gmail.com</h1>
-    <!-- end .content --></div>
+    <h1 align="center" id="k">Contact Us    </h1>
+    <h2 align="center">Email: <a href="mailto:perpetualchess@gmail.com">perpetualchess@gmail.com</a></h2>
+    <p>&nbsp;</p>
+</div>
   <div class="sidebar2">
-    <h4>Upcoming Events</h4>
-    <p>College chess match between:</p>
-    <p><strong id="osu">The Ohio State University</strong></p>
-    <p>&amp;</p>
-<p><strong id="UM">University of Michigan</strong> </p>
-<p>Please check back soon for all the details. </p>
-<p>Fully interactive chess Lectures by International Master Goran Vojinovic <strong>FREE</strong> to all that login. Look for the shouts that will announce the details of his lectures.</p>
-    <p><strong>Tournaments</strong></p>
-    <p><strong>Simuls</strong></p>
-    <p><strong>King of the Hill</strong></p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p></p>
-    <!-- end .sidebar2 --></div>
+    <h4 align="center">Upcoming Events</h4>
+    <p align="center">September 24th 6-8 pm College chess match between:</p>
+    <p align="center"><strong id="osu">The Ohio State University</strong></p>
+    <p align="center">&amp;</p>
+    <p align="center"><strong id="UM">University of Michigan</strong></p>
+    <p align="center">The first of 3 team matches is set. <em>International Masters</em> <strong>Goran Vojinovic</strong> and <strong>Atanas Kizov</strong> will be commenting live on these games.</p>
+    <p align="center">Fully interactive chess Lectures by International Master Goran Vojinovic <strong>FREE</strong> to all that login. Look for the shouts that will announce   the details of his lectures.</p>
+    <p align="center"><strong>Tournaments</strong></p>
+    <p align="center"><strong>Simuls</strong></p>
+    <p align="center"><strong>King of the Hill</strong></p>
+  <!-- end .sidebar2 --></div>
+  <div class="footer">
+    <table width="100%" border="0">
+      <tr>
+        <td width="51%"><img src="images/footerlogo.jpg" width="476" height="75" alt="Perpetual Chess" /></td>
+        <td width="24%">© 2013 </td>
+        <td width="25%"><div id="footer_social-new"> <a href="https://www.facebook.com/#!/groups/62308666317/" target="new" class="socialicon"><img src="images/social/facebook-32.png" alt="Facebook" width="102" height="33"/></a> <a href="http://twitter.com/bloomsbuckeyes" target="new" class="socialicon"><img src="images/social/twitter-32.png" alt="Twitter" width="27" height="75"/></a></div></td>
+      </tr>
+    </table>
+    <!-- end .footer --></div>
   <!-- end .container --></div>
 </body>
 </html>

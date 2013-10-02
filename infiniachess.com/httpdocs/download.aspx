@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false"
-    CodeFile="download.aspx.vb" Inherits="download" Title="Welcome to Infinia Chess - Registration" %>
+    CodeFile="download.aspx.vb" Inherits="download" Title="Welcome to Perpetual Chess - Registration" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <table cellpadding="0" cellspacing="0" border="0" width="100%" class="body">
@@ -21,7 +21,6 @@
                     <asp:Label ID="lblMsg" runat="server" Visible="false" Font-Bold="true" ForeColor="Red"></asp:Label>
                 </p>
                 <table width="90%" cellpadding="0" cellspacing="0" border="1">
-                    align="center">
                     <tr>
                         <td>
                             <table width="100%" cellpadding="5" cellspacing="0" border="0">

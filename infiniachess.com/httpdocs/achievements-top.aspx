@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" 
     CodeFile="achievements-top.aspx.vb" Inherits="achievements_top" 
-    title="Welcom to Infinia Chess - TOP 100 Users"%>
+    title="Welcom to Perpetual Chess - TOP 100 Users"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
         <br />

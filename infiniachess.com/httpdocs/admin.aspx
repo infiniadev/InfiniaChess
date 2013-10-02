@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" 
-    CodeFile="admin.aspx.vb" Inherits="admin" title="Welcome to Infinia Chess - Admin Tasks" %>
+    CodeFile="admin.aspx.vb" Inherits="admin" title="Welcome to Perpetual Chess - Admin Tasks" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
     <asp:Panel ID="pnlAdmin" runat="server" BackColor="#EEEEEE" BorderColor="Gray" BorderStyle="Solid">

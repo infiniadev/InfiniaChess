@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false"
-    CodeFile="chat-log.aspx.vb" Inherits="chat_log" title="Welcome to Infinia Chess - Chat Log"%>
+    CodeFile="chat-log.aspx.vb" Inherits="chat_log" title="Welcome to Perpetual Chess - Chat Log"%>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
     <h2>Chat Log</h2>

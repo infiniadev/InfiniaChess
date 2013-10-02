@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" aspcompat="true" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="download-step2.aspx.vb" Inherits="download_step2" title="Welcome to Infinia Chess - Payment" %>
+﻿<%@ Page Language="VB" aspcompat="true" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="download-step2.aspx.vb" Inherits="download_step2" title="Welcome to Perpetual Chess - Payment" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     

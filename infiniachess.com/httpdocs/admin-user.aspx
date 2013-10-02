@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false"
-    CodeFile="admin-user.aspx.vb" Inherits="admin_user" title="Welcome to Infinia Chess - User Administration Page"%>
+    CodeFile="admin-user.aspx.vb" Inherits="admin_user" title="Welcome to Perpetual Chess - User Administration Page"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
     <h2><asp:Label runat="server" ID="lblUser" Text="User Management"></asp:Label></h2>

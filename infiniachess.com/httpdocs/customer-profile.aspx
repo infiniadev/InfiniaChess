@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="customer-profile.aspx.vb" Inherits="customer_profile" title="Welcome to Infinia Chess - Customer Profile" %>
+﻿<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="customer-profile.aspx.vb" Inherits="customer_profile" title="Welcome to Perpetual Chess - Customer Profile" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <style type="text/css">
@@ -17,7 +17,7 @@
           <td align="left" valign="top">
 			<h2>Welcome to the fastest growing Chess Site on the Internet.</h2>  
 
- 			<p>At Infinia you will find a group of people having fun while dedicated to promoting the game of chess. </p> 
+ 			<p>At Perpetual Chess you will find a group of people having fun while dedicated to promoting the game of chess. </p> 
 
 			<p>To name only a few of our features, you  will be able to attend interesting and educational lectures by masters,  master events, puzzles for members, an active lobby where members can meet and chat, the ability to choose your own colors for your board, interface, fonts and even  choose your own chess pieces.  </p>
 			

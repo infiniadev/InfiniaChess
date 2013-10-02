@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="download-step3.aspx.vb" Inherits="download_step3" title="Welcome to Infinia Chess - Confirmation" %>
+﻿<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="download-step3.aspx.vb" Inherits="download_step3" title="Welcome to Perpetual Chess - Confirmation" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -7,7 +7,7 @@
           <td align="left" valign="top">
 			<h2>Membership</h2>
 	
-			<P><b>Thank you for joining Infinia Chess!</b>  <%=CardConfirmation %>  </P>
+			<P><b>Thank you for joining Perpetual Chess!</b>  <%=CardConfirmation %>  </P>
 			
 			<P><a href="clients/ic_setup.exe">Click Here To Download The Chess Client</a> and start playing today.</P>
 			

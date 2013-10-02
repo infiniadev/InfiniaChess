@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" 
-    CodeFile="admin-ip-mac.aspx.vb" Inherits="admin_ip_mac" title="Welcome to Infinia Chess - IP MAC Search" %>
+    CodeFile="admin-ip-mac.aspx.vb" Inherits="admin_ip_mac" title="Welcome to Perpetual Chess - IP MAC Search" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
     <asp:Panel ID="pnlSearch" runat="server" BackColor="#EEEEEE" BorderColor="Gray" BorderStyle="Solid">

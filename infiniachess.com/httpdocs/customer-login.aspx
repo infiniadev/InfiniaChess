@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="customer-login.aspx.vb" Inherits="customer_login" title="Welcome to Infinia Chess - Customer Login" %>
+﻿<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="customer-login.aspx.vb" Inherits="customer_login" title="Welcome to Perpetual Chess - Customer Login" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 

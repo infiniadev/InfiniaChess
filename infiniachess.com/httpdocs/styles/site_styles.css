@@ -1,0 +1,22 @@
+
+/*-----------------------------------
+	Footer
+-----------------------------------*/
+
+
+
+
+
+
+
+
+#footer_social a.sm_facebook {height:17px; width:74px; display:inline-block; text-indent:-9999px; margin:0 10px 0 0; background: url(../images/logo-facebook.png) 0 0 no-repeat;}
+#footer_social a:hover.sm_facebook {background-position:0 -18px;}
+#footer_social a.sm_twitter {height:17px; width:74px; display:inline-block; text-indent:-9999px; margin: 0; background: url(../images/logo-twitter.png) 0 0 no-repeat;}
+#footer_social a:hover.sm_twitter {background-position:0 -18px;}
+
+
+#footer_social-new {float:right;}
+#footer_social-new a.socialicon img {height:32px; width:32px; margin-right:10px; background:#0099cc; border-radius:4px;}
+#footer_social-new a:hover.socialicon img {background:#33ff33;}
+

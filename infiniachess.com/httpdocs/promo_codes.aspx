@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false"
-    CodeFile="promo_codes.aspx.vb" Inherits="promo_codes" title="Welcome to Infinia Chess - Promo Code"%>
+    CodeFile="promo_codes.aspx.vb" Inherits="promo_codes" title="Welcome to Perpetual Chess - Promo Code"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
     <h2>Promo Codes</h2>
