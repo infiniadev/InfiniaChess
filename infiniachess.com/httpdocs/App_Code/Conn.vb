@@ -4,7 +4,7 @@ Imports System.Data.SqlClient
 Imports Microsoft.VisualBasic
 
 Public Class Conn
-    Public Connection As New SqlConnection("data source=U\SQLSERVER;initial catalog=CLServer;persist security info=False;user id=clsa;password=Nf6=Q;packet size=4096")
+    Public Connection As New SqlConnection("data source=localhost;initial catalog=CLServer;persist security info=False;user id=clsa;password=Nf6=Q;packet size=4096")
     'Public Connection As New SqlConnection("data source=67.192.255.154;initial catalog=CLServer;persist security info=False;user id=clsa;password=Nf6=Q;packet size=4096")
     ''Public ConnVBulletinStr As String = "Driver={MySQL ODBC 5.1 Driver};Data Source=localhost;Database=chess_vbulletin;uid=chess_admin;pwd=chess;option=3"
 	' ========================================================================================================

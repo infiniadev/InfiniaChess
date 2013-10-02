@@ -55,7 +55,7 @@
     Private Function GetConfirmationLink() As String
         Dim uri = HttpContext.Current.Request.Url.AbsoluteUri
         Dim n = uri.IndexOf("download-step3.aspx")
-        Return uri.Substring(0, n) & "email-confirmation.aspx?code=" & Session("ConfirmationCode")
+        Return uri.Substring(0, n) & "confirmation.aspx?code=" & Session("ConfirmationCode")
     End Function
     ' ========================================================================================================
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -68,6 +68,7 @@
         lblLogin.Text = Session("Login") ' Session("Login")
         lblSubscribeExpire.Text = Now.AddDays(Session("SubscribeDays"))
         lblSubscribeTypeText.Text = Session("SubscribeText")
+        lblPleaseConfirm.Visible = ApplicationSettings.EmailConfirmationRequired
 
         myDB.Session = Session
         If Session("LoginID") = Nothing Then

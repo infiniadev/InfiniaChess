@@ -10,7 +10,7 @@ Public Class DBChess
     'Dim myConn As New Odbc.OdbcConnection(myConnection.ConnVBulletinStr)
     Public Session As HttpSessionState
     Const VBULLETIN_SALT As String = "AQI"
-    Dim ConnString As String = "data source=U\SQLSERVER;initial catalog=CLServer;persist security info=False;user id=clsa;password=Nf6=Q;packet size=4096"
+    Dim ConnString As String = "data source=localhost;initial catalog=CLServer;persist security info=False;user id=clsa;password=Nf6=Q;packet size=4096"
     ''Dim ConnString As String = "data source=67.192.255.154;initial catalog=CLServer;persist security info=False;user id=clsa;password=Nf6=Q;packet size=4096"
 
     Public ErrDesc As String

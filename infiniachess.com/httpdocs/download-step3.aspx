@@ -75,7 +75,10 @@
 						</td>
 						</tr>
 						
-						
+						<tr>
+						    <td></td>
+                            <td><asp:Label runat="server" ID="lblPleaseConfirm" Font-Bold="True" ForeColor="Purple">Please, confirm your email before using this login!</asp:Label></td>
+						</tr>
 						<tr>
 						<td> </td>
 						<td align=left><asp:Button ID="btnProfile" runat="server" Text="Go To Profile" /></td>
