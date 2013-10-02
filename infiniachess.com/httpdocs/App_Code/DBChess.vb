@@ -125,13 +125,10 @@ Public Class DBChess
     ' ========================================================================================================
     Function CreateNewNotConfirmedUser() As Boolean
         Dim myCommand As SqlCommand = myConnection.Connection.CreateCommand
-        Dim myTrans As SqlTransaction
 
         myConnection.Connection.Open()
-        myTrans = myConnection.Connection.BeginTransaction(IsolationLevel.ReadCommitted, "CreateNewUser")
 
         myCommand.Connection = myConnection.Connection
-        myCommand.Transaction = myTrans
 
         Try
             Dim ConfirmationCode As String = GetUniqueConfirmationCode()
@@ -142,12 +139,10 @@ Public Class DBChess
             myCommand.CommandText = Session("LastSQL")
             myCommand.ExecuteNonQuery()
 
-            myTrans.Commit()
             Session("SQLError") = Nothing
             Return True
         Catch e As Exception
             Session("SQLError") = e.Message
-            myTrans.Rollback("CreateNewUser")
             System.Diagnostics.Trace.WriteLine("[ValidateUser] Exception " & e.Message)
             Return False
         Finally
